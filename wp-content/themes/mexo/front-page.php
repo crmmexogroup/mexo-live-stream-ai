@@ -173,6 +173,20 @@ add_action('wp_head', function () {
             text-shadow: none !important;
         }
 
+        body.home .mexo-home-hero .text-gradient,
+        html.dark body.home .mexo-home-hero .text-gradient {
+            background-image: linear-gradient(90deg, #0057ff 0%, #0084ff 48%, #06b6d4 100%) !important;
+            color: transparent !important;
+            -webkit-background-clip: text !important;
+            background-clip: text !important;
+            text-shadow: 0 8px 22px rgba(0, 87, 255, 0.10) !important;
+        }
+
+        body.home .mexo-home-hero .mexo-hero-title-line:not(.text-gradient),
+        html.dark body.home .mexo-home-hero .mexo-hero-title-line:not(.text-gradient) {
+            color: #111827 !important;
+        }
+
         body.home .mexo-home-hero p,
         html.dark body.home .mexo-home-hero p {
             color: #475569 !important;
