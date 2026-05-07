@@ -101,6 +101,16 @@ Version: 1.0
     box-shadow: 0 24px 70px rgba(15, 23, 42, 0.13);
 }
 
+.mexo-growth-partnership-image {
+    object-position: center 62%;
+}
+
+@media (min-width: 1024px) {
+    .mexo-growth-partnership-image {
+        object-position: center 58%;
+    }
+}
+
 html.dark .mexo-home-hero {
     background:
         radial-gradient(circle at 15% 10%, rgba(37, 99, 235, 0.24), transparent 34rem),

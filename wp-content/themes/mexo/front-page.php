@@ -497,19 +497,30 @@ class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary t
                     </p>
 </div>
 </div>
-<div class="mt-16 relative max-w-5xl mx-auto">
-<div class="absolute inset-0 bg-primary/5 transform -rotate-1 rounded-3xl scale-[1.02]"></div>
-<div class="relative rounded-3xl overflow-hidden shadow-2xl">
-<img class="w-full h-80 lg:h-96 object-cover" data-alt="Digital marketing team collaborating on a strategy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApgSmueDw7F2LzZrCXc5MPcW34uMlIkwuIYnFLmVD5EURWQILOh_nhSy1ZW4iRAHDE29jlddSqoeclRvTRUbde0dxQ4J5kU1kmfIkc8aaHENOT6-oJjglLCSAkzlX1CKhO1C9fxdT9ZjZZV_a5zxzfkm5DAzT3PdZ_qlyiUsUiFVldRfY-DZy904PMYH7EcelfyxSPetABfvo43TGAZHEx2mpkxhNyGJSmylZPVVe-AJnEnWqwNa2mww1226PKmrifr2i2cAmG_bo"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center pb-8">
-<div class="text-white text-center">
-<p class="text-lg font-bold opacity-90">Hợp tác cùng phát triển</p>
-<div class="flex justify-center gap-1 mt-2 text-yellow-400">
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
+<div class="mexo-growth-partnership mt-16 relative max-w-6xl mx-auto">
+<div class="absolute -inset-6 bg-gradient-to-br from-primary/10 via-cyan-400/10 to-cta-orange/10 rounded-[2rem] blur-2xl pointer-events-none"></div>
+<div class="relative grid lg:grid-cols-[0.82fr_1.18fr] gap-0 overflow-hidden rounded-[2rem] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl">
+<div class="p-7 md:p-10 lg:p-12 flex flex-col justify-center bg-slate-950 text-white">
+<p class="text-sm font-extrabold uppercase tracking-[0.22em] text-cyan-300 mb-4">Hợp tác cùng phát triển</p>
+<h4 class="text-3xl md:text-4xl font-extrabold leading-tight mb-5">Đồng hành thực chiến cùng đối tác tăng trưởng TMĐT</h4>
+<p class="text-slate-300 font-medium leading-relaxed mb-7">MEXO GROUP xây dựng quan hệ hợp tác dựa trên hiệu quả thật: cùng phân tích thị trường, tối ưu vận hành và mở rộng doanh thu bền vững.</p>
+<div class="grid grid-cols-2 gap-3">
+<div class="rounded-2xl border border-white/10 bg-white/10 p-4">
+<div class="text-2xl font-black text-white">500+</div>
+<div class="text-xs font-bold uppercase tracking-wide text-slate-300 mt-1">Đối tác đồng hành</div>
+</div>
+<div class="rounded-2xl border border-white/10 bg-white/10 p-4">
+<div class="text-2xl font-black text-white">7+ năm</div>
+<div class="text-xs font-bold uppercase tracking-wide text-slate-300 mt-1">Kinh nghiệm TMĐT</div>
+</div>
+</div>
+</div>
+<div class="relative min-h-[360px] lg:min-h-[520px] bg-slate-100 dark:bg-slate-800">
+<img class="mexo-growth-partnership-image absolute inset-0 w-full h-full object-cover" data-alt="Đội ngũ MEXO GROUP và đối tác trong buổi hợp tác phát triển" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hop-tac-cung-phat-trien.jpg' ); ?>"/>
+<div class="absolute inset-x-0 bottom-0 p-5 md:p-7 bg-gradient-to-t from-slate-950/86 via-slate-950/30 to-transparent">
+<div class="inline-flex items-center gap-2 rounded-full bg-white/95 text-slate-900 px-4 py-2 shadow-lg">
+<span class="material-icons text-primary text-lg">verified</span>
+<span class="text-sm font-extrabold">Tin cậy - thực chiến - tăng trưởng</span>
 </div>
 </div>
 </div>
