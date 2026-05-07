@@ -227,7 +227,7 @@
             padding-bottom: 1.25rem !important;
         }
 
-        #mobile-menu .space-y-1 {
+        #mobile-menu > div > .space-y-1 {
             padding-left: .75rem !important;
             padding-right: .75rem !important;
         }
@@ -240,10 +240,50 @@
             line-height: 1.35 !important;
         }
 
-        #mobile-menu a.block,
-        #mobile-menu button.w-full {
-            font-size: 1rem !important;
-            padding: .72rem .95rem !important;
+        #mobile-menu > div > .space-y-1 > a,
+        #mobile-menu > div > .space-y-1 > .space-y-1 > button,
+        #mobile-menu > div > .space-y-1 > .space-y-1 > div:first-child > a {
+            display: flex !important;
+            align-items: center !important;
+            min-height: 3.35rem !important;
+            padding: 0 1rem !important;
+            font-size: 1.08rem !important;
+            font-weight: 800 !important;
+            text-align: left !important;
+        }
+
+        #mobile-menu > div > .space-y-1 > .space-y-1 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        #mobile-menu > div > .space-y-1 > .space-y-1 > div:first-child {
+            display: grid !important;
+            grid-template-columns: minmax(0, 1fr) 3.35rem !important;
+            align-items: center !important;
+            gap: 0 !important;
+            padding: 0 !important;
+        }
+
+        #mobile-menu > div > .space-y-1 > .space-y-1 > div:first-child > button,
+        #mobile-menu > div > .space-y-1 > .space-y-1 > button > span.material-icons {
+            width: 3.35rem !important;
+            height: 3.35rem !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        #mobile-menu > div > .space-y-1 > .space-y-1 > button {
+            width: 100% !important;
+            padding: 0 0 0 1rem !important;
+        }
+
+        #mobile-menu > div > .space-y-1 > .space-y-1 > button > span:first-child {
+            flex: 1 1 auto !important;
+            text-align: left !important;
         }
 
         #mobile-solutions-content,
@@ -315,7 +355,8 @@
 
         body.mexo-mobile-menu-open #ws247-aio-ct-button-show-all-container,
         body.mexo-mobile-menu-open #phonering-alo-phoneIcon,
-        body.mexo-mobile-menu-open .aio-fixed-bt-mb {
+        body.mexo-mobile-menu-open .aio-fixed-bt-mb,
+        body.mexo-mobile-menu-open #mexo-back-to-top {
             display: none !important;
             pointer-events: none !important;
         }
