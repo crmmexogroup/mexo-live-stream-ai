@@ -148,7 +148,7 @@ add_action('wp_footer', function () {
                 Đối tác tăng trưởng số 1 Việt Nam
             </div>
 <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-normal text-slate-900 dark:text-white mb-8" style="line-height: 1.24; letter-spacing: 0;">
-  Giải pháp tăng trưởng <br class="hidden lg:block"/>
+  Giải pháp <br class="block sm:hidden"/> tăng trưởng <br class="hidden lg:block"/>
   <span class="text-gradient drop-shadow-sm inline-block px-2 py-1">Thương Mại Điện Tử</span> <br/>
   cho doanh nghiệp Việt
 </h1>
