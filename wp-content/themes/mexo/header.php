@@ -716,6 +716,168 @@
         color: #f8fafc !important;
         border-color: rgba(147, 197, 253, 0.48) !important;
     }
+
+    .mexo-site-header {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 1000 !important;
+        isolation: isolate;
+        box-shadow: 0 1px 0 rgba(148, 163, 184, .14);
+    }
+
+    html.dark .mexo-site-header {
+        background: rgba(7, 18, 37, .94) !important;
+        border-color: rgba(96, 165, 250, .20) !important;
+        box-shadow: 0 12px 34px rgba(0, 0, 0, .24), 0 1px 0 rgba(96, 165, 250, .16);
+    }
+
+    html.dark .mexo-site-header .hidden.lg\:flex > a,
+    html.dark .mexo-site-header .hidden.lg\:flex > .relative > button {
+        color: #f8fafc !important;
+    }
+
+    html.dark .mexo-site-header .hidden.lg\:flex > a:hover,
+    html.dark .mexo-site-header .hidden.lg\:flex > .relative > button:hover,
+    html.dark .mexo-site-header .hidden.lg\:flex > a.mexo-is-active,
+    html.dark .mexo-site-header .hidden.lg\:flex > .relative > button.mexo-is-active {
+        color: #60a5fa !important;
+    }
+
+    html.dark .mexo-site-header .hidden.lg\:flex > a.mexo-is-active::after,
+    html.dark .mexo-site-header .hidden.lg\:flex > .relative > button.mexo-is-active::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -1.65rem;
+        width: 1.6rem;
+        height: 3px;
+        border-radius: 999px;
+        transform: translateX(-50%);
+        background: #60a5fa;
+        box-shadow: 0 0 18px rgba(96, 165, 250, .55);
+    }
+
+    html.dark .mexo-site-header .hidden.lg\:flex > .relative > button {
+        position: relative;
+    }
+
+    html.dark div.text-transparent.bg-clip-text[class*="from-primary"],
+    html.dark div.text-transparent.bg-clip-text[class*="to-primary-dark"],
+    html.dark span.text-transparent.bg-clip-text[class*="from-primary"],
+    html.dark span.text-transparent.bg-clip-text[class*="to-primary-dark"],
+    html.dark .text-gradient {
+        background: linear-gradient(90deg, #60a5fa 0%, #22d3ee 58%, #38bdf8 100%) !important;
+        background-image: linear-gradient(90deg, #60a5fa 0%, #22d3ee 58%, #38bdf8 100%) !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        color: transparent !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+    }
+
+    html.dark section:first-of-type .grid > div {
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+
+    html.dark section:first-of-type .grid {
+        border-color: rgba(96, 165, 250, .22) !important;
+    }
+
+    .mexo-primary-cta,
+    a[class*="bg-cta-orange"],
+    button[class*="bg-cta-orange"],
+    a[class*="from-cta-orange"],
+    button[class*="from-cta-orange"] {
+        background: linear-gradient(135deg, #ff6a2a 0%, #ef4444 100%) !important;
+        color: #ffffff !important;
+        border-color: transparent !important;
+        box-shadow: 0 18px 44px rgba(255, 91, 42, .32), 0 0 38px rgba(239, 68, 68, .22) !important;
+    }
+
+    .mexo-primary-cta:hover,
+    a[class*="bg-cta-orange"]:hover,
+    button[class*="bg-cta-orange"]:hover,
+    a[class*="from-cta-orange"]:hover,
+    button[class*="from-cta-orange"]:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 24px 58px rgba(255, 91, 42, .42), 0 0 52px rgba(239, 68, 68, .30) !important;
+    }
+
+    .mexo-secondary-cta,
+    html.dark a[class*="border-"]:not([class*="bg-white"]):not([class*="bg-cta-orange"]):not([class*="from-cta-orange"]),
+    html.dark button[class*="border-"]:not([class*="bg-white"]):not([class*="bg-cta-orange"]):not([class*="from-cta-orange"]) {
+        background: rgba(7, 18, 37, .42) !important;
+        color: #f8fafc !important;
+        border-color: rgba(148, 163, 184, .45) !important;
+        box-shadow: 0 14px 36px rgba(15, 23, 42, .22), 0 0 28px rgba(96, 165, 250, .08) !important;
+    }
+
+    .mexo-secondary-cta:hover,
+    html.dark a[class*="border-"]:not([class*="bg-white"]):not([class*="bg-cta-orange"]):not([class*="from-cta-orange"]):hover,
+    html.dark button[class*="border-"]:not([class*="bg-white"]):not([class*="bg-cta-orange"]):not([class*="from-cta-orange"]):hover {
+        background: rgba(15, 27, 51, .86) !important;
+        color: #ffffff !important;
+        border-color: rgba(147, 197, 253, .70) !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 20px 46px rgba(15, 23, 42, .32), 0 0 42px rgba(96, 165, 250, .16) !important;
+    }
+
+    html.dark section[class*="from-primary"] a[class*="bg-white"],
+    html.dark section[class*="from-primary"] button[class*="bg-white"],
+    html.dark section[class*="to-primary-dark"] a[class*="bg-white"],
+    html.dark section[class*="to-primary-dark"] button[class*="bg-white"] {
+        background: linear-gradient(135deg, #ff6a2a 0%, #ef4444 100%) !important;
+        color: #ffffff !important;
+        box-shadow: 0 18px 44px rgba(255, 91, 42, .32), 0 0 38px rgba(239, 68, 68, .22) !important;
+    }
+
+    html.dark .mexo-secondary-cta,
+    html.dark section[class*="from-primary"] .mexo-secondary-cta,
+    html.dark section[class*="to-primary-dark"] .mexo-secondary-cta,
+    html.dark div[class*="from-primary"] .mexo-secondary-cta,
+    html.dark div[class*="to-primary-dark"] .mexo-secondary-cta {
+        background: rgba(7, 18, 37, .42) !important;
+        background-image: none !important;
+        color: #f8fafc !important;
+        border-color: rgba(148, 163, 184, .48) !important;
+        box-shadow: 0 14px 36px rgba(15, 23, 42, .22), 0 0 28px rgba(96, 165, 250, .08) !important;
+    }
+
+    html.dark .mexo-primary-cta,
+    html.dark section[class*="from-primary"] .mexo-primary-cta,
+    html.dark section[class*="to-primary-dark"] .mexo-primary-cta,
+    html.dark div[class*="from-primary"] .mexo-primary-cta,
+    html.dark div[class*="to-primary-dark"] .mexo-primary-cta {
+        background: linear-gradient(135deg, #ff6a2a 0%, #ef4444 100%) !important;
+        color: #ffffff !important;
+        border-color: transparent !important;
+        box-shadow: 0 18px 44px rgba(255, 91, 42, .32), 0 0 38px rgba(239, 68, 68, .22) !important;
+    }
+
+    html.dark section[class*="from-primary"] a.mexo-secondary-cta[class],
+    html.dark section[class*="from-primary"] button.mexo-secondary-cta[class],
+    html.dark section[class*="to-primary-dark"] a.mexo-secondary-cta[class],
+    html.dark section[class*="to-primary-dark"] button.mexo-secondary-cta[class],
+    html.dark div[class*="from-primary"] a.mexo-secondary-cta[class],
+    html.dark div[class*="from-primary"] button.mexo-secondary-cta[class],
+    html.dark div[class*="to-primary-dark"] a.mexo-secondary-cta[class],
+    html.dark div[class*="to-primary-dark"] button.mexo-secondary-cta[class] {
+        background: rgba(7, 18, 37, .42) !important;
+        background-image: none !important;
+        color: #f8fafc !important;
+        border-color: rgba(148, 163, 184, .48) !important;
+        box-shadow: 0 14px 36px rgba(15, 23, 42, .22), 0 0 28px rgba(96, 165, 250, .08) !important;
+    }
+
+    @media (max-width: 767px) {
+        .mexo-site-header {
+            position: sticky !important;
+            top: 0 !important;
+        }
+    }
 </style>
 
 
@@ -973,6 +1135,81 @@ document.addEventListener('DOMContentLoaded', function() {
             setTheme(nextTheme);
         });
     });
+
+    (function markActiveNavigation() {
+        const path = window.location.pathname.replace(/\/+$/, '') || '/';
+        const solutionPaths = [
+            '/giai-phap',
+            '/dich-vu-van-hanh-shopee',
+            '/xay-dung-shop-shopee',
+            '/livestream-auto-24-7',
+            '/len-mall-shopee',
+            '/trang-tri-gian-hang',
+            '/dich-vu-tang-follow'
+        ];
+        const trainingPaths = ['/dao-tao-shopee'];
+
+        function samePath(href) {
+            try {
+                if (!href || href === '#' || href.indexOf('#') === 0 || href.indexOf('javascript:') === 0) {
+                    return false;
+                }
+                const url = new URL(href, window.location.origin);
+                return (url.pathname.replace(/\/+$/, '') || '/') === path;
+            } catch (error) {
+                return false;
+            }
+        }
+
+        document.querySelectorAll('.mexo-site-header a[href]').forEach(function(link) {
+            if (samePath(link.getAttribute('href'))) {
+                link.classList.add('mexo-is-active');
+            }
+        });
+
+        if (solutionPaths.indexOf(path) !== -1) {
+            document.querySelectorAll('.mexo-site-header .hidden.lg\\:flex > .relative:nth-of-type(1) > button, #mobile-menu a[href="/giai-phap"]').forEach(function(item) {
+                item.classList.add('mexo-is-active');
+            });
+        }
+
+        if (trainingPaths.indexOf(path) !== -1) {
+            document.querySelectorAll('.mexo-site-header .hidden.lg\\:flex > .relative:nth-of-type(2) > button, #mobile-training-toggle').forEach(function(item) {
+                item.classList.add('mexo-is-active');
+            });
+        }
+    })();
+
+    (function normalizeCtaButtons() {
+        const secondaryTerms = [
+            'nhận tư vấn chiến lược',
+            'xem tất cả dịch vụ',
+            'khám phá chi tiết',
+            'liên hệ hotline'
+        ];
+        const primaryTerms = [
+            'hành động ngay',
+            'đăng ký tư vấn',
+            'đăng ký nhận tư vấn',
+            'đăng ký tư vấn miễn phí',
+            'chọn gói này'
+        ];
+
+        document.querySelectorAll('a, button').forEach(function(item) {
+            const label = (item.textContent || '').toLowerCase().replace(/\s+/g, ' ').trim();
+            if (!label) return;
+
+            if (secondaryTerms.some(function(term) { return label.indexOf(term) !== -1; })) {
+                item.classList.add('mexo-secondary-cta');
+                item.classList.remove('mexo-primary-cta');
+                return;
+            }
+
+            if (primaryTerms.some(function(term) { return label.indexOf(term) !== -1; })) {
+                item.classList.add('mexo-primary-cta');
+            }
+        });
+    })();
 
     const backToTop = document.getElementById('mexo-back-to-top');
     if(backToTop) {
