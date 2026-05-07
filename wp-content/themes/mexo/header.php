@@ -130,6 +130,77 @@
         background: #1e293b;
         border-color: #475569;
     }
+
+    .mexo-back-to-top {
+        position: fixed;
+        right: 1rem;
+        bottom: 6.25rem;
+        z-index: 60;
+        width: 44px;
+        height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        color: #fff;
+        background: linear-gradient(135deg, #0057ff, #00b8d9);
+        box-shadow: 0 18px 42px rgba(0, 87, 255, 0.28);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(12px);
+        transition: opacity .22s ease, transform .22s ease, box-shadow .22s ease;
+    }
+
+    .mexo-back-to-top.is-visible {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .mexo-back-to-top:hover {
+        box-shadow: 0 22px 52px rgba(0, 87, 255, 0.36);
+        transform: translateY(-2px);
+    }
+
+    @media (min-width: 768px) {
+        .mexo-back-to-top {
+            right: 1.5rem;
+            bottom: 1.5rem;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .mexo-site-header {
+            position: sticky;
+        }
+
+        .mexo-header-inner {
+            position: relative;
+        }
+
+        .mexo-site-header > div,
+        .mexo-header-inner {
+            max-width: 100vw !important;
+            width: 100% !important;
+            overflow: hidden;
+        }
+
+        .mexo-header-actions {
+            position: fixed;
+            right: auto;
+            left: 62vw;
+            top: .85rem;
+            transform: none;
+            flex-shrink: 0;
+            margin-left: auto;
+            z-index: 70;
+        }
+
+        .mexo-site-header img[alt] {
+            max-width: 150px;
+            height: auto !important;
+        }
+    }
 </style>
 
 
@@ -142,8 +213,8 @@
 <body <?php body_class("bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display transition-colors duration-300 selection:bg-cta-orange selection:text-white"); ?>>
 <nav class="mexo-site-header sticky top-0 w-full bg-white/80 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-slate-800 z-50 transition-colors duration-300">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex-shrink-0 flex items-center cursor-pointer group">
+<div class="mexo-header-inner flex justify-between items-center h-16 md:h-20">
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mexo-header-logo flex-shrink-0 flex items-center cursor-pointer group">
     <?php 
     $custom_logo_id = get_theme_mod( 'custom_logo' );
     $logo_url = 'https://mexo.vn/wp-content/uploads/logo-1.png'; // Default
@@ -155,7 +226,7 @@
         }
     }
     ?>
-    <img src="<?php echo esc_url( $logo_url ); ?>" alt="<?php bloginfo( 'name' ); ?>" class="h-10 md:h-12 w-auto transition-all duration-300 dark:brightness-0 dark:invert">
+    <img src="<?php echo esc_url( $logo_url ); ?>" alt="<?php bloginfo( 'name' ); ?>" class="h-8 md:h-12 w-auto transition-all duration-300 dark:brightness-0 dark:invert">
 </a>
 <div class="hidden lg:flex items-center space-x-8">
 <a class="text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary font-semibold transition-colors relative" href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a>
@@ -216,8 +287,8 @@
 </div>
 <a class="text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary font-semibold transition-colors" href="blog">Blog</a>
 </div>
-<div class="flex items-center gap-4">
-<button id="theme-toggle" type="button" aria-label="Đổi chế độ sáng tối" class="mexo-theme-toggle hidden md:inline-flex">
+<div class="mexo-header-actions flex items-center gap-2 md:gap-4">
+<button id="theme-toggle" type="button" aria-label="Đổi chế độ sáng tối" class="mexo-theme-toggle inline-flex">
     <span class="material-icons mexo-theme-icon mexo-theme-moon">dark_mode</span>
     <span class="material-icons mexo-theme-icon mexo-theme-sun">light_mode</span>
 </button>
@@ -284,13 +355,6 @@
             </div>
 
             <a href="/blog" class="block px-4 py-3 text-lg font-bold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">Blog</a>
-<button id="mobile-theme-toggle" type="button" class="mexo-mobile-theme-toggle">
-    <span>Chế độ sáng/tối</span>
-    <span class="mexo-mobile-theme-icon">
-        <span class="material-icons mexo-theme-icon mexo-theme-moon">dark_mode</span>
-        <span class="material-icons mexo-theme-icon mexo-theme-sun">light_mode</span>
-    </span>
-</button>
         </div>
         <div class="p-4 mt-2 border-t border-slate-100 dark:border-slate-800">
             <a href="/lien-he/" class="flex items-center justify-center w-full px-6 py-3.5 text-base font-bold rounded-full text-white bg-cta-orange hover:bg-cta-orange/90 transition-all shadow-lg shadow-cta-orange/20">
@@ -300,6 +364,9 @@
     </div>
 </div>
 </nav>
+<button id="mexo-back-to-top" type="button" class="mexo-back-to-top" aria-label="Quay lên đầu trang">
+    <span class="material-icons text-xl">keyboard_arrow_up</span>
+</button>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -359,5 +426,17 @@ document.addEventListener('DOMContentLoaded', function() {
             setTheme(nextTheme);
         });
     });
+
+    const backToTop = document.getElementById('mexo-back-to-top');
+    if(backToTop) {
+        const toggleBackToTop = function() {
+            backToTop.classList.toggle('is-visible', window.scrollY > 420);
+        };
+        toggleBackToTop();
+        window.addEventListener('scroll', toggleBackToTop, { passive: true });
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 });
 </script>

@@ -53,6 +53,9 @@ html.dark body,
 html.dark .mexo-blog-page {
     background: #0f172a !important;
 }
+.mexo-blog-page {
+    overflow-x: hidden;
+}
 html.dark .mexo-blog-hero {
     background:
         radial-gradient(circle at 18% 20%, rgba(37, 99, 235, 0.28), transparent 28rem),
@@ -140,7 +143,93 @@ html.dark .mexo-blog-page .bg-white:not(.mexo-keep-white) {
     background-color: rgba(15, 23, 42, 0.86) !important;
 }
 @media (max-width: 767px) {
-    .mexo-blog-subtitle { font-size: 1.55rem; }
+    html,
+    body,
+    .mexo-blog-page {
+        max-width: 100vw;
+        overflow-x: hidden !important;
+    }
+
+    .mexo-blog-page .max-w-7xl,
+    .mexo-blog-page .grid,
+    .mexo-blog-page article,
+    .mexo-blog-page aside,
+    .mexo-blog-post-card > div,
+    .mexo-blog-post-card h3,
+    .mexo-blog-post-card p {
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .mexo-blog-hero {
+        padding-top: 3.25rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    html.dark .mexo-blog-hero {
+        border-bottom: 0 !important;
+        background:
+            radial-gradient(circle at 18% 6%, rgba(37, 99, 235, 0.28), transparent 18rem),
+            linear-gradient(180deg, #0f172a 0%, #111827 100%) !important;
+    }
+
+    .mexo-blog-title {
+        font-size: 2rem !important;
+        line-height: 1.08 !important;
+    }
+
+    .mexo-blog-subtitle {
+        display: block;
+        font-size: 1.32rem;
+        line-height: 1.25;
+    }
+
+    .mexo-blog-desc {
+        border-left: 0 !important;
+        padding-left: 0 !important;
+        font-size: 1rem !important;
+    }
+
+    .mexo-blog-filter-inner {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        max-width: calc(100vw - 2rem);
+        padding-bottom: .35rem;
+        scroll-snap-type: x proximity;
+    }
+
+    .mexo-blog-filter-inner a {
+        scroll-snap-align: start;
+    }
+
+    .mexo-blog-post-card,
+    .mexo-blog-sidebar-card {
+        width: 100%;
+        max-width: calc(100vw - 2rem);
+        overflow: hidden;
+        border-radius: 1.25rem !important;
+    }
+
+    .mexo-blog-card-title {
+        font-size: 1.35rem !important;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .mexo-blog-meta {
+        flex-wrap: wrap;
+        gap: .75rem;
+    }
+
+    .mexo-blog-meta > div {
+        flex-wrap: wrap;
+        gap: .5rem !important;
+    }
+
+    .mexo-blog-meta > a {
+        width: 100%;
+        justify-content: center;
+    }
 }
 </style>
 <main class="mexo-blog-page min-h-screen pb-20">
