@@ -1326,7 +1326,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'nhận tư vấn chiến lược',
             'xem tất cả dịch vụ',
             'khám phá chi tiết',
-            'liên hệ hotline'
+            'liên hệ hotline',
+            'liên hệ ngay'
         ];
         const primaryTerms = [
             'hành động ngay',
