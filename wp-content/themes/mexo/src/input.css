@@ -141,6 +141,10 @@ html.dark .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 > div {
         white-space: normal;
     }
 
+    .mexo-home-hero h1 br.hidden {
+        display: block !important;
+    }
+
     .mexo-home-hero p {
         max-width: calc(100vw - 2rem);
         margin-inline: auto;
