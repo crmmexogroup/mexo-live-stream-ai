@@ -498,27 +498,27 @@ class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary t
 </div>
 </div>
 <div class="mexo-growth-partnership mt-16 relative max-w-6xl mx-auto">
-<div class="absolute -inset-6 bg-gradient-to-br from-primary/10 via-cyan-400/10 to-cta-orange/10 rounded-[2rem] blur-2xl pointer-events-none"></div>
-<div class="relative grid lg:grid-cols-[0.82fr_1.18fr] gap-0 overflow-hidden rounded-[2rem] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl">
-<div class="p-7 md:p-10 lg:p-12 flex flex-col justify-center bg-slate-950 text-white">
-<p class="text-sm font-extrabold uppercase tracking-[0.22em] text-cyan-300 mb-4">Hợp tác cùng phát triển</p>
-<h4 class="text-3xl md:text-4xl font-extrabold leading-tight mb-5">Đồng hành thực chiến cùng đối tác tăng trưởng TMĐT</h4>
-<p class="text-slate-300 font-medium leading-relaxed mb-7">MEXO GROUP xây dựng quan hệ hợp tác dựa trên hiệu quả thật: cùng phân tích thị trường, tối ưu vận hành và mở rộng doanh thu bền vững.</p>
-<div class="grid grid-cols-2 gap-3">
-<div class="rounded-2xl border border-white/10 bg-white/10 p-4">
-<div class="text-2xl font-black text-white">500+</div>
-<div class="text-xs font-bold uppercase tracking-wide text-slate-300 mt-1">Đối tác đồng hành</div>
+<div class="mexo-growth-partnership__glow absolute -inset-6 bg-gradient-to-br from-primary/10 via-cyan-400/10 to-cta-orange/10 rounded-[2rem] blur-2xl pointer-events-none"></div>
+<div class="mexo-growth-partnership__card relative grid lg:grid-cols-[0.82fr_1.18fr] gap-0 overflow-hidden rounded-[2rem] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl">
+<div class="mexo-growth-partnership__copy p-7 md:p-10 lg:p-12 flex flex-col justify-center bg-slate-950 text-white">
+<p class="mexo-growth-partnership__eyebrow text-sm font-extrabold uppercase tracking-[0.22em] text-cyan-300 mb-4">Hợp tác cùng phát triển</p>
+<h4 class="mexo-growth-partnership__title text-3xl md:text-4xl font-extrabold leading-tight mb-5">Đồng hành thực chiến cùng đối tác tăng trưởng TMĐT</h4>
+<p class="mexo-growth-partnership__desc text-slate-300 font-medium leading-relaxed mb-7">MEXO GROUP xây dựng quan hệ hợp tác dựa trên hiệu quả thật: cùng phân tích thị trường, tối ưu vận hành và mở rộng doanh thu bền vững.</p>
+<div class="mexo-growth-partnership__stats grid grid-cols-2 gap-3">
+<div class="mexo-growth-partnership__stat rounded-2xl border border-white/10 bg-white/10 p-4">
+<div class="mexo-growth-partnership__number text-2xl font-black text-white">500+</div>
+<div class="mexo-growth-partnership__label text-xs font-bold uppercase tracking-wide text-slate-300 mt-1">Đối tác đồng hành</div>
 </div>
-<div class="rounded-2xl border border-white/10 bg-white/10 p-4">
-<div class="text-2xl font-black text-white">7+ năm</div>
-<div class="text-xs font-bold uppercase tracking-wide text-slate-300 mt-1">Kinh nghiệm TMĐT</div>
+<div class="mexo-growth-partnership__stat rounded-2xl border border-white/10 bg-white/10 p-4">
+<div class="mexo-growth-partnership__number text-2xl font-black text-white">7+ năm</div>
+<div class="mexo-growth-partnership__label text-xs font-bold uppercase tracking-wide text-slate-300 mt-1">Kinh nghiệm TMĐT</div>
 </div>
 </div>
 </div>
-<div class="relative min-h-[360px] lg:min-h-[520px] bg-slate-100 dark:bg-slate-800">
+<div class="mexo-growth-partnership__media relative min-h-[360px] lg:min-h-[520px] bg-slate-100 dark:bg-slate-800">
 <img class="mexo-growth-partnership-image absolute inset-0 w-full h-full object-cover" data-alt="Đội ngũ MEXO GROUP và đối tác trong buổi hợp tác phát triển" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hop-tac-cung-phat-trien.jpg' ); ?>"/>
-<div class="absolute inset-x-0 bottom-0 p-5 md:p-7 bg-gradient-to-t from-slate-950/86 via-slate-950/30 to-transparent">
-<div class="inline-flex items-center gap-2 rounded-full bg-white/95 text-slate-900 px-4 py-2 shadow-lg">
+<div class="mexo-growth-partnership__shade absolute inset-x-0 bottom-0 p-5 md:p-7 bg-gradient-to-t from-slate-950/86 via-slate-950/30 to-transparent">
+<div class="mexo-growth-partnership__badge inline-flex items-center gap-2 rounded-full bg-white/95 text-slate-900 px-4 py-2 shadow-lg">
 <span class="material-icons text-primary text-lg">verified</span>
 <span class="text-sm font-extrabold">Tin cậy - thực chiến - tăng trưởng</span>
 </div>
