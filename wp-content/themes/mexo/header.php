@@ -240,11 +240,11 @@
             line-height: 1.35 !important;
         }
 
-        #mobile-menu > div > .space-y-1 > a,
-        #mobile-menu > div > .space-y-1 > .space-y-1 > button,
-        #mobile-menu > div > .space-y-1 > .space-y-1 > div:first-child > a {
+        #mobile-menu .mexo-mobile-nav-link,
+        #mobile-menu .mexo-mobile-nav-row {
             display: flex !important;
             align-items: center !important;
+            width: 100% !important;
             min-height: 3.35rem !important;
             padding: 0 1rem !important;
             font-size: 1.08rem !important;
@@ -252,12 +252,12 @@
             text-align: left !important;
         }
 
-        #mobile-menu > div > .space-y-1 > .space-y-1 {
+        #mobile-menu .mexo-mobile-nav-section {
             padding-left: 0 !important;
             padding-right: 0 !important;
         }
 
-        #mobile-menu > div > .space-y-1 > .space-y-1 > div:first-child {
+        #mobile-menu .mexo-mobile-nav-row {
             display: grid !important;
             grid-template-columns: minmax(0, 1fr) 3.35rem !important;
             align-items: center !important;
@@ -265,8 +265,18 @@
             padding: 0 !important;
         }
 
-        #mobile-menu > div > .space-y-1 > .space-y-1 > div:first-child > button,
-        #mobile-menu > div > .space-y-1 > .space-y-1 > button > span.material-icons {
+        #mobile-menu .mexo-mobile-nav-row > a,
+        #mobile-menu .mexo-mobile-nav-row > .mexo-mobile-nav-label {
+            min-width: 0 !important;
+            padding: 0 1rem !important;
+            font-size: 1.08rem !important;
+            font-weight: 800 !important;
+            line-height: 1.2 !important;
+            text-align: left !important;
+        }
+
+        #mobile-menu .mexo-mobile-nav-toggle,
+        #mobile-menu .mexo-mobile-nav-toggle .material-icons {
             width: 3.35rem !important;
             height: 3.35rem !important;
             display: inline-flex !important;
@@ -274,16 +284,6 @@
             justify-content: center !important;
             padding: 0 !important;
             margin: 0 !important;
-        }
-
-        #mobile-menu > div > .space-y-1 > .space-y-1 > button {
-            width: 100% !important;
-            padding: 0 0 0 1rem !important;
-        }
-
-        #mobile-menu > div > .space-y-1 > .space-y-1 > button > span:first-child {
-            flex: 1 1 auto !important;
-            text-align: left !important;
         }
 
         #mobile-solutions-content,
@@ -465,15 +465,15 @@
 <!-- Mobile Menu Dropdown -->
 <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 shadow-xl lg:hidden hidden overflow-y-auto max-h-[80vh]">
     <div class="flex flex-col py-4">
-        <div class="space-y-1 px-4">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="block px-4 py-3 text-lg font-bold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">Trang chủ</a>
-            <a href="/gioi-thieu" class="block px-4 py-3 text-lg font-bold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">Giới thiệu</a>
+        <div class="mexo-mobile-nav-list space-y-1 px-4">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mexo-mobile-nav-link block px-4 py-3 text-lg font-bold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">Trang chủ</a>
+            <a href="/gioi-thieu" class="mexo-mobile-nav-link block px-4 py-3 text-lg font-bold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">Giới thiệu</a>
             
             <!-- Mobile Solutions Accordion -->
-            <div class="space-y-1">
-                <div class="w-full flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">
+            <div class="mexo-mobile-nav-section space-y-1">
+                <div class="mexo-mobile-nav-row w-full flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">
                     <a href="/giai-phap" class="flex-grow px-4 py-3 text-lg font-bold text-slate-900 dark:text-white">Giải pháp</a>
-                    <button id="mobile-solutions-toggle" class="px-5 py-4 group">
+                    <button id="mobile-solutions-toggle" class="mexo-mobile-nav-toggle px-5 py-4 group">
                         <span class="material-icons text-slate-400 transition-transform duration-200 group-aria-expanded:rotate-180">expand_more</span>
                     </button>
                 </div>
@@ -502,9 +502,9 @@
             </div> 
 
              <!-- Mobile Training Accordion -->
-            <div class="space-y-1">
-                <button id="mobile-training-toggle" class="w-full flex items-center justify-between px-5 py-4 text-lg font-bold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors group">
-                    <span>Đào tạo</span>
+            <div class="mexo-mobile-nav-section space-y-1">
+                <button id="mobile-training-toggle" class="mexo-mobile-nav-row w-full flex items-center justify-between px-5 py-4 text-lg font-bold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors group">
+                    <span class="mexo-mobile-nav-label">Đào tạo</span>
                     <span class="material-icons text-slate-400 transition-transform duration-200 group-aria-expanded:rotate-180">expand_more</span>
                 </button>
                 <div id="mobile-training-content" class="hidden px-4 space-y-1 bg-slate-50/50 dark:bg-slate-800/50 rounded-xl mx-2 pb-2">
@@ -514,7 +514,7 @@
                 </div>
             </div>
 
-            <a href="/blog" class="block px-4 py-3 text-lg font-bold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">Blog</a>
+            <a href="/blog" class="mexo-mobile-nav-link block px-4 py-3 text-lg font-bold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">Blog</a>
         </div>
         <div class="p-4 mt-2 border-t border-slate-100 dark:border-slate-800">
             <a href="/lien-he/" class="flex items-center justify-center w-full px-6 py-3.5 text-base font-bold rounded-full text-white bg-cta-orange hover:bg-cta-orange/90 transition-all shadow-lg shadow-cta-orange/20">
