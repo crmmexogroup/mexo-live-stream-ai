@@ -137,7 +137,7 @@ add_action('wp_footer', function () {
 
 <?php get_header(); ?>
 
-<section class="relative pt-8 pb-16 lg:pt-12 lg:pb-24 overflow-hidden">
+<section class="mexo-home-hero relative pt-8 pb-16 lg:pt-12 lg:pb-24 overflow-hidden">
 
 <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 <div class="inline-flex items-center px-4 py-2 rounded-full bg-white dark:bg-slate-800 shadow-md border border-slate-100 dark:border-slate-700 text-primary text-2xl font-bold mb-8 animate-float cursor-default">
