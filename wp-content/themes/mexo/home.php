@@ -49,11 +49,101 @@ html.dark .mexo-blog-card-title {
 html.dark .mexo-blog-card-excerpt {
     color: #475569 !important;
 }
+html.dark body,
+html.dark .mexo-blog-page {
+    background: #0f172a !important;
+}
+html.dark .mexo-blog-hero {
+    background:
+        radial-gradient(circle at 18% 20%, rgba(37, 99, 235, 0.28), transparent 28rem),
+        radial-gradient(circle at 84% 12%, rgba(249, 115, 22, 0.16), transparent 26rem),
+        linear-gradient(135deg, #0f172a 0%, #111827 58%, #172554 100%) !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+html.dark .mexo-blog-hero .bg-pattern {
+    opacity: 0.1 !important;
+}
+html.dark .mexo-blog-title {
+    color: #ffffff !important;
+}
+html.dark .mexo-blog-desc {
+    color: #cbd5e1 !important;
+    border-left-color: rgba(96, 165, 250, 0.42) !important;
+}
+html.dark .mexo-blog-crumb-home {
+    color: #94a3b8 !important;
+}
+html.dark .mexo-blog-crumb-current {
+    background: rgba(37, 99, 235, 0.18) !important;
+    color: #93c5fd !important;
+}
+html.dark .mexo-blog-filter a:not(.mexo-blog-filter-active) {
+    background: rgba(30, 41, 59, 0.92) !important;
+    border: 1px solid rgba(148, 163, 184, 0.18) !important;
+    color: #cbd5e1 !important;
+    box-shadow: none !important;
+}
+html.dark .mexo-blog-filter a:not(.mexo-blog-filter-active):hover {
+    background: rgba(37, 99, 235, 0.18) !important;
+    border-color: rgba(96, 165, 250, 0.34) !important;
+    color: #93c5fd !important;
+}
+html.dark .mexo-blog-post-card,
+html.dark .mexo-blog-sidebar-card {
+    background: rgba(15, 23, 42, 0.86) !important;
+    border: 1px solid rgba(148, 163, 184, 0.18) !important;
+    box-shadow: 0 24px 70px rgba(2, 6, 23, 0.26) !important;
+}
+html.dark .mexo-blog-post-card:hover,
+html.dark .mexo-blog-sidebar-card:hover {
+    border-color: rgba(96, 165, 250, 0.3) !important;
+    box-shadow: 0 26px 80px rgba(37, 99, 235, 0.12) !important;
+}
+html.dark .mexo-blog-card-title {
+    color: #f8fafc !important;
+}
+html.dark .mexo-blog-card-excerpt {
+    color: #cbd5e1 !important;
+}
+html.dark .mexo-blog-meta {
+    border-top-color: rgba(148, 163, 184, 0.18) !important;
+    color: #94a3b8 !important;
+}
+html.dark .mexo-blog-meta span {
+    background: rgba(30, 41, 59, 0.9) !important;
+}
+html.dark .mexo-blog-sidebar-card h3,
+html.dark .mexo-blog-sidebar-card h4 {
+    color: #f8fafc !important;
+}
+html.dark .mexo-blog-sidebar-card h4:hover {
+    color: #60a5fa !important;
+}
+html.dark .mexo-blog-sidebar-card .text-text-sub,
+html.dark .mexo-blog-sidebar-card span {
+    color: #94a3b8 !important;
+}
+html.dark .mexo-blog-topic-link {
+    background: rgba(30, 41, 59, 0.92) !important;
+    border-color: rgba(148, 163, 184, 0.18) !important;
+    color: #cbd5e1 !important;
+}
+html.dark .mexo-blog-topic-link:hover {
+    background: rgba(37, 99, 235, 0.18) !important;
+    border-color: rgba(96, 165, 250, 0.34) !important;
+    color: #93c5fd !important;
+}
+html.dark .mexo-blog-recent-list {
+    border-color: rgba(148, 163, 184, 0.14) !important;
+}
+html.dark .mexo-blog-page .bg-white:not(.mexo-keep-white) {
+    background-color: rgba(15, 23, 42, 0.86) !important;
+}
 @media (max-width: 767px) {
     .mexo-blog-subtitle { font-size: 1.55rem; }
 }
 </style>
-<main class="min-h-screen pb-20">
+<main class="mexo-blog-page min-h-screen pb-20">
 <section class="mexo-blog-hero relative bg-white pt-20 pb-14 lg:pt-24 lg:pb-20 overflow-hidden">
 <div class="absolute inset-0 bg-pattern opacity-30"></div>
 <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary/5 blur-3xl"></div>
@@ -61,9 +151,9 @@ html.dark .mexo-blog-card-excerpt {
 <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 <div class="flex flex-col gap-6">
 <div class="flex items-center gap-2 text-sm">
-<a class="font-medium text-text-sub hover:text-primary transition-colors" href="#">Trang chủ</a>
+<a class="mexo-blog-crumb-home font-medium text-text-sub hover:text-primary transition-colors" href="#">Trang chủ</a>
 <span class="material-symbols-outlined text-[12px] text-text-sub/50">chevron_right</span>
-<span class="font-bold text-primary px-2 py-0.5 rounded-md bg-primary/5">Blog Kiến Thức</span>
+<span class="mexo-blog-crumb-current font-bold text-primary px-2 py-0.5 rounded-md bg-primary/5">Blog Kiến Thức</span>
 </div>
 <div class="flex max-w-5xl flex-col gap-6">
 <h1 class="mexo-blog-title font-display text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
@@ -102,7 +192,7 @@ html.dark .mexo-blog-card-excerpt {
                         </h2>
 <div class="grid gap-10">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <article class="group relative flex flex-col md:flex-row gap-6 bg-white p-5 rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 ring-1 ring-black/5">
+    <article class="mexo-blog-post-card group relative flex flex-col md:flex-row gap-6 bg-white p-5 rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 ring-1 ring-black/5">
         <div class="relative w-full md:w-72 lg:w-80 shrink-0 overflow-hidden rounded-xl aspect-[4/3] md:aspect-[16/10]">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10"></div>
             <?php if (has_post_thumbnail()) : ?>
@@ -130,7 +220,7 @@ html.dark .mexo-blog-card-excerpt {
                     <?php echo wp_trim_words(get_the_excerpt(), 40); ?>
                 </p>
             </div>
-            <div class="mt-6 flex items-center justify-between border-t border-dashed border-gray-200 pt-4 text-xs font-medium text-text-sub">
+            <div class="mexo-blog-meta mt-6 flex items-center justify-between border-t border-dashed border-gray-200 pt-4 text-xs font-medium text-text-sub">
                 <div class="flex items-center gap-4">
                     <span class="flex items-center gap-1.5 bg-gray-50 px-2 py-1 rounded-md">
                         <span class="material-symbols-outlined text-[18px] text-primary/70">calendar_month</span>
@@ -173,7 +263,7 @@ html.dark .mexo-blog-card-excerpt {
 </div>
 </div>
 <aside class="flex flex-col gap-8 lg:col-span-4 pl-0 lg:pl-6">
-<div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/[0.05]">
+<div class="mexo-blog-sidebar-card rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/[0.05]">
 <h3 class="mb-6 flex items-center gap-2 text-lg font-bold text-text-main">
 <span class="flex items-center justify-center size-8 rounded-lg bg-yellow-100 text-yellow-600">
 <span class="material-symbols-outlined text-[20px]">star</span>
@@ -219,7 +309,7 @@ html.dark .mexo-blog-card-excerpt {
 </div>
 </div>
 </div>
-<div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/[0.05]">
+<div class="mexo-blog-sidebar-card rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/[0.05]">
 <h3 class="mb-6 flex items-center gap-2 text-lg font-bold text-text-main">
 <span class="flex items-center justify-center size-8 rounded-lg bg-gray-100 text-text-sub">
 <span class="material-symbols-outlined text-[20px]">category</span>
@@ -231,19 +321,19 @@ html.dark .mexo-blog-card-excerpt {
     $categories = get_categories();
     foreach ($categories as $category) {
         $count = $category->count;
-        echo '<a href="' . get_category_link($category->term_id) . '" class="rounded-full bg-gray-50 border border-gray-100 px-4 py-2 text-xs font-semibold text-text-main hover:bg-primary/10 hover:text-primary hover:border-primary/20 transition-all">' . $category->name . ' (' . $count . ')</a>';
+        echo '<a href="' . get_category_link($category->term_id) . '" class="mexo-blog-topic-link rounded-full bg-gray-50 border border-gray-100 px-4 py-2 text-xs font-semibold text-text-main hover:bg-primary/10 hover:text-primary hover:border-primary/20 transition-all">' . $category->name . ' (' . $count . ')</a>';
     }
     ?>
 </div>
 </div>
-<div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/[0.05]">
+<div class="mexo-blog-sidebar-card rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/[0.05]">
 <h3 class="mb-6 flex items-center gap-2 text-lg font-bold text-text-main">
 <span class="flex items-center justify-center size-8 rounded-lg bg-red-50 text-red-500">
 <span class="material-symbols-outlined text-[20px]">schedule</span>
 </span>
                             Mới cập nhật
                         </h3>
-<div class="divide-y divide-gray-100">
+<div class="mexo-blog-recent-list divide-y divide-gray-100">
     <?php
     $recent_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 5));
     if ($recent_posts->have_posts()) : while ($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
