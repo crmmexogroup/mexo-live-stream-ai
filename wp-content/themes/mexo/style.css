@@ -93,3 +93,14 @@ html.dark .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 > div {
         font-size: clamp(2.35rem, 13vw, 3.85rem);
     }
 }
+
+.mexo-home-hero h1 {
+    max-width: 72rem;
+    margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+    .mexo-home-hero h1 {
+        font-size: clamp(3.75rem, 5.15vw, 4.4rem) !important;
+    }
+}
