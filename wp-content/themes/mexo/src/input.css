@@ -129,7 +129,7 @@ html.dark .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 > div {
     }
 
     .mexo-home-hero h1 {
-        font-size: clamp(2rem, 9vw, 2.45rem) !important;
+        font-size: clamp(1.75rem, 7.9vw, 2.05rem) !important;
         line-height: 1.12 !important;
         max-width: calc(100vw - 2rem);
         overflow-wrap: normal;
