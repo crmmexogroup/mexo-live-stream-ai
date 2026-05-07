@@ -1,0 +1,35 @@
+/*!
+Theme Name: mexo
+Theme URI: https://mexo.vn
+Author: mexo.vn
+Author URI: https://mexo.vn
+Description: Theme created from home.html using Tailwind CSS.
+Version: 1.0
+*/
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@import '../assets/fonts/fonts.css';
+
+/* Custom Utilities */
+@layer utilities {
+    .text-gradient {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(135deg, #0057FF 0%, #00C2CB 100%);
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .gradient-text {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, #2563EB, #F97316);
+    }
+}
