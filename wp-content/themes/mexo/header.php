@@ -208,6 +208,117 @@
             max-width: 150px;
             height: auto !important;
         }
+
+        #mobile-menu {
+            position: fixed !important;
+            inset: 4rem 0 auto 0 !important;
+            width: 100vw !important;
+            max-width: 100vw !important;
+            max-height: calc(100dvh - 4rem) !important;
+            overflow-y: auto !important;
+            overscroll-behavior: contain;
+            padding-bottom: calc(6rem + env(safe-area-inset-bottom));
+            border-radius: 0 0 1.25rem 1.25rem;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #mobile-menu > div {
+            padding-top: .75rem !important;
+            padding-bottom: 1.25rem !important;
+        }
+
+        #mobile-menu .space-y-1 {
+            padding-left: .75rem !important;
+            padding-right: .75rem !important;
+        }
+
+        #mobile-menu a,
+        #mobile-menu button {
+            max-width: 100%;
+            white-space: normal;
+            word-break: keep-all;
+            line-height: 1.35 !important;
+        }
+
+        #mobile-menu a.block,
+        #mobile-menu button.w-full {
+            font-size: 1rem !important;
+            padding: .72rem .95rem !important;
+        }
+
+        #mobile-solutions-content,
+        #mobile-training-content {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: .6rem !important;
+            padding-right: .6rem !important;
+            max-height: 52dvh;
+            overflow-y: auto;
+            border: 1px solid rgba(148, 163, 184, .18);
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #mobile-solutions-content a,
+        #mobile-training-content a {
+            font-size: .94rem !important;
+            padding-top: .55rem !important;
+            padding-bottom: .55rem !important;
+        }
+
+        #mobile-solutions-content span,
+        #mobile-training-content span {
+            font-size: .72rem !important;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        section {
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
+        section:first-of-type {
+            text-align: center;
+        }
+
+        section:first-of-type h1 {
+            max-width: min(100%, 24rem);
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: center !important;
+            line-height: 1.14 !important;
+        }
+
+        section:first-of-type p {
+            max-width: 22rem;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: center !important;
+            font-size: 1rem !important;
+            line-height: 1.62 !important;
+        }
+
+        section:first-of-type a[class*="rounded-full"],
+        section:first-of-type button[class*="rounded-full"],
+        section:first-of-type a[class*="rounded-2xl"],
+        section:first-of-type button[class*="rounded-2xl"] {
+            width: calc(100% - 2rem) !important;
+            max-width: 21rem !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            justify-content: center !important;
+            text-align: center;
+            font-size: .98rem !important;
+        }
+
+        body.mexo-mobile-menu-open #ws247-aio-ct-button-show-all-container,
+        body.mexo-mobile-menu-open #phonering-alo-phoneIcon,
+        body.mexo-mobile-menu-open .aio-fixed-bt-mb {
+            display: none !important;
+            pointer-events: none !important;
+        }
     }
 </style>
 
@@ -416,9 +527,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const isHidden = mobileMenu.classList.contains('hidden');
         if (isHidden) {
             mobileMenu.classList.remove('hidden');
+            document.body.classList.add('mexo-mobile-menu-open');
             // Optional: Add basic animation class logic here if needed
         } else {
             mobileMenu.classList.add('hidden');
+            document.body.classList.remove('mexo-mobile-menu-open');
         }
     }
 
