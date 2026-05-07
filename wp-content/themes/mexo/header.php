@@ -183,6 +183,11 @@
         color: #f8fafc !important;
     }
 
+    html.dark a[class*="bg-white"]:not([class*="dark:bg-"]),
+    html.dark button[class*="bg-white"]:not([class*="dark:bg-"]) {
+        color: #0f3fbd !important;
+    }
+
     html.dark a[class*="border-"]:not([class*="bg-white"]):not([class*="bg-primary"]):not([class*="bg-cta-orange"]),
     html.dark button[class*="border-"]:not([class*="bg-white"]):not([class*="bg-primary"]):not([class*="bg-cta-orange"]) {
         color: #f8fafc !important;
@@ -589,6 +594,65 @@
     html.dark [class*="text-gray-500"],
     html.dark [class*="text-gray-600"] {
         color: #cbd5e1 !important;
+    }
+
+    html.dark section [class*="opacity-70"],
+    html.dark section [class*="opacity-60"],
+    html.dark section [class*="opacity-50"] {
+        opacity: .96 !important;
+    }
+
+    html.dark body,
+    html.dark main,
+    html.dark footer {
+        background-color: #071225 !important;
+        background-image: none !important;
+    }
+
+    html.dark section:not([class*="from-primary"]):not([class*="from-cta"]):not([class*="to-primary-dark"]) {
+        background: #071225 !important;
+        background-color: #071225 !important;
+        background-image: none !important;
+        border-color: #071225 !important;
+    }
+
+    html.dark section:not([class*="from-primary"]):not([class*="from-cta"]):not([class*="to-primary-dark"])::before,
+    html.dark section:not([class*="from-primary"]):not([class*="from-cta"]):not([class*="to-primary-dark"])::after {
+        background-image: none !important;
+    }
+
+    html.dark section:not([class*="from-primary"]):not([class*="from-cta"]):not([class*="to-primary-dark"]) > .absolute.inset-0,
+    html.dark section:not([class*="from-primary"]):not([class*="from-cta"]):not([class*="to-primary-dark"]) > div.absolute.inset-0,
+    html.dark section:not([class*="from-primary"]):not([class*="from-cta"]):not([class*="to-primary-dark"]) > [class*="absolute"][class*="inset-"] {
+        background: transparent !important;
+        background-image: none !important;
+        opacity: 0 !important;
+    }
+
+    html.dark section[class*="bg-slate-"],
+    html.dark section[class*="bg-gray-"],
+    html.dark section[class*="bg-[#"],
+    html.dark section[class*="from-slate-"],
+    html.dark section[class*="from-gray-"],
+    html.dark section[class*="to-slate-"],
+    html.dark section[class*="to-gray-"],
+    html.dark section[class*="via-slate-"],
+    html.dark section[class*="via-gray-"] {
+        background: #071225 !important;
+        background-color: #071225 !important;
+        background-image: none !important;
+        border-color: #071225 !important;
+    }
+
+    html.dark section[class*="border-y"],
+    html.dark section[class*="border-b"],
+    html.dark section[class*="border-t"] {
+        border-color: #071225 !important;
+    }
+
+    html.dark .mexo-site-header,
+    html.dark #mobile-menu {
+        background-color: rgba(7, 18, 37, 0.96) !important;
     }
 </style>
 
