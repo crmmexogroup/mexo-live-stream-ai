@@ -654,6 +654,68 @@
     html.dark #mobile-menu {
         background-color: rgba(7, 18, 37, 0.96) !important;
     }
+
+    html.dark section[class*="from-primary"],
+    html.dark section[class*="to-primary-dark"],
+    html.dark section[class*="bg-primary"],
+    html.dark section[class*="bg-gradient-to-"] {
+        --tw-gradient-from: #071225 !important;
+        --tw-gradient-to: #071225 !important;
+        --tw-gradient-stops: #071225, #071225 !important;
+        background: #071225 !important;
+        background-color: #071225 !important;
+        background-image: none !important;
+        border-color: #071225 !important;
+    }
+
+    html.dark section[class*="from-primary"] > .absolute,
+    html.dark section[class*="to-primary-dark"] > .absolute,
+    html.dark section[class*="bg-primary"] > .absolute,
+    html.dark section[class*="bg-gradient-to-"] > .absolute {
+        background: transparent !important;
+        background-image: none !important;
+        opacity: 0 !important;
+    }
+
+    html.dark div[class*="bg-primary"]:not([class*="bg-primary/"]),
+    html.dark div[class*="from-primary"][class*="to-primary-dark"],
+    html.dark div[class*="bg-gradient-to-br"][class*="from-primary"],
+    html.dark div[class*="bg-gradient-to-r"][class*="from-primary"] {
+        --tw-gradient-from: #0f1b33 !important;
+        --tw-gradient-to: #0f1b33 !important;
+        --tw-gradient-stops: #0f1b33, #0f1b33 !important;
+        background: #0f1b33 !important;
+        background-color: #0f1b33 !important;
+        background-image: none !important;
+        border: 1px solid rgba(96, 165, 250, 0.30) !important;
+    }
+
+    html.dark div[class*="bg-primary"]:not([class*="bg-primary/"]) > .absolute,
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] > .absolute,
+    html.dark div[class*="bg-gradient-to-br"][class*="from-primary"] > .absolute,
+    html.dark div[class*="bg-gradient-to-r"][class*="from-primary"] > .absolute {
+        background: transparent !important;
+        background-image: none !important;
+        opacity: 0 !important;
+    }
+
+    html.dark div[class*="bg-primary"]:not([class*="bg-primary/"]) a:not([class*="bg-white"]),
+    html.dark div[class*="bg-primary"]:not([class*="bg-primary/"]) button:not([class*="bg-white"]),
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] a:not([class*="bg-white"]),
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] button:not([class*="bg-white"]) {
+        color: #f8fafc !important;
+        border-color: rgba(147, 197, 253, 0.48) !important;
+    }
+
+    html.dark section[class*="from-primary"] a:not([class*="bg-white"]),
+    html.dark section[class*="from-primary"] button:not([class*="bg-white"]),
+    html.dark section[class*="to-primary-dark"] a:not([class*="bg-white"]),
+    html.dark section[class*="to-primary-dark"] button:not([class*="bg-white"]),
+    html.dark section[class*="bg-gradient-to-"] a:not([class*="bg-white"]),
+    html.dark section[class*="bg-gradient-to-"] button:not([class*="bg-white"]) {
+        color: #f8fafc !important;
+        border-color: rgba(147, 197, 253, 0.48) !important;
+    }
 </style>
 
 
