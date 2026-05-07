@@ -186,14 +186,21 @@
         }
 
         .mexo-header-actions {
-            position: fixed;
-            right: auto;
-            left: 62vw;
-            top: .85rem;
-            transform: none;
-            flex-shrink: 0;
-            margin-left: auto;
-            z-index: 70;
+            position: fixed !important;
+            right: 6.25rem !important;
+            left: auto !important;
+            top: .85rem !important;
+            transform: none !important;
+            width: 92px !important;
+            display: flex !important;
+            justify-content: flex-end !important;
+            flex-shrink: 0 !important;
+            margin-left: 0 !important;
+            z-index: 9999 !important;
+        }
+
+        .mexo-header-actions > a {
+            display: none !important;
         }
 
         .mexo-site-header img[alt] {
