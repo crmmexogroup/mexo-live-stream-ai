@@ -40,6 +40,112 @@
         color: #60a5fa !important;
     }
 
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img,
+    video,
+    iframe {
+        max-width: 100%;
+    }
+
+    img:not([class*="h-"]):not([height]) {
+        height: auto;
+    }
+
+    .mexo-site-header img[alt] {
+        aspect-ratio: 240 / 64;
+        object-fit: contain;
+    }
+
+    html.dark body {
+        background: #071225 !important;
+        color: #e5efff !important;
+    }
+
+    html.dark main,
+    html.dark section[class*="dark:bg-background-dark"],
+    html.dark section[class*="dark:bg-slate-950"],
+    html.dark section[class*="dark:bg-slate-900"],
+    html.dark div[class*="dark:bg-background-dark"] {
+        background-color: #071225 !important;
+    }
+
+    html.dark section[class*="dark:bg-slate-900/50"],
+    html.dark div[class*="dark:bg-slate-900/50"] {
+        background-color: rgba(7, 18, 37, 0.72) !important;
+    }
+
+    html.dark [class*="dark:bg-slate-800"],
+    html.dark [class*="dark:bg-card-dark"],
+    html.dark [class*="dark:bg-[#151c2a]"],
+    html.dark [class*="dark:bg-[#1e2736]"] {
+        background-color: #0f1b33 !important;
+    }
+
+    html.dark [class*="dark:bg-slate-800/50"],
+    html.dark [class*="dark:bg-card-dark/50"] {
+        background-color: rgba(15, 27, 51, 0.78) !important;
+    }
+
+    html.dark [class*="dark:border-slate-800"],
+    html.dark [class*="dark:border-slate-700"],
+    html.dark [class*="dark:border-gray-700"],
+    html.dark [class*="dark:border-gray-600"] {
+        border-color: rgba(96, 165, 250, 0.22) !important;
+    }
+
+    html.dark [class*="dark:text-white"],
+    html.dark h1,
+    html.dark h2,
+    html.dark h3,
+    html.dark h4 {
+        color: #f8fafc !important;
+    }
+
+    html.dark [class*="dark:text-slate-200"],
+    html.dark [class*="dark:text-gray-200"] {
+        color: #e5efff !important;
+    }
+
+    html.dark [class*="dark:text-slate-300"],
+    html.dark [class*="dark:text-slate-400"],
+    html.dark [class*="dark:text-gray-300"],
+    html.dark [class*="dark:text-gray-400"] {
+        color: #cbd5e1 !important;
+    }
+
+    html.dark .text-gradient {
+        background-image: linear-gradient(90deg, #60a5fa 0%, #22d3ee 58%, #38bdf8 100%) !important;
+        color: transparent !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+    }
+
+    html.dark section[class*="from-primary"],
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] {
+        background-image: linear-gradient(135deg, #0057ff 0%, #0747c8 100%) !important;
+    }
+
+    html.dark a[class*="bg-white"],
+    html.dark button[class*="bg-white"] {
+        color: #0f3fbd !important;
+    }
+
+    html.dark #ws247-aio-ct-button-show-all-container {
+        contain: layout paint;
+        width: 64px !important;
+    }
+
+    html.dark #phonering-alo-phoneIcon {
+        contain: layout paint;
+        width: 96px !important;
+        height: 96px !important;
+    }
+
     html.dark img.custom-logo,
     html.dark .mexo-site-header img[alt] {
         filter: brightness(0) invert(1);
@@ -387,7 +493,7 @@
         }
     }
     ?>
-    <img src="<?php echo esc_url( $logo_url ); ?>" alt="<?php bloginfo( 'name' ); ?>" class="h-8 md:h-12 w-auto transition-all duration-300 dark:brightness-0 dark:invert">
+    <img src="<?php echo esc_url( $logo_url ); ?>" alt="<?php bloginfo( 'name' ); ?>" width="240" height="64" loading="eager" decoding="async" fetchpriority="high" class="h-8 md:h-12 w-auto transition-all duration-300 dark:brightness-0 dark:invert">
 </a>
 <div class="hidden lg:flex items-center space-x-8">
 <a class="text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary font-semibold transition-colors relative" href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a>
