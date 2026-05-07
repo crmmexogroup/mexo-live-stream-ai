@@ -154,6 +154,10 @@ html.dark .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 > div {
     .mexo-home-hero button {
         width: min(100%, 21rem);
     }
+
+    #ws247-aio-ct-button-hl {
+        display: none !important;
+    }
 }
 
 @media (min-width: 1024px) {
