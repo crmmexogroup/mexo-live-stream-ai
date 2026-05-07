@@ -718,49 +718,50 @@ Hiện là Admin cộng đồng “SHOPEE NGƯỜI BÁN - Cộng đồng Shopee 
 </a>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 aspect-[4/3] shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer">
-<div class="absolute inset-0 flex items-center justify-center text-gray-300 group-hover:scale-110 transition-transform duration-700 bg-gray-200 dark:bg-gray-700">
-<span class="material-symbols-outlined text-5xl opacity-50">image</span>
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-<div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<button type="button" class="mexo-gallery-item group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 aspect-[4/3] shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer text-left" data-gallery-src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/z7799390953491_ecb3c87b4ae736d79ff69efade5b00f6.jpg' ); ?>" data-gallery-title="Lớp học Offline Hà Nội">
+<img alt="Lớp học Offline Hà Nội" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/z7799390953491_ecb3c87b4ae736d79ff69efade5b00f6.jpg' ); ?>"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div class="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
 <p class="text-white text-base font-bold">Lớp học Offline Hà Nội</p>
-<p class="text-gray-300 text-xs mt-1">Sôi nổi và nhiệt huyết</p>
+<p class="text-gray-300 text-xs mt-1">Sôi nổi và tập trung thực hành</p>
 </div>
 </div>
-</div>
-<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 aspect-[4/3] shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer">
-<div class="absolute inset-0 flex items-center justify-center text-gray-300 group-hover:scale-110 transition-transform duration-700 bg-gray-200 dark:bg-gray-700">
-<span class="material-symbols-outlined text-5xl opacity-50">image</span>
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-<div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+</button>
+<button type="button" class="mexo-gallery-item group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 aspect-[4/3] shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer text-left" data-gallery-src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/z7799343617663_6f1599d4b6f61ac6434aee1cde472977.jpg' ); ?>" data-gallery-title="Hỗ trợ 1-1 tại lớp">
+<img alt="Hỗ trợ 1-1 tại lớp" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/z7799343617663_6f1599d4b6f61ac6434aee1cde472977.jpg' ); ?>"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div class="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
 <p class="text-white text-base font-bold">Hỗ trợ 1-1 tại lớp</p>
-<p class="text-gray-300 text-xs mt-1">Cầm tay chỉ việc tận tình</p>
+<p class="text-gray-300 text-xs mt-1">Cầm tay chỉ việc theo từng shop</p>
 </div>
 </div>
-</div>
-<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 aspect-[4/3] shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer">
-<div class="absolute inset-0 flex items-center justify-center text-gray-300 group-hover:scale-110 transition-transform duration-700 bg-gray-200 dark:bg-gray-700">
-<span class="material-symbols-outlined text-5xl opacity-50">image</span>
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-<div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-<p class="text-white text-base font-bold">Thực hành Livestream</p>
-<p class="text-gray-300 text-xs mt-1">Setup bối cảnh thực tế</p>
+</button>
+<button type="button" class="mexo-gallery-item group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 aspect-[4/3] shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer text-left" data-gallery-src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/z7799343611169_218d7bcc2d08d3190dedf1c1f2ad3da3.jpg' ); ?>" data-gallery-title="Thực hành tại lớp">
+<img alt="Thực hành tại lớp" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/z7799343611169_218d7bcc2d08d3190dedf1c1f2ad3da3.jpg' ); ?>"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div class="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+<p class="text-white text-base font-bold">Thực hành tại lớp</p>
+<p class="text-gray-300 text-xs mt-1">Áp dụng trực tiếp vào sản phẩm</p>
 </div>
 </div>
-</div>
-<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 aspect-[4/3] shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer">
-<div class="absolute inset-0 flex items-center justify-center text-gray-300 group-hover:scale-110 transition-transform duration-700 bg-gray-200 dark:bg-gray-700">
-<span class="material-symbols-outlined text-5xl opacity-50">image</span>
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-<div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-<p class="text-white text-base font-bold">Trao chứng chỉ</p>
-<p class="text-gray-300 text-xs mt-1">Hoàn thành khóa học xuất sắc</p>
+</button>
+<button type="button" class="mexo-gallery-item group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 aspect-[4/3] shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer text-left" data-gallery-src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/z7799343625647_d8139bbd599b27612b7d995ce62fa55d.jpg' ); ?>" data-gallery-title="Đồng hành hỗ trợ sau khóa học">
+<img alt="Đồng hành hỗ trợ sau khóa học" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/z7799343625647_d8139bbd599b27612b7d995ce62fa55d.jpg' ); ?>"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div class="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+<p class="text-white text-base font-bold">Đồng hành hỗ trợ sau khóa học</p>
+<p class="text-gray-300 text-xs mt-1">Theo sát quá trình triển khai thực tế</p>
 </div>
 </div>
+</button>
+</div>
+<div id="mexo-gallery-lightbox" class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black/90 p-4">
+<button type="button" class="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20" aria-label="Đóng ảnh">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="w-full max-w-5xl">
+<img alt="" class="mx-auto max-h-[82vh] w-auto rounded-2xl object-contain shadow-2xl" src=""/>
+<p class="mt-4 text-center text-lg font-bold text-white"></p>
 </div>
 </div>
 <div class="mt-8 text-center md:hidden">
@@ -1135,6 +1136,52 @@ echo '<div class="xc-hidden-cf7" style="display:none !important;">' . do_shortco
                     setTimeout(() => cf7Submit.click(), 100);
                 } else {
                     alert('Lỗi: Không tìm thấy form gửi đi.');
+                }
+            });
+        }
+
+        const galleryItems = document.querySelectorAll('.mexo-gallery-item');
+        const galleryLightbox = document.getElementById('mexo-gallery-lightbox');
+        if(galleryItems.length && galleryLightbox) {
+            const lightboxImage = galleryLightbox.querySelector('img');
+            const lightboxCaption = galleryLightbox.querySelector('p');
+            const closeBtn = galleryLightbox.querySelector('button');
+
+            const closeLightbox = function() {
+                galleryLightbox.classList.add('hidden');
+                galleryLightbox.classList.remove('flex');
+                document.body.style.overflow = '';
+                if(lightboxImage) {
+                    lightboxImage.src = '';
+                }
+            };
+
+            galleryItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    if(lightboxImage) {
+                        lightboxImage.src = item.getAttribute('data-gallery-src') || '';
+                        lightboxImage.alt = item.getAttribute('data-gallery-title') || '';
+                    }
+                    if(lightboxCaption) {
+                        lightboxCaption.textContent = item.getAttribute('data-gallery-title') || '';
+                    }
+                    galleryLightbox.classList.remove('hidden');
+                    galleryLightbox.classList.add('flex');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            if(closeBtn) {
+                closeBtn.addEventListener('click', closeLightbox);
+            }
+            galleryLightbox.addEventListener('click', function(event) {
+                if(event.target === galleryLightbox) {
+                    closeLightbox();
+                }
+            });
+            document.addEventListener('keydown', function(event) {
+                if(event.key === 'Escape' && !galleryLightbox.classList.contains('hidden')) {
+                    closeLightbox();
                 }
             });
         }
