@@ -21,9 +21,9 @@ get_header(); ?>
                             Đối tác tăng trưởng thương mại điện tử toàn diện cho doanh nghiệp Việt. <br class="hidden lg:block"/>Chúng tôi biến tiềm năng thành lợi nhuận thực tế bằng giải pháp thực chiến.
                         </h2>
 <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-<button class="flex items-center justify-center rounded-xl h-12 px-8 bg-primary hover:bg-primary-dark text-white text-base font-bold transition-all transform hover:scale-105 shadow-lg shadow-blue-500/30">
-<span>Xem hồ sơ</span>
-</button>
+<a class="flex items-center justify-center rounded-xl h-12 px-8 bg-primary hover:bg-primary-dark text-white text-base font-bold transition-all transform hover:scale-105 shadow-lg shadow-blue-500/30" href="<?php echo esc_url( get_template_directory_uri() . '/assets/docs/profile-mexo-group.pdf' ); ?>" target="_blank" rel="noopener">
+<span>Xem hồ sơ năng lực</span>
+</a>
 <button type="button"
     onclick="window.location.href='/lien-he/';" class="flex items-center justify-center rounded-xl h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-base font-bold transition-all">
 <span>Liên hệ ngay</span>
@@ -234,11 +234,9 @@ get_header(); ?>
                     </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
+<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 shadow-lg">
 <div class="aspect-[3/4] w-full bg-gray-200">
-<div class="w-full h-full bg-gradient-to-b from-gray-300 to-gray-400 flex items-end justify-center">
-<span class="material-symbols-outlined text-9xl text-gray-500 opacity-50 mb-10">person</span>
-</div>
+<img alt="Trưởng phòng vận hành MEXO GROUP" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mexo-team-operations-ai.png' ); ?>"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
 <h3 class="text-white text-xl font-bold">Nguyễn Văn A</h3>
@@ -248,11 +246,9 @@ get_header(); ?>
                             </p>
 </div>
 </div>
-<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
+<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 shadow-lg">
 <div class="aspect-[3/4] w-full bg-gray-200">
-<div class="w-full h-full bg-gradient-to-b from-gray-300 to-gray-400 flex items-end justify-center">
-<span class="material-symbols-outlined text-9xl text-gray-500 opacity-50 mb-10">person_2</span>
-</div>
+<img alt="Trưởng phòng Marketing MEXO GROUP" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mexo-team-marketing-ai.png' ); ?>"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
 <h3 class="text-white text-xl font-bold">Trần Thị B</h3>
@@ -262,11 +258,9 @@ get_header(); ?>
                             </p>
 </div>
 </div>
-<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
+<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 shadow-lg">
 <div class="aspect-[3/4] w-full bg-gray-200">
-<div class="w-full h-full bg-gradient-to-b from-gray-300 to-gray-400 flex items-end justify-center">
-<span class="material-symbols-outlined text-9xl text-gray-500 opacity-50 mb-10">person_3</span>
-</div>
+<img alt="Chuyên gia SEO và Content MEXO GROUP" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mexo-team-seo-ai.png' ); ?>"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
 <h3 class="text-white text-xl font-bold">Lê Văn C</h3>
@@ -276,11 +270,9 @@ get_header(); ?>
                             </p>
 </div>
 </div>
-<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
+<div class="group relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 shadow-lg">
 <div class="aspect-[3/4] w-full bg-gray-200">
-<div class="w-full h-full bg-gradient-to-b from-gray-300 to-gray-400 flex items-end justify-center">
-<span class="material-symbols-outlined text-9xl text-gray-500 opacity-50 mb-10">person_4</span>
-</div>
+<img alt="Chăm sóc khách hàng MEXO GROUP" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mexo-team-customer-success-ai.png' ); ?>"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
 <h3 class="text-white text-xl font-bold">Phạm Thị D</h3>
@@ -304,45 +296,16 @@ get_header(); ?>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-[400px]">
 <div class="md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden shadow-md">
-<div class="w-full h-full bg-gray-300 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQz3sFVgRdcdgNLgqdYpqJeQHCszcStLyuhFBqg8r5H0JjJ6mfEB_xNjR9Ld0q6SVT0dkx-4e_TClPaXKscCOK0fadqZGAEJh7UtXOm_nFYutWEzTPg4FsMdvetFKCXdff8LQXazFeXueJUz5cXR8KqMVhNOT8DSfm64LYHWnXRTBFpM42NgLWMECUR0LwQqdecMIytkg7Vnv5z5ae2K00d_5iEb5LaMlT8NEv0g-Kuk4vTmJuwPSgSWqrFQ01j_giCDM_4lIbbu8');">
+<div class="w-full h-full bg-gray-300 flex items-center justify-center bg-cover bg-center hover:scale-105 transition-transform duration-700" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/assets/images/mexo-workspace-main-ai.png' ); ?>');">
 </div>
 </div>
 <div class="rounded-2xl overflow-hidden shadow-md">
-<div class="w-full h-full bg-gray-300 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMfY0L0otAsftJzNyb_KWgC_ImdiM2V8EjUZiczyPfa9z7P3rHsy2ktjNgEZC51auRZF802UCBDPz3PnXHE6RYCVo7q5XJKMwhg7Ql500fJGRTuSKZWQmHCiFkk-lNjgj4K4nMdkOLiR5jw1VQaF98YwGqYVflENKla94AZ5UID5O8xR62hR7yuo68DPZm2qYXzwxRr9qRior3eiVK-1TLe1_k_-rVSabhCKhHNiychSzLamlXWsMkRPgyype-ZnXZmTA7klTKDdk');">
+<div class="w-full h-full bg-gray-300 flex items-center justify-center bg-cover bg-center hover:scale-105 transition-transform duration-700" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/assets/images/mexo-workspace-meeting-ai.png' ); ?>');">
 </div>
 </div>
 <div class="rounded-2xl overflow-hidden shadow-md">
-<div class="w-full h-full bg-gray-300 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBux-PeF-6c0j7jYH6-T_OuJ1v43zENZfiX_2-85-9uMMCcUxsb3XKMb9UPOgtOrvA2h8x0_WVGcya10jJo8iap2J8HVFd_AbCD3srMsHhFWiLK6OixUc0QFDp6VX8HjiHM0S-W5qIhLxK0JzBCZ2Zd8hcDxsD4k9LOME_-NQlCFGVEL_22Cbp4XeXA5kltblFljYQBt3oOeJLCBukhlYWNO_2c4NbR9GS9wSt5yFnXMi8xpurBzN7GcP6kzy6HPZMJ0DfuRIp9VGk');">
+<div class="w-full h-full bg-gray-300 flex items-center justify-center bg-cover bg-center hover:scale-105 transition-transform duration-700" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/assets/images/mexo-workspace-training-ai.png' ); ?>');">
 </div>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-gray-800 rounded-3xl p-8 lg:p-12 shadow-sm border border-gray-100 dark:border-gray-700">
-<h2 class="text-[#111318] dark:text-white text-2xl lg:text-3xl font-bold text-center mb-10">Hồ sơ pháp lý &amp; Chứng nhận</h2>
-<div class="flex flex-wrap justify-center items-center gap-12 lg:gap-20 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-<div class="flex flex-col items-center gap-2">
-<div class="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
-<span class="text-xs text-gray-400 font-bold">SHOPEE</span>
-</div>
-<span class="text-xs font-bold uppercase">Đối tác chiến lược</span>
-</div>
-<div class="flex flex-col items-center gap-2">
-<div class="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
-<span class="text-xs text-gray-400 font-bold">TIKTOK</span>
-</div>
-<span class="text-xs font-bold uppercase">Agency Partner</span>
-</div>
-<div class="flex flex-col items-center gap-2">
-<div class="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
-<span class="text-xs text-gray-400 font-bold">LAZADA</span>
-</div>
-<span class="text-xs font-bold uppercase">Certified Partner</span>
-</div>
-<div class="flex flex-col items-center gap-2">
-<div class="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
-<span class="text-xs text-gray-400 font-bold">GPKD</span>
-</div>
-<span class="text-xs font-bold uppercase">Giấy phép KD</span>
 </div>
 </div>
 </div>
@@ -359,9 +322,9 @@ get_header(); ?>
     onclick="window.location.href='/lien-he/';" class="bg-white text-primary hover:bg-blue-50 font-bold py-4 px-10 rounded-xl transition-all shadow-xl hover:-translate-y-1">
                         Liên hệ tư vấn ngay
                     </button>
-<button class="bg-transparent border-2 border-white/40 hover:bg-white/10 text-white font-bold py-4 px-10 rounded-xl transition-all">
+<a class="bg-transparent border-2 border-white/40 hover:bg-white/10 text-white font-bold py-4 px-10 rounded-xl transition-all text-center" href="<?php echo esc_url( get_template_directory_uri() . '/assets/docs/profile-mexo-group.pdf' ); ?>" download>
                         Tải hồ sơ năng lực (PDF)
-                    </button>
+                    </a>
 </div>
 </div>
 </section>
