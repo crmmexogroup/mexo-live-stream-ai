@@ -109,6 +109,32 @@ add_action('wp_head', function () {
             font-family: 'Be Vietnam Pro', Arial, 'Helvetica Neue', sans-serif;
         }
 
+        .mexo-hero-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mexo-hero-title-line {
+            display: block;
+            max-width: 100%;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 767px) {
+            .mexo-home-hero .mexo-hero-title {
+                font-size: 1.55rem !important;
+                line-height: 1.18 !important;
+                margin-bottom: 1.5rem !important;
+                width: 100%;
+                overflow: visible;
+            }
+
+            .mexo-home-hero .mexo-hero-title-line {
+                white-space: nowrap;
+            }
+        }
+
         html.fonts-loading *,
         html.fonts-loading *::before,
         html.fonts-loading *::after {
@@ -147,10 +173,10 @@ add_action('wp_footer', function () {
 </span>
                 Đối tác tăng trưởng số 1 Việt Nam
             </div>
-<h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-normal text-slate-900 dark:text-white mb-8" style="line-height: 1.24; letter-spacing: 0;">
-  Giải pháp <br class="mexo-mobile-only-break"/> tăng trưởng <br class="hidden lg:block"/>
-  <span class="text-gradient drop-shadow-sm inline-block px-2 py-1">Thương Mại <br class="mexo-mobile-only-break"/> Điện Tử</span> <br/>
-  cho doanh nghiệp <br class="mexo-mobile-only-break"/> Việt
+<h1 class="mexo-hero-title text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-normal text-slate-900 dark:text-white mb-8" style="line-height: 1.24; letter-spacing: 0;">
+  <span class="mexo-hero-title-line">Giải pháp tăng trưởng</span>
+  <span class="mexo-hero-title-line text-gradient drop-shadow-sm px-2 py-1">Thương Mại Điện Tử</span>
+  <span class="mexo-hero-title-line">cho doanh nghiệp Việt</span>
 </h1>
 <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-600 dark:text-slate-300 mb-10 font-medium leading-relaxed">
                 Tối ưu hóa vận hành, bứt phá doanh thu và xây dựng thương hiệu bền vững trên nền tảng số cùng hệ sinh thái giải pháp toàn diện.

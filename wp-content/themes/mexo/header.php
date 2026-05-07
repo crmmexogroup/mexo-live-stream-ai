@@ -187,16 +187,17 @@
 
         .mexo-header-actions {
             position: fixed !important;
-            right: 6.25rem !important;
-            left: auto !important;
-            top: .85rem !important;
+            right: auto !important;
+            left: calc(100vw - 6.5rem) !important;
+            top: .95rem !important;
             transform: none !important;
-            width: 92px !important;
+            width: 5.25rem !important;
             display: flex !important;
             justify-content: flex-end !important;
             flex-shrink: 0 !important;
-            margin-left: 0 !important;
-            z-index: 9999 !important;
+            margin-left: auto !important;
+            z-index: 70 !important;
+            gap: .5rem !important;
         }
 
         .mexo-header-actions > a {
@@ -379,6 +380,33 @@
 document.addEventListener('DOMContentLoaded', function() {
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const headerActions = document.querySelector('.mexo-header-actions');
+
+    function alignMobileHeaderActions() {
+        if(!headerActions) return;
+
+        if(window.matchMedia('(max-width: 767px)').matches) {
+            const viewportCandidates = [
+                window.visualViewport && window.visualViewport.width,
+                window.innerWidth,
+                document.documentElement && document.documentElement.clientWidth
+            ].filter(Boolean);
+            const viewportWidth = Math.min.apply(Math, viewportCandidates);
+            const actionWidth = headerActions.offsetWidth || 84;
+            headerActions.style.left = Math.max(12, viewportWidth - actionWidth - 16) + 'px';
+            headerActions.style.right = 'auto';
+        } else {
+            headerActions.style.left = '';
+            headerActions.style.right = '';
+        }
+    }
+
+    alignMobileHeaderActions();
+    window.addEventListener('resize', alignMobileHeaderActions);
+    window.addEventListener('orientationchange', alignMobileHeaderActions);
+    if(window.visualViewport) {
+        window.visualViewport.addEventListener('resize', alignMobileHeaderActions);
+    }
 
     function toggleMenu() {
         if(!mobileMenu) return;
