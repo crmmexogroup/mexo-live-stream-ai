@@ -73,6 +73,10 @@ Version: 1.0
     box-shadow: 0 18px 55px rgba(0, 87, 255, 0.14);
 }
 
+.mexo-mobile-only-break {
+    display: none;
+}
+
 .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 > div {
     padding: 1rem;
     border: 1px solid rgba(148, 163, 184, 0.28);
@@ -143,6 +147,10 @@ html.dark .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 > div {
 
     .mexo-home-hero h1 br.hidden {
         display: block !important;
+    }
+
+    .mexo-mobile-only-break {
+        display: block;
     }
 
     .mexo-home-hero p {
