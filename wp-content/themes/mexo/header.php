@@ -718,11 +718,25 @@
     }
 
     .mexo-site-header {
-        position: sticky !important;
+        position: fixed !important;
         top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
         z-index: 1000 !important;
         isolation: isolate;
         box-shadow: 0 1px 0 rgba(148, 163, 184, .14);
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+    body.admin-bar .mexo-site-header {
+        top: 32px !important;
+    }
+
+    body.admin-bar {
+        padding-top: 112px;
     }
 
     html.dark .mexo-site-header {
@@ -874,8 +888,22 @@
 
     @media (max-width: 767px) {
         .mexo-site-header {
-            position: sticky !important;
+            position: fixed !important;
             top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+        }
+
+        body {
+            padding-top: 64px;
+        }
+
+        body.admin-bar .mexo-site-header {
+            top: 46px !important;
+        }
+
+        body.admin-bar {
+            padding-top: 110px;
         }
     }
 
