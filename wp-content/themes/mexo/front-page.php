@@ -271,6 +271,126 @@ add_action('wp_head', function () {
             }
         }
 
+        html.dark body.home {
+            background: #071225 !important;
+            color: #f8fafc !important;
+        }
+
+        html.dark body.home .mexo-site-header {
+            background: rgba(7, 18, 37, 0.96) !important;
+            border-color: rgba(59, 130, 246, 0.18) !important;
+            box-shadow: 0 14px 38px rgba(0, 0, 0, 0.28) !important;
+        }
+
+        html.dark body.home .mexo-site-header a,
+        html.dark body.home .mexo-site-header button:not(.mexo-theme-toggle):not(#mobile-menu-btn) {
+            color: #e5efff !important;
+        }
+
+        html.dark body.home .mexo-site-header a:hover,
+        html.dark body.home .mexo-site-header button:not(.mexo-theme-toggle):not(#mobile-menu-btn):hover {
+            color: #60a5fa !important;
+        }
+
+        html.dark body.home .mexo-site-header img {
+            filter: brightness(0) invert(1) !important;
+        }
+
+        html.dark body.home #mobile-menu {
+            background: #071225 !important;
+            border-color: rgba(59, 130, 246, 0.18) !important;
+            color: #f8fafc !important;
+        }
+
+        html.dark body.home #mobile-menu .mexo-mobile-nav-link,
+        html.dark body.home #mobile-menu .mexo-mobile-nav-row,
+        html.dark body.home #mobile-menu .mexo-mobile-nav-row > a,
+        html.dark body.home #mobile-menu .mexo-mobile-nav-label {
+            color: #f8fafc !important;
+        }
+
+        html.dark body.home #mobile-menu .material-icons {
+            color: #bfdbfe !important;
+        }
+
+        html.dark body.home .mexo-home-hero {
+            background:
+                radial-gradient(circle at 16% 18%, rgba(0, 87, 255, 0.22), transparent 20rem),
+                radial-gradient(circle at 82% 34%, rgba(6, 182, 212, 0.18), transparent 22rem),
+                linear-gradient(180deg, #08152b 0%, #071225 58%, #0a1830 100%) !important;
+            color: #f8fafc !important;
+        }
+
+        html.dark body.home .mexo-home-hero::before {
+            background-image:
+                linear-gradient(rgba(96, 165, 250, 0.09) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(96, 165, 250, 0.09) 1px, transparent 1px);
+        }
+
+        html.dark body.home .mexo-home-hero .mexo-hero-title,
+        html.dark body.home .mexo-home-hero .mexo-hero-title-line:not(.text-gradient) {
+            color: #ffffff !important;
+            text-shadow: 0 16px 36px rgba(0, 0, 0, 0.22) !important;
+        }
+
+        html.dark body.home .mexo-home-hero .text-gradient {
+            background-image: linear-gradient(90deg, #60a5fa 0%, #22d3ee 52%, #38bdf8 100%) !important;
+            text-shadow: 0 12px 30px rgba(34, 211, 238, 0.16) !important;
+        }
+
+        html.dark body.home .mexo-home-hero p {
+            color: #cbd5e1 !important;
+        }
+
+        html.dark body.home .mexo-home-hero .text-slate-900,
+        html.dark body.home .mexo-home-hero .text-slate-800,
+        html.dark body.home .mexo-home-hero .text-slate-700 {
+            color: #f8fafc !important;
+        }
+
+        html.dark body.home .mexo-home-hero .text-slate-600,
+        html.dark body.home .mexo-home-hero .text-slate-500,
+        html.dark body.home .mexo-home-hero .text-slate-400 {
+            color: #cbd5e1 !important;
+        }
+
+        html.dark body.home .mexo-home-hero [class*="bg-white/80"] {
+            background: rgba(15, 23, 42, 0.82) !important;
+            border-color: rgba(96, 165, 250, 0.22) !important;
+            box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22) !important;
+        }
+
+        html.dark body.home .mexo-home-hero .mexo-hero-badge {
+            background: rgba(15, 23, 42, 0.82) !important;
+            border-color: rgba(96, 165, 250, 0.24) !important;
+            color: #93c5fd !important;
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26) !important;
+        }
+
+        html.dark body.home .mexo-home-hero .mexo-secondary-cta {
+            background: rgba(15, 23, 42, 0.82) !important;
+            color: #f8fafc !important;
+            border-color: rgba(148, 163, 184, 0.34) !important;
+        }
+
+        html.dark body.home .mexo-home-hero .mt-20 {
+            border-color: rgba(96, 165, 250, 0.18) !important;
+        }
+
+        html.dark body.home .mexo-home-hero .mt-20 > div {
+            background: rgba(15, 23, 42, 0.82) !important;
+            border: 1px solid rgba(96, 165, 250, 0.22) !important;
+            box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22) !important;
+        }
+
+        html.dark body.home .mexo-home-hero .mt-20 > div > div:first-child {
+            color: #60a5fa !important;
+        }
+
+        html.dark body.home .mexo-home-hero .mt-20 > div > div:last-child {
+            color: #cbd5e1 !important;
+        }
+
         html.fonts-loading *,
         html.fonts-loading *::before,
         html.fonts-loading *::after {
