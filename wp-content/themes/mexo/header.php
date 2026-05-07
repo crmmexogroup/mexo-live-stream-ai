@@ -67,19 +67,28 @@
     }
 
     html.dark main,
+    html.dark section {
+        background-color: #071225 !important;
+    }
+
+    html.dark main,
     html.dark section[class*="dark:bg-background-dark"],
     html.dark section[class*="dark:bg-slate-950"],
     html.dark section[class*="dark:bg-slate-900"],
+    html.dark section[class*="dark:bg-gray-950"],
+    html.dark section[class*="dark:bg-gray-900"],
     html.dark div[class*="dark:bg-background-dark"] {
         background-color: #071225 !important;
     }
 
     html.dark section[class*="dark:bg-slate-900/50"],
-    html.dark div[class*="dark:bg-slate-900/50"] {
-        background-color: rgba(7, 18, 37, 0.72) !important;
+    html.dark div[class*="dark:bg-slate-900/50"],
+    html.dark div[class*="dark:bg-gray-900/50"] {
+        background-color: rgba(7, 18, 37, 0.92) !important;
     }
 
     html.dark [class*="dark:bg-slate-800"],
+    html.dark [class*="dark:bg-gray-800"],
     html.dark [class*="dark:bg-card-dark"],
     html.dark [class*="dark:bg-[#151c2a]"],
     html.dark [class*="dark:bg-[#1e2736]"] {
@@ -87,6 +96,7 @@
     }
 
     html.dark [class*="dark:bg-slate-800/50"],
+    html.dark [class*="dark:bg-gray-800/50"],
     html.dark [class*="dark:bg-card-dark/50"] {
         background-color: rgba(15, 27, 51, 0.78) !important;
     }
@@ -115,7 +125,21 @@
     html.dark [class*="dark:text-slate-400"],
     html.dark [class*="dark:text-gray-300"],
     html.dark [class*="dark:text-gray-400"] {
-        color: #cbd5e1 !important;
+        color: #dbeafe !important;
+    }
+
+    html.dark [class*="text-primary"],
+    html.dark [class*="text-blue-600"],
+    html.dark [class*="text-blue-700"],
+    html.dark [class*="text-indigo-600"],
+    html.dark [class*="text-text-sub"] {
+        color: #93c5fd !important;
+    }
+
+    html.dark [class*="border-primary"],
+    html.dark [class*="border-blue-"],
+    html.dark [class*="dark:border-gray-700"] {
+        border-color: rgba(96, 165, 250, 0.38) !important;
     }
 
     html.dark .text-gradient {
@@ -130,9 +154,46 @@
         background-image: linear-gradient(135deg, #0057ff 0%, #0747c8 100%) !important;
     }
 
-    html.dark a[class*="bg-white"],
-    html.dark button[class*="bg-white"] {
+    html.dark section[class*="from-primary"] h1,
+    html.dark section[class*="from-primary"] h2,
+    html.dark section[class*="from-primary"] h3,
+    html.dark section[class*="from-primary"] p,
+    html.dark section[class*="from-primary"] span,
+    html.dark section[class*="from-primary"] a:not([class*="bg-white"]),
+    html.dark section[class*="from-primary"] button:not([class*="bg-white"]),
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] h1,
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] h2,
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] h3,
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] p,
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] span,
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] a:not([class*="bg-white"]),
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] button:not([class*="bg-white"]) {
+        color: #ffffff !important;
+    }
+
+    html.dark section[class*="from-primary"] a[class*="bg-white"],
+    html.dark section[class*="from-primary"] button[class*="bg-white"],
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] a[class*="bg-white"],
+    html.dark div[class*="from-primary"][class*="to-primary-dark"] button[class*="bg-white"] {
         color: #0f3fbd !important;
+    }
+
+    html.dark a[class*="bg-white"][class*="dark:bg-"]:not([class*="from-primary"]),
+    html.dark button[class*="bg-white"][class*="dark:bg-"]:not([class*="from-primary"]) {
+        color: #f8fafc !important;
+    }
+
+    html.dark a[class*="border-"]:not([class*="bg-white"]):not([class*="bg-primary"]):not([class*="bg-cta-orange"]),
+    html.dark button[class*="border-"]:not([class*="bg-white"]):not([class*="bg-primary"]):not([class*="bg-cta-orange"]) {
+        color: #f8fafc !important;
+        border-color: rgba(96, 165, 250, 0.42) !important;
+    }
+
+    html.dark a[class*="border-"]:not([class*="bg-white"]):not([class*="bg-primary"]):not([class*="bg-cta-orange"]):hover,
+    html.dark button[class*="border-"]:not([class*="bg-white"]):not([class*="bg-primary"]):not([class*="bg-cta-orange"]):hover {
+        color: #ffffff !important;
+        border-color: rgba(147, 197, 253, 0.72) !important;
+        background-color: rgba(59, 130, 246, 0.10) !important;
     }
 
     html.dark #ws247-aio-ct-button-show-all-container {
@@ -467,6 +528,67 @@
             display: none !important;
             pointer-events: none !important;
         }
+    }
+
+    html.dark section[class*="dark:from-"]:not([class*="from-primary"]):not([class*="from-cta"]),
+    html.dark section[class*="dark:via-"]:not([class*="from-primary"]):not([class*="from-cta"]),
+    html.dark section[class*="dark:to-"]:not([class*="from-primary"]):not([class*="from-cta"]) {
+        --tw-gradient-from: #071225 !important;
+        --tw-gradient-to: #071225 !important;
+        --tw-gradient-stops: #071225, #071225 !important;
+        background-image: none !important;
+        background-color: #071225 !important;
+    }
+
+    html.dark section > .absolute[class*="bg-gradient"]:not([class*="from-primary"]):not([class*="from-cta"]),
+    html.dark section > .absolute[class*="radial-gradient"]:not([class*="from-primary"]):not([class*="from-cta"]) {
+        opacity: .16 !important;
+        background-image: none !important;
+        background-color: #071225 !important;
+    }
+
+    html.dark div[class*="dark:from-gray-"],
+    html.dark div[class*="dark:from-slate-"],
+    html.dark div[class*="dark:to-card-dark"],
+    html.dark div[class*="dark:to-gray-"],
+    html.dark div[class*="dark:to-slate-"] {
+        --tw-gradient-from: #0f1b33 !important;
+        --tw-gradient-to: #0f1b33 !important;
+        --tw-gradient-stops: #0f1b33, #0f1b33 !important;
+        background-color: #0f1b33 !important;
+    }
+
+    html.dark a[class*="dark:bg-transparent"],
+    html.dark button[class*="dark:bg-transparent"],
+    html.dark a[class*="bg-transparent"],
+    html.dark button[class*="bg-transparent"],
+    html.dark a[class*="border-2"],
+    html.dark button[class*="border-2"] {
+        color: #f8fafc !important;
+        border-color: rgba(147, 197, 253, 0.48) !important;
+    }
+
+    html.dark a[class*="dark:bg-transparent"] *,
+    html.dark button[class*="dark:bg-transparent"] *,
+    html.dark a[class*="bg-transparent"] *,
+    html.dark button[class*="bg-transparent"] *,
+    html.dark a[class*="border-2"] *,
+    html.dark button[class*="border-2"] * {
+        color: #f8fafc !important;
+    }
+
+    html.dark a[class*="text-primary"]:not([class*="bg-white"]),
+    html.dark button[class*="text-primary"]:not([class*="bg-white"]),
+    html.dark a[class*="text-blue-600"]:not([class*="bg-white"]),
+    html.dark button[class*="text-blue-600"]:not([class*="bg-white"]) {
+        color: #93c5fd !important;
+    }
+
+    html.dark [class*="text-slate-500"],
+    html.dark [class*="text-slate-600"],
+    html.dark [class*="text-gray-500"],
+    html.dark [class*="text-gray-600"] {
+        color: #cbd5e1 !important;
     }
 </style>
 
