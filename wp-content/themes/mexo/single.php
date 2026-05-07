@@ -80,6 +80,72 @@ html.dark .mexo-article-card .mexo-post-content th { border-color: #d1d5db !impo
 .mexo-article-card .mexo-post-content hr,
 html.dark .mexo-article-card .mexo-post-content hr { border-color: #e5e7eb !important; }
 html.dark .mexo-post-page { background: #0f172a; }
+html.dark .mexo-article-card {
+    background: #0f1b33 !important;
+    color: #e5efff !important;
+    border-color: rgba(96, 165, 250, 0.24) !important;
+    box-shadow: 0 26px 78px rgba(0, 0, 0, 0.32) !important;
+}
+html.dark .mexo-article-card .mexo-post-title,
+html.dark .mexo-article-card .mexo-post-author,
+html.dark .mexo-article-card .mexo-post-content h1,
+html.dark .mexo-article-card .mexo-post-content h2,
+html.dark .mexo-article-card .mexo-post-content h3,
+html.dark .mexo-article-card .mexo-post-content h4,
+html.dark .mexo-article-card .mexo-post-content h5,
+html.dark .mexo-article-card .mexo-post-content h6,
+html.dark .mexo-article-card .mexo-post-content strong {
+    color: #ffffff !important;
+}
+html.dark .mexo-article-card .mexo-post-content,
+html.dark .mexo-article-card .mexo-post-content p,
+html.dark .mexo-article-card .mexo-post-content li,
+html.dark .mexo-article-card .mexo-post-content td,
+html.dark .mexo-article-card .mexo-post-content th,
+html.dark .mexo-article-card .mexo-post-content figcaption,
+html.dark .mexo-article-card .mexo-post-content span {
+    color: #dbeafe !important;
+}
+html.dark .mexo-article-card .mexo-post-content a {
+    color: #93c5fd !important;
+}
+html.dark .mexo-article-card .mexo-post-content blockquote {
+    color: #e5efff !important;
+    background: rgba(7, 18, 37, 0.78) !important;
+    box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.22) !important;
+}
+html.dark .mexo-article-card .mexo-post-content blockquote p {
+    color: #e5efff !important;
+}
+html.dark .mexo-article-eeat {
+    background: #071225 !important;
+    border-color: rgba(96, 165, 250, 0.28) !important;
+}
+html.dark .mexo-article-eeat,
+html.dark .mexo-article-eeat p,
+html.dark .mexo-article-eeat li,
+html.dark .mexo-article-eeat span {
+    color: #dbeafe !important;
+}
+html.dark .mexo-article-eeat h2,
+html.dark .mexo-article-eeat h3,
+html.dark .mexo-article-eeat strong {
+    color: #ffffff !important;
+}
+html.dark .mexo-article-eeat .rounded-xl {
+    background: #0f1b33 !important;
+    border-color: rgba(96, 165, 250, 0.22) !important;
+}
+@media (max-width: 767px) {
+    .mexo-article-card {
+        border-radius: 1.25rem !important;
+    }
+    html.dark .mexo-article-card .mexo-post-content,
+    html.dark .mexo-article-card .mexo-post-content p {
+        font-size: 1rem !important;
+        line-height: 1.75 !important;
+    }
+}
 </style>
 
 <main class="mexo-post-page flex-1 relative w-full py-10 md:py-14">
