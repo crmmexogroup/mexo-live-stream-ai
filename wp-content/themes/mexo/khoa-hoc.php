@@ -318,10 +318,23 @@ get_header(); ?>
 <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" fill-rule="evenodd"></path></svg>
 </a>
 </div>
-<a class="flex items-center justify-center gap-2 text-secondary font-bold text-sm bg-blue-50 dark:bg-blue-900/20 py-3 rounded-xl hover:bg-secondary hover:text-white transition-all border border-blue-100 dark:border-blue-900" href="https://www.facebook.com/groups/881621835206943">
-<span class="material-symbols-outlined icon-filled">groups</span>
-                    ADMIN GROUP SHOPEE NGƯỜI BÁN VIỆT NAM
+<div class="grid gap-3">
+<a class="flex items-center gap-3 text-secondary font-bold text-sm bg-blue-50 dark:bg-blue-900/20 px-4 py-3 rounded-xl hover:bg-secondary hover:text-white transition-all border border-blue-100 dark:border-blue-900 shadow-sm" href="https://www.facebook.com/groups/881621835206943" target="_blank" rel="noopener">
+<span class="material-symbols-outlined icon-filled text-xl">groups</span>
+<span class="leading-snug">Admin Group Shopee Người Bán Việt Nam</span>
+<span class="material-symbols-outlined text-base ml-auto">open_in_new</span>
                 </a>
+<a class="flex items-center gap-3 text-secondary font-bold text-sm bg-blue-50 dark:bg-blue-900/20 px-4 py-3 rounded-xl hover:bg-secondary hover:text-white transition-all border border-blue-100 dark:border-blue-900 shadow-sm" href="https://www.facebook.com/groups/1705256516204292" target="_blank" rel="noopener">
+<span class="material-symbols-outlined icon-filled text-xl">forum</span>
+<span class="leading-snug">Shopee Group - Cộng đồng Shopee Việt Nam</span>
+<span class="material-symbols-outlined text-base ml-auto">open_in_new</span>
+                </a>
+<a class="flex items-center gap-3 text-secondary font-bold text-sm bg-blue-50 dark:bg-blue-900/20 px-4 py-3 rounded-xl hover:bg-secondary hover:text-white transition-all border border-blue-100 dark:border-blue-900 shadow-sm" href="https://www.facebook.com/groups/242605124320242" target="_blank" rel="noopener">
+<span class="material-symbols-outlined icon-filled text-xl">campaign</span>
+<span class="leading-snug">Cộng đồng Affiliate Shopee Việt Nam</span>
+<span class="material-symbols-outlined text-base ml-auto">open_in_new</span>
+                </a>
+</div>
 </div>
 <div class="w-full md:w-7/12 space-y-6">
 <div>
@@ -356,51 +369,61 @@ Hiện là Admin cộng đồng “SHOPEE NGƯỜI BÁN - Cộng đồng Shopee 
 </div>
 </div>
 </div>
-<div class="lg:w-1/3 flex flex-col gap-6">
-<div class="bg-accent-red dark:bg-red-900 rounded-[2.5rem] p-8 shadow-xl border border-red-500 dark:border-red-800 relative overflow-hidden group">
+<div class="lg:w-1/3 flex flex-col gap-5">
+<div class="bg-accent-red dark:bg-red-900 rounded-[2rem] p-6 shadow-xl border border-red-500 dark:border-red-800 relative overflow-hidden group">
 <div class="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
 <div class="absolute bottom-0 left-0 w-32 h-32 bg-black/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 <div class="relative z-10">
-<h3 class="text-2xl font-black text-white uppercase mb-8 text-center tracking-tight border-b border-white/20 pb-4">CÁC KHÓA ĐÀO TẠO</h3>
-<div class="space-y-4">
-<div class="flex items-center gap-4 bg-white/10 dark:bg-black/20 p-4 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all cursor-default">
-<div class="w-12 h-12 rounded-xl bg-white text-accent-red flex items-center justify-center shrink-0 shadow-lg">
-<span class="material-symbols-outlined text-2xl">person_celebrate</span>
+<h3 class="text-2xl font-black text-white uppercase mb-5 text-center tracking-tight">Các khóa đào tạo</h3>
+<div class="grid gap-3">
+<div class="flex items-center gap-3 bg-white/12 dark:bg-black/20 p-3 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all cursor-default">
+<div class="w-11 h-11 rounded-xl bg-white text-accent-red flex items-center justify-center shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-xl">person_celebrate</span>
 </div>
-<span class="text-lg font-bold text-white">COACHING 1-1</span>
-</div>
-<div class="flex items-center gap-4 bg-white/10 dark:bg-black/20 p-4 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all cursor-default">
-<div class="w-12 h-12 rounded-xl bg-white text-accent-red flex items-center justify-center shrink-0 shadow-lg">
-<span class="material-symbols-outlined text-2xl">diversity_3</span>
-</div>
-<span class="text-lg font-bold text-white">NHÓM 3-10 NGƯỜI</span>
-</div>
-<div class="flex items-center gap-4 bg-white/10 dark:bg-black/20 p-4 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all cursor-default">
-<div class="w-12 h-12 rounded-xl bg-white text-accent-red flex items-center justify-center shrink-0 shadow-lg">
-<span class="material-symbols-outlined text-2xl">play_lesson</span>
-</div>
-<span class="text-lg font-bold text-white">VIDEO ONLINE 24/7</span>
+<div>
+<span class="block text-base font-black text-white">Coaching 1-1</span>
+<span class="block text-xs text-white/75 font-semibold">Kèm sát theo mô hình shop</span>
 </div>
 </div>
-<div class="mt-6 pt-6 border-t border-white/20 text-center">
-<p class="text-sm text-white/90 font-medium leading-relaxed">
+<div class="flex items-center gap-3 bg-white/12 dark:bg-black/20 p-3 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all cursor-default">
+<div class="w-11 h-11 rounded-xl bg-white text-accent-red flex items-center justify-center shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-xl">diversity_3</span>
+</div>
+<div>
+<span class="block text-base font-black text-white">Nhóm 3-10 người</span>
+<span class="block text-xs text-white/75 font-semibold">Tương tác nhiều, tối ưu chi phí</span>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-white/12 dark:bg-black/20 p-3 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all cursor-default">
+<div class="w-11 h-11 rounded-xl bg-white text-accent-red flex items-center justify-center shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-xl">play_lesson</span>
+</div>
+<div>
+<span class="block text-base font-black text-white">Video online 24/7</span>
+<span class="block text-xs text-white/75 font-semibold">Chủ động học lại trọn đời</span>
+</div>
+</div>
+</div>
+<div class="mt-5 pt-5 border-t border-white/20">
+<p class="text-sm text-white/90 font-semibold leading-relaxed">
 <span class="font-bold bg-white text-accent-red px-2 py-0.5 rounded text-xs uppercase mr-1">Lưu ý</span>
-                    Toàn bộ nội dung học là giống nhau. Chỉ khác nhau về hình thức học. Tùy nhu cầu và mong muốn mọi người lựa chọn cho phù hợp.
+                    Nội dung học giống nhau, chỉ khác hình thức học để phù hợp thời gian và nhu cầu từng học viên.
                 </p>
 </div>
 </div>
 </div>
-<div class="flex-1 bg-gradient-to-br from-secondary to-blue-800 text-white p-8 rounded-[2.5rem] shadow-xl relative overflow-hidden group cursor-pointer transition-all hover:-translate-y-2">
+<div class="grid gap-5 md:grid-cols-2 lg:grid-cols-1">
+<div class="bg-gradient-to-br from-secondary to-blue-800 text-white p-6 rounded-[2rem] shadow-xl relative overflow-hidden group cursor-pointer transition-all hover:-translate-y-1">
 <div class="absolute right-0 bottom-0 opacity-10 transform translate-x-1/4 translate-y-1/4 group-hover:scale-110 transition-transform duration-500">
 <span class="material-symbols-outlined text-[12rem]">apartment</span>
 </div>
 <div class="relative z-10 h-full flex flex-col justify-between">
 <div>
-<div class="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center mb-6 backdrop-blur-sm">
+<div class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center mb-5 backdrop-blur-sm">
 <span class="material-symbols-outlined text-3xl">store</span>
 </div>
-<h4 class="text-2xl font-black mb-3">HÌNH THỨC OFFLINE</h4>
-<p class="text-blue-100 text-sm leading-relaxed mb-6 font-medium">Học trực tiếp tại văn phòng Hà Nội. Cầm tay chỉ việc, tương tác 1:1 với giảng viên và đội ngũ support.</p>
+<h4 class="text-xl font-black mb-3 uppercase">Hình thức offline</h4>
+<p class="text-blue-100 text-sm leading-relaxed mb-5 font-medium">Học trực tiếp tại văn phòng Hà Nội, được cầm tay chỉ việc và hỗ trợ sát trong buổi học.</p>
 </div>
 <div>
 <span class="inline-flex items-center text-sm font-bold bg-white text-secondary px-5 py-2.5 rounded-full shadow-lg hover:bg-gray-100 transition-colors">
@@ -409,22 +432,23 @@ Hiện là Admin cộng đồng “SHOPEE NGƯỜI BÁN - Cộng đồng Shopee 
 </div>
 </div>
 </div>
-<div class="flex-1 bg-white dark:bg-card-dark p-8 rounded-[2.5rem] shadow-lg border border-gray-100 dark:border-gray-700 relative overflow-hidden group cursor-pointer transition-all hover:-translate-y-2 hover:border-purple-200">
+<div class="bg-white dark:bg-card-dark p-6 rounded-[2rem] shadow-lg border border-gray-100 dark:border-gray-700 relative overflow-hidden group cursor-pointer transition-all hover:-translate-y-1 hover:border-purple-200">
 <div class="absolute right-0 bottom-0 opacity-5 transform translate-x-1/4 translate-y-1/4 group-hover:scale-110 transition-transform duration-500">
 <span class="material-symbols-outlined text-[12rem] text-purple-900 dark:text-purple-100">videocam</span>
 </div>
 <div class="relative z-10 h-full flex flex-col justify-between">
 <div>
-<div class="w-14 h-14 rounded-2xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-6">
+<div class="w-12 h-12 rounded-2xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-5">
 <span class="material-symbols-outlined text-3xl">videocam</span>
 </div>
-<h4 class="text-2xl font-black text-text-main dark:text-white mb-3">HÌNH THỨC ONLINE</h4>
-<p class="text-text-sub dark:text-gray-400 text-sm leading-relaxed mb-6">Học qua Zoom chất lượng cao. Thuận tiện cho học viên ở xa, xem lại video bài giảng trọn đời.</p>
+<h4 class="text-xl font-black text-text-main dark:text-white mb-3 uppercase">Hình thức online</h4>
+<p class="text-text-sub dark:text-gray-400 text-sm leading-relaxed mb-5">Học qua Zoom chất lượng cao, phù hợp học viên ở xa và có video để xem lại.</p>
 </div>
 <div>
 <span class="inline-flex items-center text-sm font-bold text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/10 px-5 py-2.5 rounded-full border border-purple-100 dark:border-purple-800">
                     Đăng ký Zoom <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
 </span>
+</div>
 </div>
 </div>
 </div>
