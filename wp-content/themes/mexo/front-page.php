@@ -121,9 +121,105 @@ add_action('wp_head', function () {
             white-space: nowrap;
         }
 
+        body.home,
+        html.dark body.home {
+            background: #f8fbff !important;
+            color: #111827 !important;
+        }
+
+        body.home .mexo-site-header,
+        html.dark body.home .mexo-site-header {
+            background: rgba(255, 255, 255, 0.94) !important;
+            border-color: rgba(226, 232, 240, 0.95) !important;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+        }
+
+        body.home .mexo-site-header a,
+        html.dark body.home .mexo-site-header a,
+        body.home .mexo-site-header button:not(.mexo-theme-toggle):not(#mobile-menu-btn),
+        html.dark body.home .mexo-site-header button:not(.mexo-theme-toggle):not(#mobile-menu-btn) {
+            color: #334155 !important;
+        }
+
+        body.home .mexo-site-header img,
+        html.dark body.home .mexo-site-header img {
+            filter: none !important;
+        }
+
+        body.home .mexo-home-hero,
+        html.dark body.home .mexo-home-hero {
+            background:
+                radial-gradient(circle at 16% 52%, rgba(0, 87, 255, 0.06), transparent 22rem),
+                radial-gradient(circle at 84% 42%, rgba(16, 185, 219, 0.08), transparent 22rem),
+                linear-gradient(180deg, #ffffff 0%, #f8fbff 54%, #ffffff 100%) !important;
+            color: #111827 !important;
+        }
+
+        body.home .mexo-home-hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(0, 87, 255, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 87, 255, 0.035) 1px, transparent 1px);
+            background-size: 56px 56px;
+            mask-image: linear-gradient(to bottom, transparent 0, black 16%, black 78%, transparent 100%);
+        }
+
+        body.home .mexo-home-hero .mexo-hero-title,
+        html.dark body.home .mexo-home-hero .mexo-hero-title {
+            color: #111827 !important;
+            text-shadow: none !important;
+        }
+
+        body.home .mexo-home-hero p,
+        html.dark body.home .mexo-home-hero p {
+            color: #475569 !important;
+        }
+
+        body.home .mexo-home-hero .mexo-hero-badge,
+        html.dark body.home .mexo-home-hero .mexo-hero-badge {
+            background: rgba(255, 255, 255, 0.92) !important;
+            border-color: rgba(226, 232, 240, 0.95) !important;
+            color: #0057ff !important;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.10) !important;
+        }
+
+        body.home .mexo-home-hero .mexo-primary-cta,
+        html.dark body.home .mexo-home-hero .mexo-primary-cta {
+            background: linear-gradient(135deg, #ff5a2f 0%, #f43f3f 100%) !important;
+            color: #ffffff !important;
+            border-color: transparent !important;
+            box-shadow: 0 18px 34px rgba(244, 63, 63, 0.26) !important;
+        }
+
+        body.home .mexo-home-hero .mexo-secondary-cta,
+        html.dark body.home .mexo-home-hero .mexo-secondary-cta {
+            background: rgba(255, 255, 255, 0.92) !important;
+            color: #334155 !important;
+            border-color: rgba(203, 213, 225, 0.9) !important;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08) !important;
+        }
+
+        body.home .mexo-home-hero .mt-20,
+        html.dark body.home .mexo-home-hero .mt-20 {
+            border-color: rgba(203, 213, 225, 0.8) !important;
+        }
+
+        body.home .mexo-home-hero .mt-20 > div,
+        html.dark body.home .mexo-home-hero .mt-20 > div {
+            color: #0057ff !important;
+        }
+
+        body.home .mexo-home-hero .mt-20 > div > div:last-child,
+        html.dark body.home .mexo-home-hero .mt-20 > div > div:last-child {
+            color: #475569 !important;
+        }
+
         @media (max-width: 767px) {
             .mexo-home-hero .mexo-hero-title {
-                font-size: 1.55rem !important;
+                font-size: 1.78rem !important;
                 line-height: 1.18 !important;
                 margin-bottom: 1.5rem !important;
                 width: 100%;
@@ -132,6 +228,32 @@ add_action('wp_head', function () {
 
             .mexo-home-hero .mexo-hero-title-line {
                 white-space: nowrap;
+            }
+
+            body.home .mexo-site-header,
+            html.dark body.home .mexo-site-header {
+                background: rgba(255, 255, 255, 0.96) !important;
+            }
+
+            body.home .mexo-home-hero,
+            html.dark body.home .mexo-home-hero {
+                padding-top: 2rem !important;
+                background:
+                    radial-gradient(circle at 50% 14%, rgba(0, 87, 255, 0.09), transparent 16rem),
+                    linear-gradient(180deg, #ffffff 0%, #f8fbff 56%, #ffffff 100%) !important;
+            }
+
+            body.home .mexo-home-hero .mt-20 {
+                margin-top: 3.5rem !important;
+                padding-top: 1.5rem !important;
+            }
+
+            body.home .mexo-home-hero .mt-20 > div {
+                border: 1px solid rgba(0, 87, 255, 0.14);
+                border-radius: 1.25rem;
+                padding: 1.25rem 1rem;
+                background: rgba(255, 255, 255, 0.88);
+                box-shadow: 0 14px 36px rgba(15, 23, 42, 0.06);
             }
         }
 
@@ -166,7 +288,7 @@ add_action('wp_footer', function () {
 <section class="mexo-home-hero relative pt-8 pb-16 lg:pt-12 lg:pb-24 overflow-hidden">
 
 <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<div class="inline-flex items-center px-4 py-2 rounded-full bg-white dark:bg-slate-800 shadow-md border border-slate-100 dark:border-slate-700 text-primary text-2xl font-bold mb-8 animate-float cursor-default">
+<div class="mexo-hero-badge inline-flex items-center px-4 py-2 rounded-full bg-white dark:bg-slate-800 shadow-md border border-slate-100 dark:border-slate-700 text-primary text-2xl font-bold mb-8 animate-float cursor-default">
 <span class="flex h-2.5 w-2.5 relative mr-2.5">
 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
 <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
@@ -185,7 +307,7 @@ add_action('wp_footer', function () {
 <button
     type="button"
     onclick="window.location.href='/lien-he/';"
-    class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-full text-white bg-gradient-to-r from-cta-orange to-cta-red shadow-lg shadow-cta-orange/30 hover:shadow-xl hover:shadow-cta-orange/40 transition-all transform hover:-translate-y-1 hover:scale-105">
+    class="mexo-primary-cta inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-full text-white bg-gradient-to-r from-cta-orange to-cta-red shadow-lg shadow-cta-orange/30 hover:shadow-xl hover:shadow-cta-orange/40 transition-all transform hover:-translate-y-1 hover:scale-105">
     <span class="material-icons mr-2 text-xl">rocket_launch</span>
     Hành động ngay
 </button>
@@ -193,7 +315,7 @@ add_action('wp_footer', function () {
 <button
     type="button"
     onclick="window.location.href='/lien-he/';"
-    class="inline-flex items-center justify-center px-8 py-4 border border-slate-200 dark:border-slate-700 text-base font-bold rounded-full text-slate-700 dark:text-white bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-primary/50 shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1">
+    class="mexo-secondary-cta inline-flex items-center justify-center px-8 py-4 border border-slate-200 dark:border-slate-700 text-base font-bold rounded-full text-slate-700 dark:text-white bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-primary/50 shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1">
     Nhận tư vấn chiến lược
     <span class="material-icons ml-2 text-xl">arrow_forward</span>
 </button>

@@ -276,7 +276,8 @@
         }
 
         #mobile-menu .mexo-mobile-nav-toggle,
-        #mobile-menu .mexo-mobile-nav-toggle .material-icons {
+        #mobile-menu .mexo-mobile-nav-toggle .material-icons,
+        #mobile-menu .mexo-mobile-nav-row > span.material-icons {
             width: 3.35rem !important;
             height: 3.35rem !important;
             display: inline-flex !important;
