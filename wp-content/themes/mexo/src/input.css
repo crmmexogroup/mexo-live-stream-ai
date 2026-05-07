@@ -154,13 +154,18 @@ html.dark .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 > div {
     }
 
     .mexo-home-hero p {
-        max-width: calc(100vw - 2rem);
+        max-width: 20rem;
         margin-inline: auto;
-        font-size: 1rem;
+        font-size: .95rem;
+        line-height: 1.55;
     }
 
     .mexo-home-hero button {
         width: min(100%, 21rem);
+    }
+
+    .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 {
+        grid-template-columns: 1fr !important;
     }
 
     #ws247-aio-ct-button-hl {
