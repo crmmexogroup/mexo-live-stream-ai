@@ -89,8 +89,19 @@ html.dark .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 > div {
         padding-top: 2.5rem;
     }
 
+    .mexo-home-hero > .relative > .inline-flex {
+        max-width: calc(100vw - 2rem);
+        white-space: normal;
+        justify-content: center;
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+
     .mexo-home-hero h1 {
-        font-size: clamp(2.35rem, 13vw, 3.85rem);
+        font-size: clamp(2.15rem, 10.5vw, 2.8rem) !important;
+        line-height: 1.12 !important;
+        max-width: calc(100vw - 2rem);
+        overflow-wrap: normal;
     }
 }
 
