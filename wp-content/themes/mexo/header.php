@@ -187,8 +187,8 @@
 
         .mexo-header-actions {
             position: fixed !important;
-            right: auto !important;
-            left: calc(100vw - 6.5rem) !important;
+            right: .75rem !important;
+            left: auto !important;
             top: .95rem !important;
             transform: none !important;
             width: 5.25rem !important;
@@ -393,11 +393,14 @@ document.addEventListener('DOMContentLoaded', function() {
             ].filter(Boolean);
             const viewportWidth = Math.min.apply(Math, viewportCandidates);
             const actionWidth = headerActions.offsetWidth || 84;
-            headerActions.style.left = Math.max(12, viewportWidth - actionWidth - 16) + 'px';
-            headerActions.style.right = 'auto';
+            const rightOffset = 12;
+            headerActions.style.setProperty('left', Math.max(12, viewportWidth - actionWidth - rightOffset) + 'px', 'important');
+            headerActions.style.setProperty('right', 'auto', 'important');
+            headerActions.style.setProperty('top', '.95rem', 'important');
         } else {
-            headerActions.style.left = '';
-            headerActions.style.right = '';
+            headerActions.style.removeProperty('left');
+            headerActions.style.removeProperty('right');
+            headerActions.style.removeProperty('top');
         }
     }
 
