@@ -997,6 +997,25 @@
         color: #ffffff !important;
         -webkit-text-fill-color: #ffffff !important;
     }
+
+    html:not(.dark) .mexo-secondary-cta[class],
+    html:not(.dark) a.mexo-secondary-cta[class],
+    html:not(.dark) button.mexo-secondary-cta[class],
+    html:not(.dark) section a.mexo-secondary-cta[class],
+    html:not(.dark) section button.mexo-secondary-cta[class] {
+        background: rgba(255, 255, 255, .92) !important;
+        background-image: none !important;
+        color: #1f2937 !important;
+        -webkit-text-fill-color: #1f2937 !important;
+        border-color: rgba(148, 163, 184, .55) !important;
+    }
+
+    html:not(.dark) .mexo-secondary-cta[class] *,
+    html:not(.dark) a.mexo-secondary-cta[class] *,
+    html:not(.dark) button.mexo-secondary-cta[class] * {
+        color: #1f2937 !important;
+        -webkit-text-fill-color: #1f2937 !important;
+    }
 </style>
 
 
@@ -1246,6 +1265,9 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             localStorage.setItem('mexo-theme', theme);
         } catch (error) {}
+        if (typeof window.mexoApplyCtaTheme === 'function') {
+            window.mexoApplyCtaTheme();
+        }
     }
 
     themeButtons.forEach(function(button) {
@@ -1314,6 +1336,36 @@ document.addEventListener('DOMContentLoaded', function() {
             'chọn gói này'
         ];
 
+        function applyButtonTheme(item, type) {
+            const isDark = document.documentElement.classList.contains('dark');
+
+            if (type === 'secondary') {
+                const textColor = isDark ? '#ffffff' : '#1f2937';
+                item.style.setProperty('color', textColor, 'important');
+                item.style.setProperty('-webkit-text-fill-color', textColor, 'important');
+                item.style.setProperty('border-width', '1px', 'important');
+                item.style.setProperty('border-style', 'solid', 'important');
+                item.style.setProperty('border-color', isDark ? 'rgba(148, 163, 184, .52)' : 'rgba(148, 163, 184, .55)', 'important');
+                return;
+            }
+
+            item.style.setProperty('color', '#ffffff', 'important');
+            item.style.setProperty('-webkit-text-fill-color', '#ffffff', 'important');
+            item.style.setProperty('border-width', '1.5px', 'important');
+            item.style.setProperty('border-style', 'solid', 'important');
+            item.style.setProperty('border-color', 'rgba(255, 255, 255, .78)', 'important');
+        }
+
+        window.mexoApplyCtaTheme = function() {
+            document.querySelectorAll('.mexo-secondary-cta').forEach(function(item) {
+                applyButtonTheme(item, 'secondary');
+            });
+
+            document.querySelectorAll('.mexo-primary-cta').forEach(function(item) {
+                applyButtonTheme(item, 'primary');
+            });
+        };
+
         document.querySelectorAll('a, button').forEach(function(item) {
             const label = (item.textContent || '').toLowerCase().replace(/\s+/g, ' ').trim();
             if (!label) return;
@@ -1321,21 +1373,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (secondaryTerms.some(function(term) { return label.indexOf(term) !== -1; })) {
                 item.classList.add('mexo-secondary-cta');
                 item.classList.remove('mexo-primary-cta');
-                item.style.setProperty('color', '#ffffff', 'important');
-                item.style.setProperty('-webkit-text-fill-color', '#ffffff', 'important');
-                item.style.setProperty('border-width', '1px', 'important');
-                item.style.setProperty('border-style', 'solid', 'important');
-                item.style.setProperty('border-color', 'rgba(148, 163, 184, .52)', 'important');
+                applyButtonTheme(item, 'secondary');
                 return;
             }
 
             if (primaryTerms.some(function(term) { return label.indexOf(term) !== -1; })) {
                 item.classList.add('mexo-primary-cta');
-                item.style.setProperty('color', '#ffffff', 'important');
-                item.style.setProperty('-webkit-text-fill-color', '#ffffff', 'important');
-                item.style.setProperty('border-width', '1.5px', 'important');
-                item.style.setProperty('border-style', 'solid', 'important');
-                item.style.setProperty('border-color', 'rgba(255, 255, 255, .78)', 'important');
+                applyButtonTheme(item, 'primary');
             }
         });
     })();
