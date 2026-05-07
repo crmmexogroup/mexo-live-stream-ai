@@ -878,6 +878,97 @@
             top: 0 !important;
         }
     }
+
+    html.dark .mexo-primary-cta,
+    html.dark a.mexo-primary-cta,
+    html.dark button.mexo-primary-cta,
+    html.dark a[class*="bg-cta-orange"],
+    html.dark button[class*="bg-cta-orange"],
+    html.dark a[class*="from-cta-orange"],
+    html.dark button[class*="from-cta-orange"] {
+        color: #ffffff !important;
+        border: 1.5px solid rgba(255, 255, 255, .74) !important;
+        box-shadow: 0 18px 44px rgba(255, 91, 42, .36), 0 0 42px rgba(239, 68, 68, .26), inset 0 1px 0 rgba(255, 255, 255, .24) !important;
+    }
+
+    html.dark .mexo-primary-cta *,
+    html.dark a.mexo-primary-cta *,
+    html.dark button.mexo-primary-cta *,
+    html.dark a[class*="bg-cta-orange"] *,
+    html.dark button[class*="bg-cta-orange"] *,
+    html.dark a[class*="from-cta-orange"] *,
+    html.dark button[class*="from-cta-orange"] * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    html.dark .mexo-secondary-cta,
+    html.dark a.mexo-secondary-cta,
+    html.dark button.mexo-secondary-cta {
+        color: #ffffff !important;
+    }
+
+    html.dark .mexo-secondary-cta *,
+    html.dark a.mexo-secondary-cta *,
+    html.dark button.mexo-secondary-cta * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    html.dark section[class*="from-primary"] .mexo-primary-cta,
+    html.dark section[class*="to-primary-dark"] .mexo-primary-cta,
+    html.dark div[class*="from-primary"] .mexo-primary-cta,
+    html.dark div[class*="to-primary-dark"] .mexo-primary-cta {
+        border-color: rgba(255, 255, 255, .78) !important;
+        color: #ffffff !important;
+    }
+
+    html.dark section[class*="from-primary"] .mexo-secondary-cta,
+    html.dark section[class*="to-primary-dark"] .mexo-secondary-cta,
+    html.dark div[class*="from-primary"] .mexo-secondary-cta,
+    html.dark div[class*="to-primary-dark"] .mexo-secondary-cta {
+        color: #ffffff !important;
+    }
+
+    html.dark .mexo-primary-cta[class],
+    html.dark a.mexo-primary-cta[class],
+    html.dark button.mexo-primary-cta[class],
+    html.dark header a.mexo-primary-cta[class],
+    html.dark nav a.mexo-primary-cta[class],
+    html.dark section a.mexo-primary-cta[class],
+    html.dark section button.mexo-primary-cta[class] {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+        border-width: 1.5px !important;
+        border-style: solid !important;
+        border-color: rgba(255, 255, 255, .78) !important;
+    }
+
+    html.dark .mexo-primary-cta[class] *,
+    html.dark a.mexo-primary-cta[class] *,
+    html.dark button.mexo-primary-cta[class] * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    html.dark .mexo-secondary-cta[class],
+    html.dark a.mexo-secondary-cta[class],
+    html.dark button.mexo-secondary-cta[class],
+    html.dark section a.mexo-secondary-cta[class],
+    html.dark section button.mexo-secondary-cta[class] {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-color: rgba(148, 163, 184, .52) !important;
+    }
+
+    html.dark .mexo-secondary-cta[class] *,
+    html.dark a.mexo-secondary-cta[class] *,
+    html.dark button.mexo-secondary-cta[class] * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
 </style>
 
 
@@ -1202,11 +1293,21 @@ document.addEventListener('DOMContentLoaded', function() {
             if (secondaryTerms.some(function(term) { return label.indexOf(term) !== -1; })) {
                 item.classList.add('mexo-secondary-cta');
                 item.classList.remove('mexo-primary-cta');
+                item.style.setProperty('color', '#ffffff', 'important');
+                item.style.setProperty('-webkit-text-fill-color', '#ffffff', 'important');
+                item.style.setProperty('border-width', '1px', 'important');
+                item.style.setProperty('border-style', 'solid', 'important');
+                item.style.setProperty('border-color', 'rgba(148, 163, 184, .52)', 'important');
                 return;
             }
 
             if (primaryTerms.some(function(term) { return label.indexOf(term) !== -1; })) {
                 item.classList.add('mexo-primary-cta');
+                item.style.setProperty('color', '#ffffff', 'important');
+                item.style.setProperty('-webkit-text-fill-color', '#ffffff', 'important');
+                item.style.setProperty('border-width', '1.5px', 'important');
+                item.style.setProperty('border-style', 'solid', 'important');
+                item.style.setProperty('border-color', 'rgba(255, 255, 255, .78)', 'important');
             }
         });
     })();
