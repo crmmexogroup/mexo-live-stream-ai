@@ -752,6 +752,66 @@
         align-items: center;
     }
 
+    @media (min-width: 1024px) {
+        .mexo-site-header > div {
+            width: 100% !important;
+            max-width: min(calc(100% - 3rem), 1568px) !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .mexo-header-inner {
+            display: grid !important;
+            grid-template-columns: minmax(220px, 1fr) auto minmax(220px, 1fr) !important;
+            align-items: center !important;
+            column-gap: clamp(1.5rem, 2vw, 2.5rem) !important;
+            height: 80px !important;
+        }
+
+        .mexo-header-logo {
+            justify-self: start !important;
+        }
+
+        .mexo-header-logo img {
+            width: auto !important;
+            height: 48px !important;
+            max-width: 180px !important;
+        }
+
+        .mexo-site-header .hidden.lg\:flex {
+            justify-self: center !important;
+            align-items: center !important;
+            gap: clamp(1.8rem, 2.15vw, 2.5rem) !important;
+            margin: 0 !important;
+        }
+
+        .mexo-site-header .hidden.lg\:flex > a,
+        .mexo-site-header .hidden.lg\:flex > .relative > button {
+            font-size: 1rem !important;
+            font-weight: 700 !important;
+            line-height: 1.5rem !important;
+        }
+
+        .mexo-header-actions {
+            justify-self: end !important;
+            margin-left: 0 !important;
+            gap: 1rem !important;
+        }
+
+        .mexo-site-header .hidden.lg\:flex > a.mexo-is-active::after,
+        .mexo-site-header .hidden.lg\:flex > .relative > button.mexo-is-active::after {
+            top: auto;
+        }
+
+        .mexo-site-header .hidden.lg\:flex > a.mexo-is-active::after {
+            bottom: -1.7rem;
+        }
+
+        .mexo-site-header .hidden.lg\:flex > .relative > button.mexo-is-active::after {
+            bottom: -1.5rem;
+        }
+    }
+
     html.dark .mexo-site-header .hidden.lg\:flex > a,
     html.dark .mexo-site-header .hidden.lg\:flex > .relative > button {
         color: #f8fafc !important;
@@ -780,6 +840,18 @@
 
     html.dark .mexo-site-header .hidden.lg\:flex > .relative > button {
         position: relative;
+    }
+
+    @media (min-width: 1024px) {
+        .mexo-site-header .hidden.lg\:flex > a.mexo-is-active::after {
+            top: auto;
+            bottom: -1.7rem;
+        }
+
+        .mexo-site-header .hidden.lg\:flex > .relative > button.mexo-is-active::after {
+            top: auto;
+            bottom: -1.5rem;
+        }
     }
 
     html.dark div.text-transparent.bg-clip-text[class*="from-primary"],
