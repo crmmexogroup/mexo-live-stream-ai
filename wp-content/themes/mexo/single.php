@@ -449,6 +449,102 @@ html.dark .mexo-post-content td:first-child {
         padding: 0.72rem 0.8rem !important;
     }
 }
+.mexo-post-content [style],
+.mexo-post-content [style] * {
+    color: inherit !important;
+}
+html.dark .mexo-post-content [style],
+html.dark .mexo-post-content [style] * {
+    color: #dbeafe !important;
+    -webkit-text-fill-color: #dbeafe !important;
+}
+html.dark .mexo-post-content [style] strong,
+html.dark .mexo-post-content strong [style],
+html.dark .mexo-post-content h1 [style],
+html.dark .mexo-post-content h2 [style],
+html.dark .mexo-post-content h3 [style] {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+.mexo-post-content blockquote,
+.mexo-post-content blockquote *,
+.mexo-post-content .wp-block-quote,
+.mexo-post-content .wp-block-quote *,
+.mexo-post-content .wp-block-pullquote,
+.mexo-post-content .wp-block-pullquote *,
+.mexo-post-content figure.wp-block-pullquote,
+.mexo-post-content figure.wp-block-pullquote * {
+    font-size: 1rem !important;
+    line-height: 1.62 !important;
+    font-weight: 500 !important;
+}
+@media (min-width: 768px) {
+    .mexo-post-content blockquote,
+    .mexo-post-content blockquote *,
+    .mexo-post-content .wp-block-quote,
+    .mexo-post-content .wp-block-quote *,
+    .mexo-post-content .wp-block-pullquote,
+    .mexo-post-content .wp-block-pullquote *,
+    .mexo-post-content figure.wp-block-pullquote,
+    .mexo-post-content figure.wp-block-pullquote * {
+        font-size: 1.08rem !important;
+        line-height: 1.65 !important;
+    }
+}
+@media (max-width: 767px) {
+    .mexo-post-content blockquote,
+    .mexo-post-content blockquote *,
+    .mexo-post-content .wp-block-quote,
+    .mexo-post-content .wp-block-quote *,
+    .mexo-post-content .wp-block-pullquote,
+    .mexo-post-content .wp-block-pullquote *,
+    .mexo-post-content figure.wp-block-pullquote,
+    .mexo-post-content figure.wp-block-pullquote * {
+        font-size: 0.98rem !important;
+        line-height: 1.58 !important;
+    }
+}
+.mexo-post-cta-box {
+    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%) !important;
+}
+.mexo-post-cta-box h3 {
+    color: #0f172a !important;
+}
+.mexo-post-cta-box p {
+    color: #475569 !important;
+}
+html.dark .mexo-post-cta-box {
+    background: #0f1b33 !important;
+    border-color: rgba(96, 165, 250, 0.28) !important;
+}
+html.dark .mexo-post-cta-box > .absolute {
+    opacity: 0 !important;
+}
+html.dark .mexo-post-cta-box h3,
+html.dark .mexo-post-cta-box h3 * {
+    color: #ffffff !important;
+}
+html.dark .mexo-post-cta-box p,
+html.dark .mexo-post-cta-box p * {
+    color: #dbeafe !important;
+}
+html.dark .mexo-post-cta-box button:first-of-type {
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+}
+html.dark .mexo-post-cta-box button.mexo-post-cta-secondary,
+html.dark .mexo-post-cta-box button:last-of-type,
+html.dark .mexo-post-cta-box .flex > button + button,
+html.dark .mexo-post-cta-box .flex > button:last-child {
+    background: rgba(7, 18, 37, 0.62) !important;
+    color: #ffffff !important;
+    border-color: rgba(148, 163, 184, 0.52) !important;
+}
+html.dark .mexo-post-cta-box button.mexo-post-cta-secondary *,
+html.dark .mexo-post-cta-box .flex > button + button *,
+html.dark .mexo-post-cta-box .flex > button:last-child * {
+    color: #ffffff !important;
+}
 </style>
 
 <main class="mexo-post-page flex-1 relative w-full py-10 md:py-14">
@@ -550,7 +646,7 @@ html.dark .mexo-post-content td:first-child {
             </div>
 
             <!-- CTA Box -->
-            <div class="mt-4 bg-gradient-to-br from-blue-50 to-indigo-50/50 rounded-2xl p-8 md:p-10 flex flex-col items-center text-center gap-6 border border-blue-100 relative overflow-hidden shadow-sm">
+            <div class="mexo-post-cta-box mt-4 bg-gradient-to-br from-blue-50 to-indigo-50/50 rounded-2xl p-8 md:p-10 flex flex-col items-center text-center gap-6 border border-blue-100 relative overflow-hidden shadow-sm">
                 <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-100 rounded-full mix-blend-multiply filter blur-2xl opacity-60"></div>
                 <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-100 rounded-full mix-blend-multiply filter blur-2xl opacity-60"></div>
                 <div class="z-10 flex flex-col items-center">
@@ -564,7 +660,7 @@ html.dark .mexo-post-content td:first-child {
                             <span class="material-symbols-outlined text-[20px]">chat_bubble</span>
                             Liên hệ tư vấn
                         </button>
-                        <button class="flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 text-gray-700 font-bold rounded-xl transition-all border border-gray-200 hover:border-blue-300">
+                        <button class="mexo-post-cta-secondary flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 text-gray-700 font-bold rounded-xl transition-all border border-gray-200 hover:border-blue-300">
                             Xem dịch vụ liên quan
                         </button>
                     </div>
