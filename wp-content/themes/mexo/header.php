@@ -781,8 +781,18 @@
         .mexo-site-header .hidden.lg\:flex {
             justify-self: center !important;
             align-items: center !important;
-            gap: clamp(1.55rem, 1.85vw, 2rem) !important;
+            gap: clamp(1rem, 1.25vw, 1.35rem) !important;
             margin: 0 !important;
+        }
+
+        .mexo-site-header .hidden.lg\:flex > :not([hidden]) ~ :not([hidden]) {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        .mexo-site-header .hidden.lg\:flex > * {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
         }
 
         .mexo-site-header .hidden.lg\:flex > a,
