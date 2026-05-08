@@ -142,6 +142,22 @@ html.dark .mexo-blog-recent-list {
 html.dark .mexo-blog-page .bg-white:not(.mexo-keep-white) {
     background-color: rgba(15, 23, 42, 0.86) !important;
 }
+.mexo-blog-category-badge,
+.mexo-blog-topic-link {
+    border-radius: 999px !important;
+    border: 1px solid #bfdbfe !important;
+    background: #eff6ff !important;
+    color: #0d59f2 !important;
+    font-size: 0.75rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0 !important;
+}
+html.dark .mexo-blog-category-badge,
+html.dark .mexo-blog-topic-link {
+    background: rgba(37, 99, 235, 0.18) !important;
+    border-color: rgba(147, 197, 253, 0.28) !important;
+    color: #bfdbfe !important;
+}
 @media (max-width: 767px) {
     html,
     body,
@@ -292,7 +308,7 @@ html.dark .mexo-blog-page .bg-white:not(.mexo-keep-white) {
             <?php 
             $categories = get_the_category();
             if (!empty($categories)) : ?>
-            <div class="absolute left-4 top-4 z-20 rounded-lg bg-white/90 px-3 py-1.5 text-xs font-bold text-primary backdrop-blur shadow-sm">
+            <div class="mexo-blog-category-badge absolute left-4 top-4 z-20 px-3 py-1.5 backdrop-blur shadow-sm">
                 <?php echo esc_html($categories[0]->name); ?>
             </div>
             <?php endif; ?>

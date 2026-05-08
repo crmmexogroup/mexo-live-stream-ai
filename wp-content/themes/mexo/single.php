@@ -545,6 +545,220 @@ html.dark .mexo-post-cta-box .flex > button + button *,
 html.dark .mexo-post-cta-box .flex > button:last-child * {
     color: #ffffff !important;
 }
+
+/* Final blog article polish: Shopee copied content, dark sidebar, compact notes. */
+.mexo-post-content .articleRender,
+.mexo-post-content .articleContent,
+.mexo-post-content .article-content,
+.mexo-post-content .ql-container,
+.mexo-post-content .ql-editor,
+.mexo-post-content [class*="articleRender"],
+.mexo-post-content [class*="articleContent"] {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.mexo-post-content h2,
+.mexo-post-content h2 *,
+.mexo-post-content h5,
+.mexo-post-content h5 * {
+    font-size: clamp(1.45rem, 2.8vw, 2rem) !important;
+    line-height: 1.24 !important;
+    color: #0f172a !important;
+}
+.mexo-post-content p:has(> img[src*="susercontent.com"]),
+.mexo-post-content p:has(> img[src*="down-vn.img.susercontent.com"]) {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 1rem !important;
+    padding: 1rem !important;
+    text-align: center !important;
+}
+.mexo-post-content img[src*="susercontent.com"],
+.mexo-post-content img[src*="down-vn.img.susercontent.com"] {
+    background: #ffffff !important;
+    border-radius: 0.75rem !important;
+    box-shadow: none !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+}
+.mexo-post-content blockquote,
+.mexo-post-content .wp-block-quote,
+.mexo-post-content .wp-block-pullquote,
+.mexo-post-content figure.wp-block-pullquote {
+    background: transparent !important;
+    border: 0 !important;
+    border-left: 4px solid #d1d5db !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0.45rem 0 !important;
+    padding: 0.18rem 0 0.18rem 1.1rem !important;
+}
+.mexo-post-content blockquote::before,
+.mexo-post-content .wp-block-quote::before,
+.mexo-post-content .wp-block-pullquote::before,
+.mexo-post-content figure.wp-block-pullquote::before {
+    content: none !important;
+}
+.mexo-post-content blockquote,
+.mexo-post-content blockquote *,
+.mexo-post-content .wp-block-quote,
+.mexo-post-content .wp-block-quote *,
+.mexo-post-content .wp-block-pullquote,
+.mexo-post-content .wp-block-pullquote *,
+.mexo-post-content figure.wp-block-pullquote,
+.mexo-post-content figure.wp-block-pullquote * {
+    color: #111827 !important;
+    font-size: 1rem !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 1.7 !important;
+}
+.mexo-post-content blockquote strong,
+.mexo-post-content .wp-block-quote strong,
+.mexo-post-content .wp-block-pullquote strong {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+}
+.mexo-post-content blockquote p,
+.mexo-post-content .wp-block-quote p,
+.mexo-post-content .wp-block-pullquote p,
+.mexo-post-content figure.wp-block-pullquote p {
+    margin: 0 !important;
+}
+html.dark .mexo-post-content h2,
+html.dark .mexo-post-content h2 *,
+html.dark .mexo-post-content h5,
+html.dark .mexo-post-content h5 * {
+    color: #ffffff !important;
+}
+html.dark .mexo-post-content p:has(> img[src*="susercontent.com"]),
+html.dark .mexo-post-content p:has(> img[src*="down-vn.img.susercontent.com"]) {
+    background: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.72) !important;
+}
+html.dark .mexo-post-content blockquote,
+html.dark .mexo-post-content .wp-block-quote,
+html.dark .mexo-post-content .wp-block-pullquote,
+html.dark .mexo-post-content figure.wp-block-pullquote {
+    background: transparent !important;
+    border-color: transparent !important;
+    border-left-color: rgba(191, 219, 254, 0.52) !important;
+}
+html.dark .mexo-post-content blockquote,
+html.dark .mexo-post-content blockquote *,
+html.dark .mexo-post-content .wp-block-quote,
+html.dark .mexo-post-content .wp-block-quote *,
+html.dark .mexo-post-content .wp-block-pullquote,
+html.dark .mexo-post-content .wp-block-pullquote *,
+html.dark .mexo-post-content figure.wp-block-pullquote,
+html.dark .mexo-post-content figure.wp-block-pullquote * {
+    color: #e5efff !important;
+}
+html.dark .mexo-post-content blockquote strong,
+html.dark .mexo-post-content .wp-block-quote strong,
+html.dark .mexo-post-content .wp-block-pullquote strong {
+    color: #ffffff !important;
+}
+.mexo-article-card > .flex.flex-wrap.gap-2.text-sm.items-center a,
+.mexo-article-card > .flex.flex-wrap.gap-2.text-sm.items-center span:last-child {
+    background: #eff6ff !important;
+    border: 1px solid #bfdbfe !important;
+    border-radius: 999px !important;
+    color: #0d59f2 !important;
+    font-size: 0.72rem !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    padding: 0.45rem 0.75rem !important;
+    box-shadow: none !important;
+}
+html.dark .mexo-article-card > .flex.flex-wrap.gap-2.text-sm.items-center a,
+html.dark .mexo-article-card > .flex.flex-wrap.gap-2.text-sm.items-center span:last-child {
+    background: rgba(37, 99, 235, 0.18) !important;
+    border-color: rgba(147, 197, 253, 0.28) !important;
+    color: #bfdbfe !important;
+}
+html.dark .mexo-post-page aside .sticky > div.bg-white {
+    background: #0f1b33 !important;
+    border-color: rgba(96, 165, 250, 0.24) !important;
+    box-shadow: 0 22px 55px rgba(2, 6, 23, 0.26) !important;
+}
+html.dark .mexo-post-page aside .sticky > div.bg-white h3,
+html.dark .mexo-post-page aside .sticky > div.bg-white h4,
+html.dark .mexo-post-page aside .sticky > div.bg-white strong {
+    color: #ffffff !important;
+}
+html.dark .mexo-post-page aside .sticky > div.bg-white a,
+html.dark .mexo-post-page aside .sticky > div.bg-white p,
+html.dark .mexo-post-page aside .sticky > div.bg-white span {
+    color: #dbeafe !important;
+}
+html.dark .mexo-post-page aside .sticky > div.bg-white .bg-blue-50,
+html.dark .mexo-post-page aside .sticky > div.bg-white .bg-gray-50,
+html.dark .mexo-post-page aside .sticky > div.bg-white .bg-indigo-100,
+html.dark .mexo-post-page aside .sticky > div.bg-white .bg-yellow-100,
+html.dark .mexo-post-page aside .sticky > div.bg-white .bg-red-100 {
+    background: rgba(37, 99, 235, 0.18) !important;
+    border: 1px solid rgba(147, 197, 253, 0.24) !important;
+}
+html.dark .mexo-post-page aside .sticky > div.bg-white .divide-y,
+html.dark .mexo-post-page aside .sticky > div.bg-white .divide-y > * {
+    border-color: rgba(96, 165, 250, 0.16) !important;
+}
+@media (max-width: 767px) {
+    .mexo-post-content h2,
+    .mexo-post-content h2 *,
+    .mexo-post-content h5,
+    .mexo-post-content h5 * {
+        font-size: clamp(1.35rem, 6.2vw, 1.8rem) !important;
+    }
+}
+.mexo-article-card .mexo-post-content blockquote,
+.mexo-article-card .mexo-post-content .wp-block-quote,
+.mexo-article-card .mexo-post-content .wp-block-pullquote,
+.mexo-article-card .mexo-post-content figure.wp-block-pullquote,
+html.dark .mexo-article-card .mexo-post-content blockquote,
+html.dark .mexo-article-card .mexo-post-content .wp-block-quote,
+html.dark .mexo-article-card .mexo-post-content .wp-block-pullquote,
+html.dark .mexo-article-card .mexo-post-content figure.wp-block-pullquote {
+    background: transparent !important;
+    border: 0 !important;
+    border-left: 4px solid #d1d5db !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0.45rem 0 !important;
+    padding: 0.18rem 0 0.18rem 1.1rem !important;
+}
+html.dark .mexo-article-card .mexo-post-content blockquote,
+html.dark .mexo-article-card .mexo-post-content .wp-block-quote,
+html.dark .mexo-article-card .mexo-post-content .wp-block-pullquote,
+html.dark .mexo-article-card .mexo-post-content figure.wp-block-pullquote {
+    border-left-color: rgba(191, 219, 254, 0.52) !important;
+}
+html.dark .mexo-post-page aside .sticky > div.bg-white a,
+html.dark .mexo-post-page aside .sticky > div.bg-white a *,
+html.dark .mexo-post-page aside .sticky > div.bg-white h4,
+html.dark .mexo-post-page aside .sticky > div.bg-white h4 * {
+    color: #dbeafe !important;
+}
+html.dark .mexo-post-page aside .sticky > div.bg-white h3,
+html.dark .mexo-post-page aside .sticky > div.bg-white h3 * {
+    color: #ffffff !important;
+}
+html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:first-of-type {
+    background: #ffffff !important;
+    color: #0d59f2 !important;
+    border: 1px solid rgba(255, 255, 255, 0.85) !important;
+}
+html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:last-of-type,
+html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:last-of-type * {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.32) !important;
+}
 </style>
 
 <main class="mexo-post-page flex-1 relative w-full py-10 md:py-14">

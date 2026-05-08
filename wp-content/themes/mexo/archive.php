@@ -1,4 +1,20 @@
 <?php get_header(); ?>
+<style>
+.mexo-blog-category-badge {
+    border-radius: 999px !important;
+    border: 1px solid #bfdbfe !important;
+    background: #eff6ff !important;
+    color: #0d59f2 !important;
+    font-size: 0.75rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0 !important;
+}
+html.dark .mexo-blog-category-badge {
+    background: rgba(37, 99, 235, 0.18) !important;
+    border-color: rgba(147, 197, 253, 0.28) !important;
+    color: #bfdbfe !important;
+}
+</style>
 <main class="min-h-screen pb-20">
 <section class="relative bg-white dark:bg-slate-950 pt-[100px] pb-16 lg:pt-[100px] lg:pb-24 overflow-hidden">
 <div class="absolute inset-0 bg-pattern opacity-30"></div>
@@ -60,7 +76,7 @@
             <?php 
             $categories = get_the_category();
             if (!empty($categories)) : ?>
-            <div class="absolute left-4 top-4 z-20 rounded-lg bg-white/90 px-3 py-1.5 text-xs font-bold text-primary backdrop-blur shadow-sm">
+            <div class="mexo-blog-category-badge absolute left-4 top-4 z-20 px-3 py-1.5 backdrop-blur shadow-sm">
                 <?php echo esc_html($categories[0]->name); ?>
             </div>
             <?php endif; ?>
