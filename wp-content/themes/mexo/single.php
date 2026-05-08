@@ -789,6 +789,60 @@ html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:last-
 html.dark .mexo-article-card .xl\:hidden span.text-gray-900 {
     color: #dbeafe !important;
 }
+.mexo-post-content .articleRender .mexo-article-lead,
+.mexo-post-content .articleContent .mexo-article-lead,
+.mexo-post-content .article-content .mexo-article-lead,
+.mexo-post-content .ql-editor .mexo-article-lead,
+.mexo-post-content [class*="articleRender"] .mexo-article-lead,
+.mexo-post-content [class*="articleContent"] .mexo-article-lead,
+html.dark .mexo-post-content .articleRender .mexo-article-lead,
+html.dark .mexo-post-content .articleContent .mexo-article-lead,
+html.dark .mexo-post-content .article-content .mexo-article-lead,
+html.dark .mexo-post-content .ql-editor .mexo-article-lead,
+html.dark .mexo-post-content [class*="articleRender"] .mexo-article-lead,
+html.dark .mexo-post-content [class*="articleContent"] .mexo-article-lead {
+    color: inherit !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.78 !important;
+    margin: 0 0 1.35rem !important;
+}
+.mexo-post-content .articleRender p,
+.mexo-post-content .articleContent p,
+.mexo-post-content .article-content p,
+.mexo-post-content .ql-editor p,
+.mexo-post-content [class*="articleRender"] p,
+.mexo-post-content [class*="articleContent"] p,
+html.dark .mexo-post-content .articleRender p,
+html.dark .mexo-post-content .articleContent p,
+html.dark .mexo-post-content .article-content p,
+html.dark .mexo-post-content .ql-editor p,
+html.dark .mexo-post-content [class*="articleRender"] p,
+html.dark .mexo-post-content [class*="articleContent"] p {
+    font-size: 1rem !important;
+    line-height: 1.72 !important;
+    margin: 0 0 1.15rem !important;
+}
+.mexo-post-content .articleRender p.catalog-list,
+.mexo-post-content .articleContent p.catalog-list,
+.mexo-post-content .article-content p.catalog-list,
+.mexo-post-content .ql-editor p.catalog-list,
+html.dark .mexo-post-content .articleRender p.catalog-list,
+html.dark .mexo-post-content .articleContent p.catalog-list,
+html.dark .mexo-post-content .article-content p.catalog-list,
+html.dark .mexo-post-content .ql-editor p.catalog-list {
+    font-size: 1.06rem !important;
+    font-weight: 800 !important;
+    line-height: 1.45 !important;
+    margin: 1.65rem 0 0.85rem !important;
+}
+.mexo-post-content .article-time,
+.mexo-post-content .article-time *,
+html.dark .mexo-post-content .article-time,
+html.dark .mexo-post-content .article-time * {
+    font-size: 0.88rem !important;
+    line-height: 1.4 !important;
+}
 </style>
 
 <main class="mexo-post-page flex-1 relative w-full py-10 md:py-14">
@@ -1055,7 +1109,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return paragraph.textContent && paragraph.textContent.trim().length > 0;
         });
 
-        const lead = paragraphs.find(function(paragraph) {
+        const isCopiedShopeeArticle = !!content.querySelector('.articleRender, .articleContent, .article-content, .ql-editor, .article-time, .ql-container, [class*="articleRender"], [class*="articleContent"]');
+        const lead = isCopiedShopeeArticle ? null : paragraphs.find(function(paragraph) {
             const text = paragraph.textContent.trim();
             return text.length >= 110 && !/^c[aậ]p nh[aậ]t/i.test(text) && !/^ngu[oờ]n/i.test(text);
         });
