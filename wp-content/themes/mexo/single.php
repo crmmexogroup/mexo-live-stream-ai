@@ -347,10 +347,37 @@ html.dark .mexo-post-content a {
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    border: 1px solid #dbe3ef;
-    border-radius: 0.85rem;
-    background: #ffffff;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
     margin: 1.8rem 0 2.2rem;
+    padding: 0 0 0.35rem;
+    display: block !important;
+}
+.mexo-post-content .quill-better-table-wrapper,
+.mexo-post-content .TyagGW_tableContainer,
+.mexo-post-content .TyagGW_tableWrapper,
+.mexo-post-content [class*="tableContainer"],
+.mexo-post-content [class*="tableWrapper"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 1.8rem 0 2.2rem !important;
+    display: block !important;
+}
+.mexo-post-content .quill-better-table-wrapper.mexo-table-scroll,
+.mexo-post-content .TyagGW_tableWrapper.mexo-table-scroll,
+.mexo-post-content [class*="tableWrapper"].mexo-table-scroll {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    margin: 1.8rem 0 2.2rem !important;
 }
 .mexo-table-scroll table,
 .mexo-post-content table {
@@ -401,8 +428,8 @@ html.dark .mexo-post-content figure.wp-block-pullquote * {
     color: #e5efff !important;
 }
 html.dark .mexo-table-scroll {
-    background: #071225 !important;
-    border-color: rgba(96, 165, 250, 0.28) !important;
+    background: transparent !important;
+    border-color: transparent !important;
 }
 html.dark .mexo-post-content th,
 html.dark .mexo-post-content td {
@@ -759,6 +786,9 @@ html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:last-
     color: #ffffff !important;
     border-color: rgba(255, 255, 255, 0.32) !important;
 }
+html.dark .mexo-article-card .xl\:hidden span.text-gray-900 {
+    color: #dbeafe !important;
+}
 </style>
 
 <main class="mexo-post-page flex-1 relative w-full py-10 md:py-14">
@@ -1036,6 +1066,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
         content.querySelectorAll('table').forEach(function(table) {
             if (table.parentElement && table.parentElement.classList.contains('mexo-table-scroll')) {
+                return;
+            }
+
+            table.removeAttribute('width');
+            table.removeAttribute('height');
+            table.style.height = '';
+
+            const parent = table.parentElement;
+            const isCopiedTableWrapper = parent && (
+                parent.classList.contains('quill-better-table-wrapper') ||
+                parent.classList.contains('TyagGW_tableWrapper') ||
+                /tableWrapper/i.test(parent.className || '')
+            );
+
+            if (isCopiedTableWrapper) {
+                parent.classList.add('mexo-table-scroll');
                 return;
             }
 
