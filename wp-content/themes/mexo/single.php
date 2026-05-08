@@ -146,6 +146,152 @@ html.dark .mexo-article-eeat .rounded-xl {
         line-height: 1.75 !important;
     }
 }
+
+/* Clean reading layout for pasted/copied article content. */
+.mexo-post-content {
+    font-size: 1.12rem !important;
+    line-height: 1.86 !important;
+    color: #64748b !important;
+    letter-spacing: 0 !important;
+}
+.mexo-post-content * {
+    letter-spacing: 0 !important;
+    max-width: 100%;
+}
+.mexo-post-content p,
+.mexo-post-content li,
+.mexo-post-content div,
+.mexo-post-content span {
+    color: #64748b !important;
+}
+.mexo-article-lead {
+    color: #020617 !important;
+    font-size: clamp(1.55rem, 4.8vw, 2.55rem) !important;
+    font-weight: 500 !important;
+    line-height: 1.36 !important;
+    margin: 0 0 3.75rem !important;
+}
+.mexo-post-content p {
+    margin: 0 0 1.8rem !important;
+}
+.mexo-post-content h2,
+.mexo-post-content h3,
+.mexo-post-content h4 {
+    color: #020617 !important;
+    line-height: 1.28 !important;
+}
+.mexo-post-content h2 {
+    font-size: clamp(1.7rem, 4.2vw, 2.35rem) !important;
+    margin-top: 3.5rem !important;
+}
+.mexo-post-content h3 {
+    font-size: clamp(1.35rem, 3.4vw, 1.75rem) !important;
+}
+.mexo-post-content a {
+    color: #475569 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 0.12em;
+}
+.mexo-post-content img,
+.mexo-post-content figure,
+.mexo-post-content video,
+.mexo-post-content iframe {
+    max-width: 100% !important;
+}
+.mexo-post-content table {
+    display: block;
+    width: 100% !important;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+html.dark .mexo-post-content {
+    color: #dbeafe !important;
+}
+html.dark .mexo-post-content p,
+html.dark .mexo-post-content li,
+html.dark .mexo-post-content div,
+html.dark .mexo-post-content span {
+    color: #dbeafe !important;
+}
+html.dark .mexo-article-lead,
+html.dark .mexo-post-content h2,
+html.dark .mexo-post-content h3,
+html.dark .mexo-post-content h4 {
+    color: #ffffff !important;
+}
+html.dark .mexo-post-content a {
+    color: #bfdbfe !important;
+}
+@media (max-width: 767px) {
+    .mexo-post-page {
+        padding-top: 1rem !important;
+        background: #ffffff !important;
+    }
+    .mexo-article-card {
+        width: 100% !important;
+        border-radius: 0 !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        padding: 1.45rem !important;
+        background: #ffffff !important;
+    }
+    .mexo-post-content {
+        font-size: 1.22rem !important;
+        line-height: 1.78 !important;
+    }
+    .mexo-article-card .mexo-post-content,
+    .mexo-article-card .mexo-post-content p,
+    .mexo-article-card .mexo-post-content li,
+    .mexo-article-card .mexo-post-content span,
+    .mexo-article-card .mexo-post-content div {
+        color: #64748b !important;
+    }
+    .mexo-article-card .mexo-post-content h2,
+    .mexo-article-card .mexo-post-content h3,
+    .mexo-article-card .mexo-post-content h4,
+    .mexo-article-card .mexo-post-content strong {
+        color: #020617 !important;
+    }
+    .mexo-article-card .mexo-post-content .mexo-article-lead {
+        font-size: clamp(2rem, 9.3vw, 2.65rem) !important;
+        line-height: 1.26 !important;
+        margin-bottom: 4.5rem !important;
+        color: #020617 !important;
+    }
+    .mexo-post-content p {
+        margin-bottom: 2rem !important;
+    }
+    html.dark .mexo-post-page {
+        background: #071225 !important;
+    }
+    html.dark .mexo-article-card {
+        background: #0f1b33 !important;
+        border: 1px solid rgba(96, 165, 250, 0.20) !important;
+        border-radius: 1.25rem !important;
+        box-shadow: none !important;
+    }
+    html.dark .mexo-article-card .mexo-post-content,
+    html.dark .mexo-article-card .mexo-post-content p,
+    html.dark .mexo-article-card .mexo-post-content li,
+    html.dark .mexo-article-card .mexo-post-content span,
+    html.dark .mexo-article-card .mexo-post-content div {
+        color: #dbeafe !important;
+        font-size: 1.22rem !important;
+        line-height: 1.78 !important;
+    }
+    html.dark .mexo-article-card .mexo-post-content .mexo-article-lead {
+        color: #ffffff !important;
+        font-size: clamp(2rem, 9.3vw, 2.65rem) !important;
+        line-height: 1.26 !important;
+        margin-bottom: 4.5rem !important;
+    }
+    html.dark .mexo-article-card .mexo-post-content h2,
+    html.dark .mexo-article-card .mexo-post-content h3,
+    html.dark .mexo-article-card .mexo-post-content h4,
+    html.dark .mexo-article-card .mexo-post-content strong {
+        color: #ffffff !important;
+    }
+}
 </style>
 
 <main class="mexo-post-page flex-1 relative w-full py-10 md:py-14">
@@ -404,5 +550,24 @@ html.dark .mexo-article-eeat .rounded-xl {
     </div>
 </div>
 </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.mexo-post-content').forEach(function(content) {
+        const paragraphs = Array.from(content.querySelectorAll('p')).filter(function(paragraph) {
+            return paragraph.textContent && paragraph.textContent.trim().length > 0;
+        });
+
+        const lead = paragraphs.find(function(paragraph) {
+            const text = paragraph.textContent.trim();
+            return text.length >= 110 && !/^c[aậ]p nh[aậ]t/i.test(text) && !/^ngu[oờ]n/i.test(text);
+        });
+
+        if (lead) {
+            lead.classList.add('mexo-article-lead');
+        }
+    });
+});
+</script>
 
 <?php get_footer(); ?>
