@@ -102,6 +102,10 @@ foreach ( $mexo_footer_faq_map as $mexo_footer_faq_slug => $mexo_footer_faq_data
 </footer>
 <?php wp_footer(); ?>
 <style id="mexo-footer-dark-final">
+html.dark body footer,
+html.dark body footer * {
+    color: #ffffff !important;
+}
 html.dark body footer a,
 html.dark body footer a:hover,
 html.dark body footer a:focus,
@@ -117,10 +121,10 @@ html.dark body footer h5 {
 html.dark body footer p,
 html.dark body footer li,
 html.dark body footer span:not(.material-symbols-outlined) {
-    color: #dbeafe !important;
+    color: #ffffff !important;
 }
 html.dark body footer .material-symbols-outlined {
-    color: #e5efff !important;
+    color: #ffffff !important;
 }
 html.dark body footer a.inline-flex {
     background: rgba(255, 255, 255, 0.10) !important;
@@ -145,10 +149,12 @@ html.dark body footer a.inline-flex {
         if (!footer) return;
 
         var isDark = document.documentElement.classList.contains('dark');
+        setImportant([footer], 'color', '#ffffff', isDark);
+        setImportant(footer.querySelectorAll('*'), 'color', '#ffffff', isDark);
         setImportant(footer.querySelectorAll('a'), 'color', '#ffffff', isDark);
         setImportant(footer.querySelectorAll('h4, h5'), 'color', '#ffffff', isDark);
-        setImportant(footer.querySelectorAll('p, li, span:not(.material-symbols-outlined)'), 'color', '#dbeafe', isDark);
-        setImportant(footer.querySelectorAll('.material-symbols-outlined'), 'color', '#e5efff', isDark);
+        setImportant(footer.querySelectorAll('p, li, span:not(.material-symbols-outlined)'), 'color', '#ffffff', isDark);
+        setImportant(footer.querySelectorAll('.material-symbols-outlined'), 'color', '#ffffff', isDark);
 
         footer.querySelectorAll('a.inline-flex').forEach(function (link) {
             if (isDark) {
