@@ -755,16 +755,16 @@
     @media (min-width: 1024px) {
         .mexo-site-header > div {
             width: 100% !important;
-            max-width: min(calc(100% - 3rem), 1568px) !important;
-            padding-left: 0 !important;
-            padding-right: 0 !important;
+            max-width: 1280px !important;
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
         }
 
         .mexo-header-inner {
             display: grid !important;
-            grid-template-columns: minmax(220px, 1fr) auto minmax(220px, 1fr) !important;
+            grid-template-columns: 220px auto 220px !important;
             align-items: center !important;
-            column-gap: clamp(1.5rem, 2vw, 2.5rem) !important;
+            column-gap: clamp(1.25rem, 1.8vw, 2rem) !important;
             height: 80px !important;
         }
 
@@ -781,7 +781,7 @@
         .mexo-site-header .hidden.lg\:flex {
             justify-self: center !important;
             align-items: center !important;
-            gap: clamp(1.8rem, 2.15vw, 2.5rem) !important;
+            gap: clamp(1.55rem, 1.85vw, 2rem) !important;
             margin: 0 !important;
         }
 
