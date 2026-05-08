@@ -1356,7 +1356,7 @@ function mexo_output_schema() {
         'telephone'=> '0855.761.555',
         'address'  => array(
             '@type'           => 'PostalAddress',
-            'streetAddress'   => 'Tầng 2 B1.1 LK6 Ô 16 Khu Đô Thị Thanh Hà',
+            'streetAddress'   => 'Tầng 2 B1.1 LK6 - 16 Khu Đô Thị Thanh Hà',
             'addressLocality' => 'Hà Nội',
             'addressCountry'  => 'VN',
         ),

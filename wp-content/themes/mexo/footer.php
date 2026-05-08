@@ -51,7 +51,7 @@ foreach ( $mexo_footer_faq_map as $mexo_footer_faq_slug => $mexo_footer_faq_data
 <div class="flex items-start gap-3">
 <span class="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5">location_on</span>
 <span class="text-sm leading-relaxed font-medium">
-                        B1.1 LK6 Ô 16 Khu Đô Thị Thanh Hà, Xã Bình Minh, TP. Hà Nội
+                        Tầng 2 B1.1 LK6 - 16 Khu Đô Thị Thanh Hà, Xã Bình Minh, TP. Hà Nội
                         <a class="inline-flex items-center ml-2 text-primary hover:text-primary-dark font-bold text-xs bg-primary/10 px-2 py-0.5 rounded-full transition-colors" href="https://maps.app.goo.gl/btoDhBjKuJNcSpny8" target="_blank">
 <span class="material-symbols-outlined text-sm mr-1">map</span> Bản đồ
                         </a>
@@ -88,7 +88,7 @@ foreach ( $mexo_footer_faq_map as $mexo_footer_faq_slug => $mexo_footer_faq_data
 <h4 class="text-slate-900 dark:text-white font-bold text-sm uppercase mb-2">CÔNG TY TNHH MEXO GROUP</h4>
 <p class="text-xs text-slate-500 leading-relaxed max-w-xl font-medium">
                             Mã số thuế: 0111153724 <br class="hidden sm:block"/>
-                            Địa chỉ văn phòng: Tầng 2 B1.1 LK6 Ô 16 Khu Đô Thị Thanh Hà, Xã Bình Minh, TP. Hà Nội
+                            Địa chỉ văn phòng: Tầng 2 B1.1 LK6 - 16 Khu Đô Thị Thanh Hà, Xã Bình Minh, TP. Hà Nội
                         </p>
 </div>
 <div class="flex gap-6 text-sm text-slate-500 font-medium">
