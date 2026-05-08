@@ -335,3 +335,197 @@ html.dark .mexo-home-hero .grid.grid-cols-2.md\:grid-cols-4 > div {
         font-size: clamp(3.75rem, 5.15vw, 4.4rem) !important;
     }
 }
+
+/* MEXO global text tone and package tab polish */
+:root {
+    --mexo-muted-light: #475569;
+    --mexo-muted-light-strong: #334155;
+    --mexo-muted-dark: #dbeafe;
+    --mexo-muted-dark-soft: #bfdbfe;
+    --mexo-dark-panel: #101c31;
+    --mexo-dark-border: rgba(96, 165, 250, 0.28);
+}
+
+body :is(.text-text-sub, .text-gray-500, .text-slate-500, .text-slate-600) {
+    color: var(--mexo-muted-light) !important;
+}
+
+body :is(.text-gray-400, .text-slate-400) {
+    color: #64748b !important;
+}
+
+html.dark body :is(.text-text-sub, .dark\:text-gray-300, .dark\:text-gray-400, .dark\:text-slate-300, .dark\:text-slate-400, .text-gray-400, .text-gray-500, .text-slate-400, .text-slate-500, .text-slate-600) {
+    color: var(--mexo-muted-dark) !important;
+}
+
+html.dark body footer,
+html.dark body footer * {
+    color: #ffffff !important;
+}
+
+.page-template-xay-shop .text-center > p,
+.page-template-xay-shop .tab-content p,
+.page-template-xay-shop .tab-content li span:not(.material-symbols-outlined),
+.page-template-xay-shop .tab-content .space-y-6 > p {
+    color: var(--mexo-muted-light) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+}
+
+.page-template-xay-shop .text-center > p {
+    max-width: 44rem !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    font-weight: 500 !important;
+}
+
+html.dark .page-template-xay-shop .text-center > p,
+html.dark .page-template-xay-shop .tab-content p,
+html.dark .page-template-xay-shop .tab-content li span:not(.material-symbols-outlined),
+html.dark .page-template-xay-shop .tab-content .space-y-6 > p {
+    color: var(--mexo-muted-dark) !important;
+}
+
+.page-template-xay-shop .tab-button {
+    min-height: 4.9rem;
+    background: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    color: #0f172a !important;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06) !important;
+}
+
+.page-template-xay-shop .tab-button:not(.active) {
+    background: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    color: #0f172a !important;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.045) !important;
+}
+
+.page-template-xay-shop .tab-button:not(.active) .tab-icon-wrapper {
+    box-shadow: none !important;
+    transform: none !important;
+    opacity: 0.88;
+    filter: saturate(0.86);
+}
+
+.page-template-xay-shop .tab-button.active {
+    background: #eaf3ff !important;
+    border-color: #0d59f2 !important;
+    color: #0f172a !important;
+    box-shadow: 0 18px 44px rgba(13, 89, 242, 0.18) !important;
+}
+
+.page-template-xay-shop .tab-button.active .tab-icon-wrapper {
+    opacity: 1;
+    filter: saturate(1);
+    box-shadow: 0 14px 32px rgba(13, 89, 242, 0.28) !important;
+}
+
+html.dark .page-template-xay-shop .tab-button {
+    background: rgba(16, 28, 49, 0.78) !important;
+    border-color: var(--mexo-dark-border) !important;
+    color: #f8fafc !important;
+    box-shadow: none !important;
+}
+
+html.dark .page-template-xay-shop .tab-button:not(.active) {
+    background: rgba(16, 28, 49, 0.68) !important;
+    border-color: rgba(96, 165, 250, 0.18) !important;
+    color: #e2e8f0 !important;
+}
+
+html.dark .page-template-xay-shop .tab-button.active {
+    background: rgba(13, 89, 242, 0.20) !important;
+    border-color: rgba(147, 197, 253, 0.72) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 36px rgba(59, 130, 246, 0.22) !important;
+}
+
+html.dark .page-template-xay-shop .tab-button.active .tab-icon-wrapper {
+    box-shadow: 0 0 28px rgba(96, 165, 250, 0.36) !important;
+}
+
+.page-template-xay-shop .tab-button span:not(.material-symbols-outlined) {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+@media (max-width: 640px) {
+    .page-template-xay-shop .tab-button {
+        min-height: 4rem;
+        padding: 0.75rem 1rem !important;
+    }
+
+    .page-template-xay-shop .tab-button .tab-icon-wrapper {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+    }
+
+    .page-template-xay-shop .text-center > p,
+    .page-template-xay-shop .tab-content p,
+    .page-template-xay-shop .tab-content li span:not(.material-symbols-outlined) {
+        font-size: 0.9rem !important;
+        line-height: 1.6 !important;
+    }
+}
+
+/* MEXO blog dark-mode contrast polish */
+html.dark .mexo-blog-page,
+html.dark .mexo-post-page {
+    background: #071225 !important;
+}
+
+html.dark .mexo-blog-page .bg-white:not(.mexo-keep-white),
+html.dark .mexo-blog-post-card,
+html.dark .mexo-blog-sidebar-card {
+    background-color: rgba(15, 27, 51, 0.92) !important;
+    border-color: rgba(96, 165, 250, 0.24) !important;
+}
+
+html.dark .mexo-blog-category-badge,
+html.dark .mexo-related-category-badge {
+    background: rgba(255, 255, 255, 0.94) !important;
+    border-color: rgba(255, 255, 255, 0.72) !important;
+    color: #0d59f2 !important;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.32) !important;
+    text-shadow: none !important;
+}
+
+html.dark .mexo-blog-card-title,
+html.dark .mexo-blog-sidebar-card h3,
+html.dark .mexo-blog-sidebar-card h4,
+html.dark .mexo-related-post-title {
+    color: #f8fafc !important;
+}
+
+html.dark .mexo-blog-card-excerpt,
+html.dark .mexo-blog-sidebar-card p,
+html.dark .mexo-blog-meta,
+html.dark .mexo-blog-recent-list span {
+    color: #dbeafe !important;
+}
+
+html.dark .mexo-blog-page .mexo-blog-cta button:first-of-type,
+html.dark .mexo-blog-page .mexo-blog-cta button.bg-white:first-of-type,
+html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:first-of-type {
+    background: #ffffff !important;
+    color: #0b2a5f !important;
+    border: 1px solid rgba(255, 255, 255, 0.82) !important;
+    box-shadow: 0 14px 36px rgba(147, 197, 253, 0.22) !important;
+}
+
+html.dark .mexo-blog-page .mexo-blog-cta button:last-of-type,
+html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:last-of-type {
+    background: rgba(255, 255, 255, 0.16) !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.58) !important;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.28) !important;
+}
+
+html.dark .mexo-blog-cta button,
+html.dark .mexo-blog-cta button *,
+html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button,
+html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button * {
+    opacity: 1 !important;
+    -webkit-text-fill-color: currentColor !important;
+}

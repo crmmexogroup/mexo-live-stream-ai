@@ -704,9 +704,11 @@ html.dark .mexo-post-content .wp-block-pullquote strong {
 }
 html.dark .mexo-article-card > .flex.flex-wrap.gap-2.text-sm.items-center a,
 html.dark .mexo-article-card > .flex.flex-wrap.gap-2.text-sm.items-center span:last-child {
-    background: rgba(37, 99, 235, 0.18) !important;
-    border-color: rgba(147, 197, 253, 0.28) !important;
-    color: #bfdbfe !important;
+    background: rgba(255, 255, 255, 0.94) !important;
+    border-color: rgba(255, 255, 255, 0.72) !important;
+    color: #0d59f2 !important;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.28) !important;
+    text-shadow: none !important;
 }
 html.dark .mexo-post-page aside .sticky > div.bg-white {
     background: #0f1b33 !important;
@@ -777,14 +779,30 @@ html.dark .mexo-post-page aside .sticky > div.bg-white h3 * {
 }
 html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:first-of-type {
     background: #ffffff !important;
-    color: #0d59f2 !important;
+    color: #0b2a5f !important;
     border: 1px solid rgba(255, 255, 255, 0.85) !important;
+    box-shadow: 0 14px 36px rgba(147, 197, 253, 0.22) !important;
 }
 html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:last-of-type,
 html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button:last-of-type * {
-    background: rgba(255, 255, 255, 0.08) !important;
+    background: rgba(255, 255, 255, 0.16) !important;
     color: #ffffff !important;
-    border-color: rgba(255, 255, 255, 0.32) !important;
+    border-color: rgba(255, 255, 255, 0.58) !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: currentColor !important;
+}
+html.dark .mexo-related-category-badge {
+    background: rgba(255, 255, 255, 0.94) !important;
+    border: 1px solid rgba(255, 255, 255, 0.72) !important;
+    color: #0d59f2 !important;
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.28) !important;
+    text-shadow: none !important;
+}
+html.dark .mexo-related-post-title {
+    color: #dbeafe !important;
+}
+html.dark .mexo-related-post-title:hover {
+    color: #ffffff !important;
 }
 html.dark .mexo-article-card .xl\:hidden span.text-gray-900 {
     color: #dbeafe !important;
@@ -994,11 +1012,11 @@ html.dark .mexo-post-content .article-time * {
                             <?php endif; ?>
                             
                             <?php $cats = get_the_category(); if($cats): ?>
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-primary shadow-sm"><?php echo $cats[0]->name; ?></div>
+                            <div class="mexo-related-category-badge absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-primary shadow-sm"><?php echo $cats[0]->name; ?></div>
                             <?php endif; ?>
                         </div>
                         <div class="flex flex-col gap-1 flex-1">
-                            <h4 class="text-[15px] font-bold text-[#0d121c] leading-snug group-hover:text-primary transition-colors line-clamp-2"><?php the_title(); ?></h4>
+                            <h4 class="mexo-related-post-title text-[15px] font-bold text-[#0d121c] leading-snug group-hover:text-primary transition-colors line-clamp-2"><?php the_title(); ?></h4>
                             <div class="mt-auto pt-2 text-xs text-gray-400 flex items-center gap-1">
                                 <span class="material-symbols-outlined text-[14px]">calendar_month</span> <?php echo get_the_date('d M'); ?>
                             </div>
@@ -1039,7 +1057,7 @@ html.dark .mexo-post-content .article-time * {
                 </div>
 
                 <!-- CTA Widget -->
-                <div class="bg-gradient-to-b from-primary to-primary-dark rounded-3xl p-8 text-center text-white shadow-xl relative overflow-hidden group">
+                <div class="mexo-blog-cta bg-gradient-to-b from-primary to-primary-dark rounded-3xl p-8 text-center text-white shadow-xl relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-10 -mt-10 blur-xl"></div>
                     <div class="absolute bottom-0 left-0 w-24 h-24 bg-blue-400/20 rounded-full -ml-5 -mb-5 blur-lg"></div>
                     <div class="relative z-10 flex flex-col items-center gap-4">

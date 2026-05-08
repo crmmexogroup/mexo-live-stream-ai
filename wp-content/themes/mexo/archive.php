@@ -10,12 +10,32 @@
     letter-spacing: 0 !important;
 }
 html.dark .mexo-blog-category-badge {
-    background: rgba(37, 99, 235, 0.18) !important;
-    border-color: rgba(147, 197, 253, 0.28) !important;
-    color: #bfdbfe !important;
+    background: rgba(255, 255, 255, 0.94) !important;
+    border-color: rgba(255, 255, 255, 0.72) !important;
+    color: #0d59f2 !important;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.32) !important;
+    text-shadow: none !important;
+}
+html.dark .mexo-blog-page .mexo-blog-cta button:first-of-type,
+html.dark .mexo-blog-page .mexo-blog-cta button.bg-white:first-of-type {
+    background: #ffffff !important;
+    color: #0b2a5f !important;
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0 14px 36px rgba(147, 197, 253, 0.22) !important;
+}
+html.dark .mexo-blog-page .mexo-blog-cta button:last-of-type {
+    background: rgba(255, 255, 255, 0.16) !important;
+    border-color: rgba(255, 255, 255, 0.58) !important;
+    color: #ffffff !important;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.28) !important;
+}
+html.dark .mexo-blog-cta button,
+html.dark .mexo-blog-cta button * {
+    opacity: 1 !important;
+    -webkit-text-fill-color: currentColor !important;
 }
 </style>
-<main class="min-h-screen pb-20">
+<main class="mexo-blog-page min-h-screen pb-20">
 <section class="relative bg-white dark:bg-slate-950 pt-[100px] pb-16 lg:pt-[100px] lg:pb-24 overflow-hidden">
 <div class="absolute inset-0 bg-pattern opacity-30"></div>
 <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary/5 blur-3xl"></div>
@@ -159,7 +179,7 @@ html.dark .mexo-blog-category-badge {
     <?php endwhile; wp_reset_postdata(); endif; ?>
 </div>
 </div>
-<div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-primary via-[#0047cc] to-[#002a80] p-8 text-center text-white shadow-xl group">
+<div class="mexo-blog-cta relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-primary via-[#0047cc] to-[#002a80] p-8 text-center text-white shadow-xl group">
 <div class="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-3xl group-hover:bg-white/15 transition-all duration-700"></div>
 <div class="absolute -left-16 -bottom-16 h-56 w-56 rounded-full bg-cta-orange/20 blur-3xl group-hover:bg-cta-orange/30 transition-all duration-700"></div>
 <div class="relative z-10 flex flex-col items-center gap-5">

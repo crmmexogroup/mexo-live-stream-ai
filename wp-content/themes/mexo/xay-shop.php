@@ -42,6 +42,75 @@ get_header();
         .dark .tab-button.active {
             background-color: #0d59f21a;
         }
+        .page-template-xay-shop .tab-button {
+            min-height: 4.9rem;
+            background: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            color: #0f172a !important;
+            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06) !important;
+        }
+        .page-template-xay-shop .tab-button:not(.active) {
+            background: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            color: #0f172a !important;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.045) !important;
+        }
+        .page-template-xay-shop .tab-button:not(.active) .tab-icon-wrapper {
+            box-shadow: none !important;
+            transform: none !important;
+            opacity: 0.88;
+            filter: saturate(0.86);
+        }
+        .page-template-xay-shop .tab-button.active {
+            background: #eaf3ff !important;
+            border-color: #0d59f2 !important;
+            color: #0f172a !important;
+            box-shadow: 0 18px 44px rgba(13, 89, 242, 0.18) !important;
+        }
+        .page-template-xay-shop .tab-button.active .tab-icon-wrapper {
+            opacity: 1;
+            filter: saturate(1);
+            box-shadow: 0 14px 32px rgba(13, 89, 242, 0.28) !important;
+        }
+        html.dark .page-template-xay-shop .tab-button {
+            background: rgba(16, 28, 49, 0.78) !important;
+            border-color: rgba(96, 165, 250, 0.28) !important;
+            color: #f8fafc !important;
+            box-shadow: none !important;
+        }
+        html.dark .page-template-xay-shop .tab-button:not(.active) {
+            background: rgba(16, 28, 49, 0.68) !important;
+            border-color: rgba(96, 165, 250, 0.18) !important;
+            color: #e2e8f0 !important;
+            box-shadow: none !important;
+        }
+        html.dark .page-template-xay-shop .tab-button.active {
+            background: rgba(13, 89, 242, 0.20) !important;
+            border-color: rgba(147, 197, 253, 0.72) !important;
+            color: #ffffff !important;
+            box-shadow: 0 0 36px rgba(59, 130, 246, 0.22) !important;
+        }
+        html.dark .page-template-xay-shop .tab-button.active .tab-icon-wrapper {
+            box-shadow: 0 0 28px rgba(96, 165, 250, 0.36) !important;
+        }
+        html.dark body.page-template-xay-shop.page-template-xay-shop-php button.tab-button[class*="border-"] {
+            background: rgba(16, 28, 49, 0.78) !important;
+            border-color: rgba(96, 165, 250, 0.28) !important;
+            color: #f8fafc !important;
+            box-shadow: none !important;
+        }
+        html.dark body.page-template-xay-shop.page-template-xay-shop-php button.tab-button[class*="border-"]:not(.active) {
+            background: rgba(16, 28, 49, 0.68) !important;
+            border-color: rgba(96, 165, 250, 0.18) !important;
+            color: #e2e8f0 !important;
+            box-shadow: none !important;
+        }
+        html.dark body.page-template-xay-shop.page-template-xay-shop-php button.tab-button.active[class*="border-"] {
+            background: rgba(13, 89, 242, 0.20) !important;
+            border-color: rgba(147, 197, 253, 0.72) !important;
+            color: #ffffff !important;
+            box-shadow: 0 0 36px rgba(59, 130, 246, 0.22) !important;
+        }
         .material-symbols-outlined.icon-filled {
           font-variation-settings:
           'FILL' 1,
@@ -885,13 +954,9 @@ get_header();
                 tabButtons.forEach(button => {
                     if (button.dataset.tab === tabId) {
                         button.classList.add('active');
-                        button.style.backgroundColor = 'var(--primary-light)';
-                        button.style.borderColor = 'var(--primary)';
-                        button.style.color = 'var(--primary)';
-                        // Add dark mode active style
-                        if (document.documentElement.classList.contains('dark')) {
-                            button.style.backgroundColor = '#0d59f21a';
-                        }
+                        button.style.backgroundColor = '';
+                        button.style.borderColor = '';
+                        button.style.color = '';
                     } else {
                         button.classList.remove('active');
                         button.style.backgroundColor = '';
@@ -920,11 +985,9 @@ get_header();
                     if (mutation.attributeName === 'class') {
                         const activeTabButton = document.querySelector('.tab-button.active');
                         if (activeTabButton) {
-                            if (document.documentElement.classList.contains('dark')) {
-                                activeTabButton.style.backgroundColor = '#0d59f21a';
-                            } else {
-                                activeTabButton.style.backgroundColor = 'var(--primary-light)';
-                            }
+                            activeTabButton.style.backgroundColor = '';
+                            activeTabButton.style.borderColor = '';
+                            activeTabButton.style.color = '';
                         }
                     }
                 });
