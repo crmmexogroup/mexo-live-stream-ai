@@ -18,6 +18,7 @@
 .prose blockquote::before { content: "“"; font-family: serif; font-size: 4rem; color: #0d59f2; opacity: 0.2; position: absolute; top: 0.5rem; left: 1rem; line-height: 1; }
 .prose img { border-radius: 1rem; margin: 2.5rem 0; width: 100%; height: auto; box-shadow: 0 10px 30px -5px rgba(0,0,0,0.05); }
 .mexo-post-page { background: #f5f7fb; }
+.mexo-article-eeat { display: none !important; }
 .mexo-article-card {
     background: #fff;
     color: #0f172a;

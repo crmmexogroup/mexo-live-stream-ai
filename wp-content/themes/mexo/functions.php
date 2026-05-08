@@ -1442,6 +1442,8 @@ function mexo_content_image_lazyload( $content ) {
 add_filter( 'the_content', 'mexo_content_image_lazyload', 12 );
 
 function mexo_append_article_trust_box( $content ) {
+    return $content;
+
     if ( ! is_singular( 'post' ) || is_admin() || ! in_the_loop() || ! is_main_query() ) {
         return $content;
     }
@@ -1465,7 +1467,6 @@ function mexo_append_article_trust_box( $content ) {
 
     return $content . ob_get_clean();
 }
-add_filter( 'the_content', 'mexo_append_article_trust_box', 30 );
 
 function mexo_robots_txt( $output, $public ) {
     $output .= "Sitemap: " . home_url( '/wp-sitemap.xml' ) . "\n";
