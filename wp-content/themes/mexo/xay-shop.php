@@ -218,13 +218,13 @@ get_header();
         }
     </style>
 
-<section class="relative overflow-hidden pt-24 pb-20 lg:pt-28 lg:pb-32 bg-white dark:bg-background-dark">
+<section class="mexo-service-hero relative overflow-hidden pt-24 pb-20 lg:pt-28 lg:pb-32 bg-white dark:bg-background-dark">
 <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100 via-transparent to-transparent opacity-60 dark:from-blue-900/30"></div>
 <div class="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-white/80 to-transparent dark:from-background-dark/80"></div>
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
 <div class="grid gap-16 lg:grid-cols-12 items-center">
 <div class="lg:col-span-7 flex flex-col gap-8">
-<div class="inline-flex w-fit items-center rounded-full bg-orange-50 border border-orange-100 px-4 py-1.5 text-sm font-bold text-orange-600 dark:bg-orange-500/10 dark:border-orange-500/20 dark:text-orange-400 shadow-sm">
+<div class="mexo-hero-pill inline-flex w-fit items-center rounded-full bg-orange-50 border border-orange-100 px-4 py-1.5 text-sm font-bold text-orange-600 dark:bg-orange-500/10 dark:border-orange-500/20 dark:text-orange-400 shadow-sm">
 <span class="material-symbols-outlined mr-2 text-[20px] icon-filled animate-bounce">local_fire_department</span>
                     Giải pháp bán hàng đột phá 2026
                 </div>

@@ -68,7 +68,7 @@ get_header();
 <div class="text-text-main dark:text-white">
 
 
-<section class="relative pt-8 pb-12 lg:pt-12 lg:pb-16 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-background-dark dark:to-background-dark">
+<section class="mexo-service-hero relative pt-8 pb-12 lg:pt-12 lg:pb-16 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-background-dark dark:to-background-dark">
 <div class="absolute inset-0 opacity-50 dark:opacity-10">
 <div class="w-full h-full bg-cover bg-center" style="background-image: url('data:image/svg+xml;utf8,&lt;svg width=&quot;100%&quot; height=&quot;100%&quot; viewBox=&quot;0 0 1200 800&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;defs&gt;&lt;filter id=&quot;f1&quot; x=&quot;-20%&quot; y=&quot;-20%&quot; width=&quot;140%&quot; height=&quot;140%&quot;&gt;&lt;feTurbulence type=&quot;fractalNoise&quot; baseFrequency=&quot;0.8&quot; numOctaves=&quot;3&quot; seed=&quot;0&quot; result=&quot;noise&quot;/&gt;&lt;feDiffuseLighting in=&quot;noise&quot; lightingColor=&quot;#a0d9ff&quot; surfaceScale=&quot;5&quot;&gt;&lt;feDistantLight azimuth=&quot;235&quot; elevation=&quot;50&quot;/&gt;&lt;/feDiffuseLighting&gt;&lt;/filter&gt;&lt;/defs&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;#f0f8ff&quot;/&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot; filter=&quot;url(%23f1)&quot; opacity=&quot;0.2&quot; /&gt;&lt;/svg&gt;');"></div>
 </div>
@@ -79,7 +79,7 @@ get_header();
 <div class="relative z-10">
 <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-20">
 <div class="flex-1 space-y-6 text-center lg:text-left">
-<div class="inline-flex items-center gap-2 rounded-full bg-shopee-light px-4 py-2 text-sm font-bold text-shopee-primary border border-shopee-primary/30 shadow-md">
+<div class="mexo-hero-pill inline-flex items-center gap-2 rounded-full bg-shopee-light px-4 py-2 text-sm font-bold text-shopee-primary border border-shopee-primary/30 shadow-md">
 <span class="material-symbols-outlined text-sm text-shopee-dark fill-current">star</span>
 <span>Dịch vụ Vận hành Gian hàng Shopee trọn gói</span>
 </div>
@@ -1144,4 +1144,3 @@ get_header();
 
 </div>
 <?php get_footer(); ?>
-

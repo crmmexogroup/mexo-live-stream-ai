@@ -377,7 +377,7 @@ html.dark .mexo-contact-mini-text {
 
 <main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
     <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-blue-100 dark:border-blue-800">
+        <div class="mexo-hero-pill inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-blue-100 dark:border-blue-800">
             <span class="size-2 rounded-full bg-primary animate-pulse"></span>
             Giải pháp tăng trưởng TMĐT
         </div>

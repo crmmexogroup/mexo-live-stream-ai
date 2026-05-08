@@ -1016,6 +1016,97 @@
         color: #1f2937 !important;
         -webkit-text-fill-color: #1f2937 !important;
     }
+
+    @media (min-width: 1024px) {
+        html.dark .mexo-site-header .hidden[class*="lg:flex"] .group > div[class*="absolute"] {
+            background: rgba(15, 27, 51, 0.98) !important;
+            border-color: rgba(96, 165, 250, 0.34) !important;
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36), 0 0 40px rgba(96, 165, 250, 0.08) !important;
+        }
+
+        html.dark .mexo-site-header .hidden[class*="lg:flex"] .group > div[class*="absolute"] a {
+            color: #eaf6ff !important;
+            -webkit-text-fill-color: #eaf6ff !important;
+            font-size: 1rem !important;
+            font-weight: 800 !important;
+            line-height: 1.65 !important;
+        }
+
+        html.dark .mexo-site-header .hidden[class*="lg:flex"] .group > div[class*="absolute"] a:hover {
+            color: #ffb86b !important;
+            -webkit-text-fill-color: #ffb86b !important;
+        }
+
+        html.dark .mexo-site-header .hidden[class*="lg:flex"] .group > div[class*="absolute"] span {
+            color: #f8fafc !important;
+        }
+
+        html.dark .mexo-site-header .hidden[class*="lg:flex"] .group > div[class*="absolute"] span.text-orange-500 {
+            color: #ff8a3d !important;
+        }
+
+        html.dark .mexo-site-header .hidden[class*="lg:flex"] .group > div[class*="absolute"] span.text-blue-600 {
+            color: #7dd3fc !important;
+        }
+    }
+
+    html.dark #mobile-menu [id$="-content"] a {
+        color: #eaf6ff !important;
+        -webkit-text-fill-color: #eaf6ff !important;
+        font-weight: 700 !important;
+    }
+
+    html.dark #mobile-menu [id$="-content"] a:hover {
+        color: #ffb86b !important;
+        -webkit-text-fill-color: #ffb86b !important;
+    }
+
+    body .mexo-hero-pill,
+    body .mexo-hero-badge {
+        color: #f05a28 !important;
+        -webkit-text-fill-color: #f05a28 !important;
+        font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
+        font-weight: 900 !important;
+    }
+
+    html.dark body .mexo-hero-pill,
+    html.dark body .mexo-hero-badge {
+        color: #ffb86b !important;
+        -webkit-text-fill-color: #ffb86b !important;
+        font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
+        font-weight: 900 !important;
+    }
+
+    body .mexo-hero-pill > span:not([class*="h-"]):not([class*="w-"]),
+    body .mexo-hero-badge > span:not([class*="h-"]):not([class*="w-"]),
+    html.dark body .mexo-hero-pill > span:not([class*="h-"]):not([class*="w-"]),
+    html.dark body .mexo-hero-badge > span:not([class*="h-"]):not([class*="w-"]) {
+        color: inherit !important;
+        -webkit-text-fill-color: currentColor !important;
+    }
+
+    @media (min-width: 1024px) {
+        html.dark .mexo-site-header .relative.group > .absolute,
+        html.dark .mexo-site-header .relative.group > div[class*="absolute"] {
+            background: rgba(15, 27, 51, 0.98) !important;
+            border-color: rgba(96, 165, 250, 0.34) !important;
+        }
+
+        html.dark .mexo-site-header .relative.group > .absolute a,
+        html.dark .mexo-site-header .relative.group > div[class*="absolute"] a {
+            color: #f8fafc !important;
+            -webkit-text-fill-color: #f8fafc !important;
+            font-size: 1rem !important;
+            font-weight: 800 !important;
+            line-height: 1.65 !important;
+        }
+
+        html.dark .mexo-site-header .relative.group > .absolute a:hover,
+        html.dark .mexo-site-header .relative.group > div[class*="absolute"] a:hover {
+            color: #ffb86b !important;
+            -webkit-text-fill-color: #ffb86b !important;
+        }
+    }
 </style>
 
 
@@ -1057,12 +1148,12 @@
 <span class="text-orange-500 font-bold text-lg">Shopee</span>
 </div>
 <ul class="space-y-2">
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="/dich-vu-van-hanh-shopee">Vận Hành Shopee</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="/xay-dung-shop-shopee">Xây Shop Shopee</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="/livestream-auto-24-7/">Livestream Auto 24/7</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="/len-mall-shopee/">Lên Mall Shopee</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="/trang-tri-gian-hang/">Trang Trí &amp; Tối Ưu Shop</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="/dich-vu-tang-follow">Tăng Follow &amp; Kháng Vi Phạm</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="/dich-vu-van-hanh-shopee">Vận Hành Shopee</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="/xay-dung-shop-shopee">Xây Shop Shopee</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="/livestream-auto-24-7/">Livestream Auto 24/7</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="/len-mall-shopee/">Lên Mall Shopee</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="/trang-tri-gian-hang/">Trang Trí &amp; Tối Ưu Shop</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="/dich-vu-tang-follow">Tăng Follow &amp; Kháng Vi Phạm</a></li>
 </ul>
 </div>
 <div>
@@ -1070,11 +1161,11 @@
 <span class="text-black dark:text-white font-bold text-lg">TikTok</span>
 </div>
 <ul class="space-y-2">
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="#">Vận Hành TikTok Shop</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="#">Xây Dựng TikTok Shop</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="#">Livestream Auto 24/7</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="#">Booking KOL</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="#">Tăng Follow &amp; Kháng Vi Phạm</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="#">Vận Hành TikTok Shop</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="#">Xây Dựng TikTok Shop</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="#">Livestream Auto 24/7</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="#">Booking KOL</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="#">Tăng Follow &amp; Kháng Vi Phạm</a></li>
 </ul>
 </div>
 <div>
@@ -1082,9 +1173,9 @@
 <span class="text-blue-600 font-bold text-lg">Mexo AI</span>
 </div>
 <ul class="space-y-2">
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="#">Media AI</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="#">Booking KOL</a></li>
-<li><a class="block text-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:translate-x-1 transition-all" href="#">Công Cụ &amp; Phần Mềm Hỗ Trợ</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="#">Media AI</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="#">Booking KOL</a></li>
+<li><a class="mexo-mega-link block hover:translate-x-1 transition-all" href="#">Công Cụ &amp; Phần Mềm Hỗ Trợ</a></li>
 </ul>
 </div>
 </div>
@@ -1095,9 +1186,9 @@
                             <span class="material-icons text-2xl transition-transform duration-300 group-hover:rotate-180">expand_more</span>
 </button>
 <div class="absolute left-0 mt-2 w-56 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 p-3 z-50">
-<a class="block px-4 py-2.5 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="/dao-tao-shopee">Đào Tạo Shopee</a>
-<a class="block px-4 py-2.5 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="#">Đào Tạo TikTok</a>
-<a class="block px-4 py-2.5 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="#">Đào Tạo AI</a>
+<a class="mexo-mega-link block px-4 py-2.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="/dao-tao-shopee">Đào Tạo Shopee</a>
+<a class="mexo-mega-link block px-4 py-2.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="#">Đào Tạo TikTok</a>
+<a class="mexo-mega-link block px-4 py-2.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="#">Đào Tạo AI</a>
 </div>
 </div>
 <a class="text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary font-semibold transition-colors" href="blog">Blog</a>

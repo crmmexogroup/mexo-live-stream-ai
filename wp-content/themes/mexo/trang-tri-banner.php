@@ -31,12 +31,12 @@ get_header();
 </style>
 
 <div class="font-body text-text-light antialiased">
-<section class="relative pt-32 pb-20 md:pb-32 overflow-hidden bg-white">
+<section class="mexo-service-hero relative pt-32 pb-20 md:pb-32 overflow-hidden bg-white">
 <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center bg-fixed opacity-[0.03]"></div>
 <div class="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white/95 to-orange-50/50"></div>
 <div class="container mx-auto px-4 relative z-10">
 <div class="flex flex-col items-center text-center">
-<div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-blue-50 backdrop-blur-md text-sm font-medium mb-6 border border-blue-100 text-primary">
+<div class="mexo-hero-pill inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-blue-50 backdrop-blur-md text-sm font-medium mb-6 border border-blue-100 text-primary">
 <span class="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
                     Giải pháp tăng trưởng doanh số 2026
                 </div>

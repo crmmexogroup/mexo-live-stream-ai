@@ -65,7 +65,7 @@ get_header();
 </style>
 
 <div class="bg-background-light font-body text-[#1e293b] antialiased scroll-smooth">
-    <section class="relative w-full overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-36">
+    <section class="mexo-service-hero relative w-full overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-36">
         <div class="absolute inset-0 bg-white pointer-events-none"></div>
         <div class="absolute inset-0 bg-grid-pattern bg-grid-size opacity-[0.6] pointer-events-none"></div>
         <div class="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white/40 to-white/80 pointer-events-none"></div>
@@ -74,7 +74,7 @@ get_header();
         <div class="absolute top-[20%] -left-[5%] w-[500px] h-[500px] bg-indigo-50/50 rounded-full blur-[100px] pointer-events-none"></div>
         <div class="mx-auto flex max-w-[1280px] flex-col lg:flex-row items-center gap-12 lg:gap-8 px-6 lg:px-10 relative z-20">
             <div class="flex flex-1 flex-col items-start gap-8 pt-4 lg:pt-8 max-w-[620px]">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100/50 shadow-sm">
+                <div class="mexo-hero-pill inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100/50 shadow-sm">
                     <div class="w-2 h-2 rounded-full bg-primary"></div>
                     <span class="text-[11px] font-bold uppercase tracking-wider text-primary">GIẢI PHÁP SHOPEE MALL TOÀN DIỆN</span>
                 </div>

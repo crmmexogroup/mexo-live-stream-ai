@@ -53,16 +53,16 @@ get_header();
         }
 </style>
 <div class="bg-slate-50 dark:bg-background-dark font-display text-[#0d121c] dark:text-white overflow-x-hidden">
-<section class="relative flex flex-col items-center justify-center px-4 py-20 md:px-10 lg:px-20 xl:px-40 lg:py-28 overflow-hidden bg-gradient-to-b from-white via-blue-50/50 to-white">
+<section class="mexo-service-hero relative flex flex-col items-center justify-center px-4 py-20 md:px-10 lg:px-20 xl:px-40 lg:py-28 overflow-hidden bg-gradient-to-b from-white via-blue-50/50 to-white">
 <div class="absolute inset-0 bg-grid-pattern pointer-events-none"></div>
 <div class="absolute top-10 right-10 w-[300px] h-[300px] bg-cyan-200 rounded-full blur-[100px] opacity-30 -z-10 animate-pulse"></div>
 <div class="absolute bottom-10 left-10 w-[400px] h-[400px] bg-blue-200 rounded-full blur-[100px] opacity-30 -z-10 animate-pulse delay-1000"></div>
 <div class="layout-content-container flex flex-col max-w-[1280px] w-full z-10">
 <div class="flex flex-col-reverse gap-12 lg:flex-row lg:items-center">
 <div class="flex flex-1 flex-col gap-8 lg:pr-10">
-<div class="inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-white/80 backdrop-blur-sm px-4 py-1.5 shadow-sm hover:shadow-md transition-shadow">
+<div class="mexo-hero-pill inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-white/80 backdrop-blur-sm px-4 py-1.5 shadow-sm hover:shadow-md transition-shadow">
 <span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
-<span class="text-xs font-bold uppercase tracking-wide text-primary">Giải pháp Shopee toàn diện 2024</span>
+<span class="text-xs font-bold uppercase tracking-wide text-primary">Giải pháp Shopee toàn diện 2026</span>
 </div>
 <h1 class="text-4xl font-black leading-[1.15] tracking-tight text-[#0d121c] dark:text-white md:text-5xl lg:text-6xl">
 <span class="gradient-text">TĂNG FOLLOW</span> <br/>

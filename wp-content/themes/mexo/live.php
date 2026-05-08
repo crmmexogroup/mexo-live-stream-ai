@@ -36,11 +36,11 @@ get_header(); ?>
             animation: float 4s ease-in-out infinite;
         }
     </style>
-<section class="relative overflow-hidden pt-24 pb-16 lg:pt-24 lg:pb-24 bg-gradient-to-b from-orange-50/80 to-white dark:from-background-dark dark:to-background-dark">
+<section class="mexo-service-hero relative overflow-hidden pt-24 pb-16 lg:pt-24 lg:pb-24 bg-gradient-to-b from-orange-50/80 to-white dark:from-background-dark dark:to-background-dark">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 <div class="flex flex-col gap-8 relative z-10">
-<div class="inline-flex w-fit items-center rounded-full bg-orange-100 border border-orange-200 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-orange-600 dark:bg-orange-900/30 dark:border-orange-800 dark:text-orange-400 shadow-sm">
+<div class="mexo-hero-pill inline-flex w-fit items-center rounded-full bg-orange-100 border border-orange-200 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-orange-600 dark:bg-orange-900/30 dark:border-orange-800 dark:text-orange-400 shadow-sm">
 <span class="relative flex h-2.5 w-2.5 mr-2">
 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
 <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-orange-500"></span>

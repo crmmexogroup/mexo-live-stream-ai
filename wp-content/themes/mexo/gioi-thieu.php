@@ -4,13 +4,13 @@ Template Name: Giới Thiệu
 */
 get_header(); ?>
 
-<section class="relative flex flex-col justify-center items-center w-full bg-white dark:bg-background-dark pt-24 pb-12 lg:pt-24 lg:pb-20">
+<section class="mexo-service-hero relative flex flex-col justify-center items-center w-full bg-white dark:bg-background-dark pt-24 pb-12 lg:pt-24 lg:pb-20">
 <div class="layout-content-container flex flex-col max-w-[1200px] w-full px-4 lg:px-10">
 <div class="w-full rounded-2xl overflow-hidden relative min-h-[400px] lg:min-h-[500px] flex items-center justify-center group shadow-2xl">
 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Modern office team meeting discussion strategy" style='background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmR-nq8wbSD7cvnEzO8ogo4rQyOYKYj_ioV3FPA6RB4e-KKTAPEqm4QOVUEJgidomhVzSwecEYNFfSO05KL-PmK5VC4Z4vDDJ_UXlriQLJWj2G3kZiN5Vxcer74YqykG5fLXJSW5eGd1gqk1GBmb58yq_WbOASNkn2njT0g4BDg33h3GRA07UoOdmtzHElJWbhPw5LxUjpOHAAnT4cuKmgMVbk_gV_5hFQGU4kpxAi3eU66HSrreCXc7XvO1ZgKjHs09mFiO-X_Ss");'>
 </div>
 <div class="relative z-10 flex flex-col gap-6 text-center max-w-[900px] px-4">
-<span class="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium mx-auto">
+<span class="mexo-hero-pill inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium mx-auto">
 <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                             Hồ Sơ Năng Lực 2026
                         </span>

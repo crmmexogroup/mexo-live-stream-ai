@@ -219,6 +219,27 @@ Version: 1.0
     }
 }
 
+.mexo-site-header .mexo-mega-link[class] {
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+    line-height: 1.65 !important;
+}
+
+.mexo-site-header .mexo-mega-link[class]:hover {
+    color: #f05a28 !important;
+    -webkit-text-fill-color: #f05a28 !important;
+}
+
+html.dark .mexo-site-header .mexo-mega-link[class] {
+    color: #f8fafc !important;
+    -webkit-text-fill-color: #f8fafc !important;
+}
+
+html.dark .mexo-site-header .mexo-mega-link[class]:hover {
+    color: #ffb86b !important;
+    -webkit-text-fill-color: #ffb86b !important;
+}
+
 @media (max-width: 640px) {
     .mexo-growth-partnership {
         margin-top: 3rem;
@@ -528,4 +549,170 @@ html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button,
 html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button * {
     opacity: 1 !important;
     -webkit-text-fill-color: currentColor !important;
+}
+
+/* Shared hero badge and service-hero spacing */
+.mexo-service-hero {
+    padding-top: clamp(2.75rem, 3.5vw, 4rem) !important;
+}
+
+.mexo-hero-pill,
+.mexo-hero-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.65rem !important;
+    padding: 0.68rem 1.55rem !important;
+    border-radius: 9999px !important;
+    font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
+    line-height: 1.25 !important;
+    font-weight: 900 !important;
+    letter-spacing: 0 !important;
+    color: #f05a28 !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    border: 1px solid rgba(240, 90, 40, 0.22) !important;
+    box-shadow: 0 16px 38px rgba(15, 23, 42, 0.10) !important;
+    text-transform: none !important;
+}
+
+.mexo-hero-pill .material-symbols-outlined,
+.mexo-hero-pill [class*="material-"],
+.mexo-hero-badge .material-symbols-outlined,
+.mexo-hero-badge [class*="material-"] {
+    color: #ff7a2f !important;
+}
+
+.mexo-hero-pill > span:not([class*="h-"]):not([class*="w-"]),
+.mexo-hero-pill > div + span,
+.mexo-hero-badge > span:not([class*="h-"]):not([class*="w-"]) {
+    color: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    -webkit-text-fill-color: currentColor !important;
+}
+
+.mexo-hero-pill .animate-ping,
+.mexo-hero-badge .animate-ping {
+    background-color: #ff7a2f !important;
+}
+
+.mexo-hero-pill span[class*="rounded-full"],
+.mexo-hero-badge span[class*="rounded-full"] {
+    background-color: #ff7a2f !important;
+}
+
+html.dark .mexo-hero-pill,
+html.dark .mexo-hero-badge {
+    color: #ffb86b !important;
+    background: rgba(15, 27, 51, 0.92) !important;
+    border-color: rgba(255, 122, 47, 0.48) !important;
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.30), 0 0 32px rgba(255, 122, 47, 0.10) !important;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.22) !important;
+}
+
+html.dark .mexo-hero-pill *,
+html.dark .mexo-hero-badge * {
+    color: inherit !important;
+    -webkit-text-fill-color: currentColor !important;
+}
+
+@media (max-width: 767px) {
+    .mexo-service-hero {
+        padding-top: 3rem !important;
+    }
+
+    .mexo-hero-pill,
+    .mexo-hero-badge {
+        max-width: calc(100vw - 2rem) !important;
+        justify-content: center !important;
+        font-size: 1rem !important;
+        padding: 0.55rem 1rem !important;
+    }
+}
+
+/* Final high-specificity contrast overrides */
+body .mexo-hero-pill[class],
+body .mexo-hero-badge[class] {
+    color: #f05a28 !important;
+    -webkit-text-fill-color: #f05a28 !important;
+    font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
+    font-weight: 900 !important;
+}
+
+html.dark body .mexo-hero-pill[class],
+html.dark body .mexo-hero-badge[class] {
+    color: #ffb86b !important;
+    -webkit-text-fill-color: #ffb86b !important;
+}
+
+body .mexo-hero-pill[class] > span:not([class*="h-"]):not([class*="w-"]),
+body .mexo-hero-badge[class] > span:not([class*="h-"]):not([class*="w-"]) {
+    color: inherit !important;
+    -webkit-text-fill-color: currentColor !important;
+}
+
+@media (min-width: 1024px) {
+    html.dark body .mexo-site-header .relative.group > .absolute,
+    html.dark body .mexo-site-header .relative.group > div[class*="absolute"] {
+        background: rgba(15, 27, 51, 0.98) !important;
+        border-color: rgba(96, 165, 250, 0.34) !important;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36), 0 0 40px rgba(96, 165, 250, 0.08) !important;
+    }
+
+    html.dark body .mexo-site-header .relative.group > .absolute a[class],
+    html.dark body .mexo-site-header .relative.group > div[class*="absolute"] a[class] {
+        color: #f8fafc !important;
+        -webkit-text-fill-color: #f8fafc !important;
+        font-size: 1rem !important;
+        font-weight: 800 !important;
+        line-height: 1.65 !important;
+    }
+
+    html.dark body .mexo-site-header .relative.group > .absolute a[class]:hover,
+    html.dark body .mexo-site-header .relative.group > div[class*="absolute"] a[class]:hover {
+        color: #ffb86b !important;
+        -webkit-text-fill-color: #ffb86b !important;
+    }
+}
+
+.mexo-site-header .mexo-mega-link[class] {
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+    line-height: 1.65 !important;
+}
+
+.mexo-site-header .mexo-mega-link[class]:hover {
+    color: #f05a28 !important;
+    -webkit-text-fill-color: #f05a28 !important;
+}
+
+html.dark .mexo-site-header .mexo-mega-link[class] {
+    color: #f8fafc !important;
+    -webkit-text-fill-color: #f8fafc !important;
+}
+
+html.dark .mexo-site-header .mexo-mega-link[class]:hover {
+    color: #ffb86b !important;
+    -webkit-text-fill-color: #ffb86b !important;
+}
+
+html:not(.dark) .mexo-site-header .mexo-mega-link[class] {
+    color: #475569 !important;
+    -webkit-text-fill-color: #475569 !important;
+}
+
+html:not(.dark) .mexo-site-header .mexo-mega-link[class]:hover {
+    color: #f05a28 !important;
+    -webkit-text-fill-color: #f05a28 !important;
+}
+
+html.dark .mexo-site-header .mexo-mega-link[class] {
+    color: #f8fafc !important;
+    -webkit-text-fill-color: #f8fafc !important;
+}
+
+html.dark .mexo-site-header .mexo-mega-link[class]:hover {
+    color: #ffb86b !important;
+    -webkit-text-fill-color: #ffb86b !important;
 }

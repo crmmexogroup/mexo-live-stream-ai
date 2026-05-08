@@ -11,11 +11,11 @@ get_header(); ?>
 }
 </style>
 
-<section class="relative overflow-hidden pt-24 pb-16 lg:pt-24 lg:pb-24">
+<section class="mexo-service-hero relative overflow-hidden pt-24 pb-16 lg:pt-24 lg:pb-24">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 <div class="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
 <div class="flex flex-col gap-6">
-<div class="inline-flex w-fit items-center rounded-full bg-blue-50 border border-blue-100 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/10 dark:border-primary/20">
+<div class="mexo-hero-pill inline-flex w-fit items-center rounded-full bg-blue-50 border border-blue-100 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/10 dark:border-primary/20">
 <span class="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
                     Đối tác tăng trưởng tin cậy
                 </div>

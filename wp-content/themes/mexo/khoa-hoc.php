@@ -119,13 +119,13 @@ get_header(); ?>
         }
     </style>
 <main>
-<section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-32">
+<section class="mexo-service-hero relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-32">
 <div class="blob bg-blue-200/40 dark:bg-primary/20 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/3 -translate-y-1/3"></div>
 <div class="blob bg-blue-200/40 dark:bg-secondary/20 w-[35rem] h-[35rem] rounded-full bottom-0 right-0 translate-x-1/4 translate-y-1/4"></div>
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
 <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-primary border border-blue-100 dark:bg-blue-900/30 dark:text-blue-400 dark:border-blue-800 text-sm font-semibold mb-2">
+<div class="mexo-hero-pill inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-primary border border-blue-100 dark:bg-blue-900/30 dark:text-blue-400 dark:border-blue-800 text-sm font-semibold mb-2">
 <span class="relative flex h-2.5 w-2.5">
 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
 <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>

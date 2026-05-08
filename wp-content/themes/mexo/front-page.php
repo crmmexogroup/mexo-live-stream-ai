@@ -195,9 +195,11 @@ add_action('wp_head', function () {
         body.home .mexo-home-hero .mexo-hero-badge,
         html.dark body.home .mexo-home-hero .mexo-hero-badge {
             background: rgba(255, 255, 255, 0.92) !important;
-            border-color: rgba(226, 232, 240, 0.95) !important;
-            color: #0057ff !important;
+            border-color: rgba(240, 90, 40, 0.24) !important;
+            color: #f05a28 !important;
             box-shadow: 0 12px 28px rgba(15, 23, 42, 0.10) !important;
+            font-size: clamp(1.05rem, 1.3vw, 1.35rem) !important;
+            font-weight: 900 !important;
         }
 
         body.home .mexo-home-hero .mexo-primary-cta,
@@ -362,9 +364,9 @@ add_action('wp_head', function () {
 
         html.dark body.home .mexo-home-hero .mexo-hero-badge {
             background: rgba(15, 23, 42, 0.82) !important;
-            border-color: rgba(96, 165, 250, 0.24) !important;
-            color: #93c5fd !important;
-            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26) !important;
+            border-color: rgba(255, 122, 47, 0.48) !important;
+            color: #ffb86b !important;
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26), 0 0 32px rgba(255, 122, 47, 0.10) !important;
         }
 
         html.dark body.home .mexo-home-hero .mexo-secondary-cta {
@@ -422,7 +424,7 @@ add_action('wp_footer', function () {
 <section class="mexo-home-hero relative pt-8 pb-16 lg:pt-12 lg:pb-24 overflow-hidden">
 
 <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<div class="mexo-hero-badge inline-flex items-center px-4 py-2 rounded-full bg-white dark:bg-slate-800 shadow-md border border-slate-100 dark:border-slate-700 text-primary text-2xl font-bold mb-8 animate-float cursor-default">
+<div class="mexo-hero-badge mexo-hero-pill inline-flex items-center px-4 py-2 rounded-full bg-white dark:bg-slate-800 shadow-md border border-slate-100 dark:border-slate-700 text-primary text-2xl font-bold mb-8 animate-float cursor-default">
 <span class="flex h-2.5 w-2.5 relative mr-2.5">
 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
 <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
