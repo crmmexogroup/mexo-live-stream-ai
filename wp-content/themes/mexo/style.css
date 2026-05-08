@@ -220,14 +220,14 @@ Version: 1.0
 }
 
 .mexo-site-header .mexo-mega-link[class] {
-    font-size: 1rem !important;
-    font-weight: 800 !important;
-    line-height: 1.65 !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    line-height: 1.55 !important;
 }
 
 .mexo-site-header .mexo-mega-link[class]:hover {
-    color: #f05a28 !important;
-    -webkit-text-fill-color: #f05a28 !important;
+    color: #60a5fa !important;
+    -webkit-text-fill-color: #60a5fa !important;
 }
 
 html.dark .mexo-site-header .mexo-mega-link[class] {
@@ -236,8 +236,8 @@ html.dark .mexo-site-header .mexo-mega-link[class] {
 }
 
 html.dark .mexo-site-header .mexo-mega-link[class]:hover {
-    color: #ffb86b !important;
-    -webkit-text-fill-color: #ffb86b !important;
+    color: #7dd3fc !important;
+    -webkit-text-fill-color: #7dd3fc !important;
 }
 
 @media (max-width: 640px) {
@@ -565,11 +565,11 @@ html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button * {
     border-radius: 9999px !important;
     font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
     line-height: 1.25 !important;
-    font-weight: 900 !important;
+    font-weight: 800 !important;
     letter-spacing: 0 !important;
-    color: #f05a28 !important;
-    background: rgba(255, 255, 255, 0.92) !important;
-    border: 1px solid rgba(240, 90, 40, 0.22) !important;
+    color: #2563eb !important;
+    background: rgba(239, 246, 255, 0.94) !important;
+    border: 1px solid rgba(96, 165, 250, 0.38) !important;
     box-shadow: 0 16px 38px rgba(15, 23, 42, 0.10) !important;
     text-transform: none !important;
 }
@@ -578,7 +578,7 @@ html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button * {
 .mexo-hero-pill [class*="material-"],
 .mexo-hero-badge .material-symbols-outlined,
 .mexo-hero-badge [class*="material-"] {
-    color: #ff7a2f !important;
+    color: #38bdf8 !important;
 }
 
 .mexo-hero-pill > span:not([class*="h-"]):not([class*="w-"]),
@@ -594,20 +594,20 @@ html.dark .mexo-post-page aside .sticky > div[class*="bg-gradient"] button * {
 
 .mexo-hero-pill .animate-ping,
 .mexo-hero-badge .animate-ping {
-    background-color: #ff7a2f !important;
+    background-color: #38bdf8 !important;
 }
 
 .mexo-hero-pill span[class*="rounded-full"],
 .mexo-hero-badge span[class*="rounded-full"] {
-    background-color: #ff7a2f !important;
+    background-color: #38bdf8 !important;
 }
 
 html.dark .mexo-hero-pill,
 html.dark .mexo-hero-badge {
-    color: #ffb86b !important;
-    background: rgba(15, 27, 51, 0.92) !important;
-    border-color: rgba(255, 122, 47, 0.48) !important;
-    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.30), 0 0 32px rgba(255, 122, 47, 0.10) !important;
+    color: #93c5fd !important;
+    background: rgba(15, 35, 66, 0.94) !important;
+    border-color: rgba(96, 165, 250, 0.55) !important;
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.30), 0 0 32px rgba(96, 165, 250, 0.16) !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.22) !important;
 }
 
@@ -634,16 +634,16 @@ html.dark .mexo-hero-badge * {
 /* Final high-specificity contrast overrides */
 body .mexo-hero-pill[class],
 body .mexo-hero-badge[class] {
-    color: #f05a28 !important;
-    -webkit-text-fill-color: #f05a28 !important;
+    color: #2563eb !important;
+    -webkit-text-fill-color: #2563eb !important;
     font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
-    font-weight: 900 !important;
+    font-weight: 800 !important;
 }
 
 html.dark body .mexo-hero-pill[class],
 html.dark body .mexo-hero-badge[class] {
-    color: #ffb86b !important;
-    -webkit-text-fill-color: #ffb86b !important;
+    color: #93c5fd !important;
+    -webkit-text-fill-color: #93c5fd !important;
 }
 
 body .mexo-hero-pill[class] > span:not([class*="h-"]):not([class*="w-"]),
@@ -664,27 +664,27 @@ body .mexo-hero-badge[class] > span:not([class*="h-"]):not([class*="w-"]) {
     html.dark body .mexo-site-header .relative.group > div[class*="absolute"] a[class] {
         color: #f8fafc !important;
         -webkit-text-fill-color: #f8fafc !important;
-        font-size: 1rem !important;
-        font-weight: 800 !important;
-        line-height: 1.65 !important;
+        font-size: 0.9rem !important;
+        font-weight: 600 !important;
+        line-height: 1.55 !important;
     }
 
     html.dark body .mexo-site-header .relative.group > .absolute a[class]:hover,
     html.dark body .mexo-site-header .relative.group > div[class*="absolute"] a[class]:hover {
-        color: #ffb86b !important;
-        -webkit-text-fill-color: #ffb86b !important;
+        color: #7dd3fc !important;
+        -webkit-text-fill-color: #7dd3fc !important;
     }
 }
 
 .mexo-site-header .mexo-mega-link[class] {
-    font-size: 1rem !important;
-    font-weight: 800 !important;
-    line-height: 1.65 !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    line-height: 1.55 !important;
 }
 
 .mexo-site-header .mexo-mega-link[class]:hover {
-    color: #f05a28 !important;
-    -webkit-text-fill-color: #f05a28 !important;
+    color: #60a5fa !important;
+    -webkit-text-fill-color: #60a5fa !important;
 }
 
 html.dark .mexo-site-header .mexo-mega-link[class] {
@@ -693,8 +693,8 @@ html.dark .mexo-site-header .mexo-mega-link[class] {
 }
 
 html.dark .mexo-site-header .mexo-mega-link[class]:hover {
-    color: #ffb86b !important;
-    -webkit-text-fill-color: #ffb86b !important;
+    color: #7dd3fc !important;
+    -webkit-text-fill-color: #7dd3fc !important;
 }
 
 html:not(.dark) .mexo-site-header .mexo-mega-link[class] {
@@ -703,8 +703,8 @@ html:not(.dark) .mexo-site-header .mexo-mega-link[class] {
 }
 
 html:not(.dark) .mexo-site-header .mexo-mega-link[class]:hover {
-    color: #f05a28 !important;
-    -webkit-text-fill-color: #f05a28 !important;
+    color: #2563eb !important;
+    -webkit-text-fill-color: #2563eb !important;
 }
 
 html.dark .mexo-site-header .mexo-mega-link[class] {
@@ -713,6 +713,6 @@ html.dark .mexo-site-header .mexo-mega-link[class] {
 }
 
 html.dark .mexo-site-header .mexo-mega-link[class]:hover {
-    color: #ffb86b !important;
-    -webkit-text-fill-color: #ffb86b !important;
+    color: #7dd3fc !important;
+    -webkit-text-fill-color: #7dd3fc !important;
 }

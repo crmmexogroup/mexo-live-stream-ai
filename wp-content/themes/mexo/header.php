@@ -745,6 +745,13 @@
         box-shadow: 0 12px 34px rgba(0, 0, 0, .24), 0 1px 0 rgba(96, 165, 250, .16);
     }
 
+    .mexo-site-header .hidden.lg\:flex > a,
+    .mexo-site-header .hidden.lg\:flex > .relative > button {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+
     html.dark .mexo-site-header .hidden.lg\:flex > a,
     html.dark .mexo-site-header .hidden.lg\:flex > .relative > button {
         color: #f8fafc !important;
@@ -757,8 +764,8 @@
         color: #60a5fa !important;
     }
 
-    html.dark .mexo-site-header .hidden.lg\:flex > a.mexo-is-active::after,
-    html.dark .mexo-site-header .hidden.lg\:flex > .relative > button.mexo-is-active::after {
+    .mexo-site-header .hidden.lg\:flex > a.mexo-is-active::after,
+    .mexo-site-header .hidden.lg\:flex > .relative > button.mexo-is-active::after {
         content: "";
         position: absolute;
         left: 50%;
@@ -1027,14 +1034,14 @@
         html.dark .mexo-site-header .hidden[class*="lg:flex"] .group > div[class*="absolute"] a {
             color: #eaf6ff !important;
             -webkit-text-fill-color: #eaf6ff !important;
-            font-size: 1rem !important;
-            font-weight: 800 !important;
-            line-height: 1.65 !important;
+            font-size: 0.9rem !important;
+            font-weight: 600 !important;
+            line-height: 1.55 !important;
         }
 
         html.dark .mexo-site-header .hidden[class*="lg:flex"] .group > div[class*="absolute"] a:hover {
-            color: #ffb86b !important;
-            -webkit-text-fill-color: #ffb86b !important;
+            color: #7dd3fc !important;
+            -webkit-text-fill-color: #7dd3fc !important;
         }
 
         html.dark .mexo-site-header .hidden[class*="lg:flex"] .group > div[class*="absolute"] span {
@@ -1057,24 +1064,24 @@
     }
 
     html.dark #mobile-menu [id$="-content"] a:hover {
-        color: #ffb86b !important;
-        -webkit-text-fill-color: #ffb86b !important;
+        color: #7dd3fc !important;
+        -webkit-text-fill-color: #7dd3fc !important;
     }
 
     body .mexo-hero-pill,
     body .mexo-hero-badge {
-        color: #f05a28 !important;
-        -webkit-text-fill-color: #f05a28 !important;
+        color: #2563eb !important;
+        -webkit-text-fill-color: #2563eb !important;
         font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
-        font-weight: 900 !important;
+        font-weight: 800 !important;
     }
 
     html.dark body .mexo-hero-pill,
     html.dark body .mexo-hero-badge {
-        color: #ffb86b !important;
-        -webkit-text-fill-color: #ffb86b !important;
+        color: #93c5fd !important;
+        -webkit-text-fill-color: #93c5fd !important;
         font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
-        font-weight: 900 !important;
+        font-weight: 800 !important;
     }
 
     body .mexo-hero-pill > span:not([class*="h-"]):not([class*="w-"]),
@@ -1096,15 +1103,15 @@
         html.dark .mexo-site-header .relative.group > div[class*="absolute"] a {
             color: #f8fafc !important;
             -webkit-text-fill-color: #f8fafc !important;
-            font-size: 1rem !important;
-            font-weight: 800 !important;
-            line-height: 1.65 !important;
+            font-size: 0.9rem !important;
+            font-weight: 600 !important;
+            line-height: 1.55 !important;
         }
 
         html.dark .mexo-site-header .relative.group > .absolute a:hover,
         html.dark .mexo-site-header .relative.group > div[class*="absolute"] a:hover {
-            color: #ffb86b !important;
-            -webkit-text-fill-color: #ffb86b !important;
+            color: #7dd3fc !important;
+            -webkit-text-fill-color: #7dd3fc !important;
         }
     }
 </style>

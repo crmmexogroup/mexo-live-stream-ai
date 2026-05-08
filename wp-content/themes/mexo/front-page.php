@@ -194,12 +194,12 @@ add_action('wp_head', function () {
 
         body.home .mexo-home-hero .mexo-hero-badge,
         html.dark body.home .mexo-home-hero .mexo-hero-badge {
-            background: rgba(255, 255, 255, 0.92) !important;
-            border-color: rgba(240, 90, 40, 0.24) !important;
-            color: #f05a28 !important;
+            background: rgba(239, 246, 255, 0.94) !important;
+            border-color: rgba(96, 165, 250, 0.38) !important;
+            color: #2563eb !important;
             box-shadow: 0 12px 28px rgba(15, 23, 42, 0.10) !important;
             font-size: clamp(1.05rem, 1.3vw, 1.35rem) !important;
-            font-weight: 900 !important;
+            font-weight: 800 !important;
         }
 
         body.home .mexo-home-hero .mexo-primary-cta,
@@ -363,10 +363,10 @@ add_action('wp_head', function () {
         }
 
         html.dark body.home .mexo-home-hero .mexo-hero-badge {
-            background: rgba(15, 23, 42, 0.82) !important;
-            border-color: rgba(255, 122, 47, 0.48) !important;
-            color: #ffb86b !important;
-            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26), 0 0 32px rgba(255, 122, 47, 0.10) !important;
+            background: rgba(15, 35, 66, 0.92) !important;
+            border-color: rgba(96, 165, 250, 0.55) !important;
+            color: #93c5fd !important;
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26), 0 0 32px rgba(96, 165, 250, 0.16) !important;
         }
 
         html.dark body.home .mexo-home-hero .mexo-secondary-cta {
