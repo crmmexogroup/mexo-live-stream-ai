@@ -68,13 +68,13 @@ foreach ( $mexo_footer_faq_map as $mexo_footer_faq_slug => $mexo_footer_faq_data
 <div class="pt-6 mt-4 border-t border-slate-100 dark:border-slate-800/50">
 <h5 class="text-xs font-bold uppercase text-slate-400 mb-4 tracking-wider">Kết nối mạng xã hội</h5>
 <div class="flex space-x-3">
-<a class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors shadow-sm transform hover:-translate-y-1" href="#">
+<a class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors shadow-sm transform hover:-translate-y-1" href="https://www.facebook.com/profile.php?id=61570878871996" target="_blank" rel="noopener noreferrer" aria-label="Facebook MEXO GROUP">
 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
 </a>
-<a class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-slate-800 transition-colors shadow-sm transform hover:-translate-y-1" href="#">
+<a class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-slate-800 transition-colors shadow-sm transform hover:-translate-y-1" href="https://www.tiktok.com/@phucthucchien" target="_blank" rel="noopener noreferrer" aria-label="TikTok MEXO GROUP">
 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path></svg>
 </a>
-<a class="w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition-colors shadow-sm transform hover:-translate-y-1" href="#">
+<a class="w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition-colors shadow-sm transform hover:-translate-y-1" href="https://www.youtube.com/@buiphuc87121" target="_blank" rel="noopener noreferrer" aria-label="YouTube MEXO GROUP">
 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
 </a>
 </div>
@@ -101,4 +101,71 @@ foreach ( $mexo_footer_faq_map as $mexo_footer_faq_slug => $mexo_footer_faq_data
 </div>
 </footer>
 <?php wp_footer(); ?>
+<style id="mexo-footer-dark-final">
+html.dark body footer a,
+html.dark body footer a:hover,
+html.dark body footer a:focus,
+html.dark body footer a:visited,
+html.dark body footer .hover\:text-primary:hover,
+html.dark body footer .hover\:text-primary-dark:hover {
+    color: #ffffff !important;
+}
+html.dark body footer h4,
+html.dark body footer h5 {
+    color: #ffffff !important;
+}
+html.dark body footer p,
+html.dark body footer li,
+html.dark body footer span:not(.material-symbols-outlined) {
+    color: #dbeafe !important;
+}
+html.dark body footer .material-symbols-outlined {
+    color: #e5efff !important;
+}
+html.dark body footer a.inline-flex {
+    background: rgba(255, 255, 255, 0.10) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+</style>
+<script>
+(function () {
+    function setImportant(nodes, property, value, important) {
+        nodes.forEach(function (node) {
+            if (!node || !node.style) return;
+            if (important) {
+                node.style.setProperty(property, value, 'important');
+            } else {
+                node.style.removeProperty(property);
+            }
+        });
+    }
+
+    function syncFooterDarkMode() {
+        var footer = document.querySelector('footer');
+        if (!footer) return;
+
+        var isDark = document.documentElement.classList.contains('dark');
+        setImportant(footer.querySelectorAll('a'), 'color', '#ffffff', isDark);
+        setImportant(footer.querySelectorAll('h4, h5'), 'color', '#ffffff', isDark);
+        setImportant(footer.querySelectorAll('p, li, span:not(.material-symbols-outlined)'), 'color', '#dbeafe', isDark);
+        setImportant(footer.querySelectorAll('.material-symbols-outlined'), 'color', '#e5efff', isDark);
+
+        footer.querySelectorAll('a.inline-flex').forEach(function (link) {
+            if (isDark) {
+                link.style.setProperty('background', 'rgba(255,255,255,0.10)', 'important');
+                link.style.setProperty('border', '1px solid rgba(255,255,255,0.18)', 'important');
+            } else {
+                link.style.removeProperty('background');
+                link.style.removeProperty('border');
+            }
+        });
+    }
+
+    syncFooterDarkMode();
+    new MutationObserver(syncFooterDarkMode).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class']
+    });
+})();
+</script>
 </body></html>
