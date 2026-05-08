@@ -818,6 +818,16 @@
             pointer-events: none;
         }
 
+        .mexo-site-header .relative.group::after {
+            content: "";
+            position: absolute;
+            left: -0.75rem;
+            right: -0.75rem;
+            top: 100%;
+            height: 1rem;
+            z-index: 45;
+        }
+
         .mexo-site-header .relative.group:hover > div[class*="absolute"] {
             pointer-events: auto;
         }
