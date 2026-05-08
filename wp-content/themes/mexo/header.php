@@ -808,6 +808,26 @@
             gap: 1rem !important;
         }
 
+        .mexo-site-header .relative.group > div[class*="absolute"] {
+            transform: none !important;
+            transition-property: opacity, visibility !important;
+            transition-duration: 120ms !important;
+            transition-timing-function: ease-out !important;
+            will-change: opacity;
+            contain: paint;
+            pointer-events: none;
+        }
+
+        .mexo-site-header .relative.group:hover > div[class*="absolute"] {
+            pointer-events: auto;
+        }
+
+        .mexo-site-header .mexo-mega-link {
+            transform: none !important;
+            transition-property: color, background-color !important;
+            transition-duration: 120ms !important;
+        }
+
         .mexo-site-header .hidden.lg\:flex > a.mexo-is-active::after,
         .mexo-site-header .hidden.lg\:flex > .relative > button.mexo-is-active::after {
             top: auto;
