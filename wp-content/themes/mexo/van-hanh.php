@@ -1063,7 +1063,7 @@ get_header();
 <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-indigo-600/20 rounded-2xl blur-2xl transform rotate-3"></div>
 <div class="relative w-full max-w-2xl">
 <div class="mexo-case-stage">
-<button type="button" class="mexo-case-slide group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hop-tac-cung-phat-trien.jpg' ); ?>">
+<button type="button" class="mexo-case-slide group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/case-study-ladyes-dashboard.png' ); ?>">
 <span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl">
 <span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4">
 <span class="h-2.5 w-2.5 rounded-full bg-red-500"></span>
@@ -1071,7 +1071,7 @@ get_header();
 <span class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
 </span>
 <span class="relative block aspect-video overflow-hidden">
-<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hop-tac-cung-phat-trien.jpg' ); ?>" alt="Case study Ví vị Laddy's Design"/>
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/case-study-ladyes-dashboard.png' ); ?>" alt="Dashboard doanh thu Ví vị Laddy's Design"/>
 <span class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/10 to-transparent"></span>
 <span class="absolute bottom-4 left-4 right-4">
 <span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-200">Ví vị Laddy's Design</span>
