@@ -218,6 +218,12 @@ get_header();
             background: rgba(30,41,59,0.98);
             transform: scale(1.04);
         }
+        .dark .mexo-van-hanh-price,
+        .dark .mexo-van-hanh-process-link,
+        .dark .mexo-van-hanh-policy-title {
+            color: #fff !important;
+            -webkit-text-fill-color: #fff !important;
+        }
     </style>
 <div class="text-text-main dark:text-white">
 
@@ -278,7 +284,7 @@ get_header();
                                 Yêu cầu tư vấn ngay
                                 <span class="material-symbols-outlined ml-2 text-xl">arrow_forward</span>
 </a>
-<a class="inline-flex items-center justify-center h-14 px-8 rounded-xl border-2 border-shopee-primary/30 text-shopee-primary font-bold text-lg hover:bg-shopee-light transition-all backdrop-blur-sm hover:border-shopee-primary/50 dark:text-white dark:border-white/20 dark:hover:bg-white/10" href="#process">
+<a class="mexo-van-hanh-process-link inline-flex items-center justify-center h-14 px-8 rounded-xl border-2 border-shopee-primary/30 text-shopee-primary font-bold text-lg hover:bg-shopee-light transition-all backdrop-blur-sm hover:border-shopee-primary/50 dark:text-white dark:border-white/20 dark:hover:bg-white/10" href="#process">
                                 Xem quy trình chi tiết
                             </a>
 </div>
@@ -1020,7 +1026,7 @@ get_header();
 </div>
 <h4 class="text-2xl font-bold text-text-main dark:text-white mb-3 uppercase">Gói Tăng Tốc</h4>
 <div class="flex flex-col items-center mb-6 space-y-1">
-<span class="text-5xl lg:text-6xl font-black text-primary dark:text-white tracking-tight">24.000.000</span>
+<span class="mexo-van-hanh-price text-5xl lg:text-6xl font-black text-primary dark:text-white tracking-tight">24.000.000</span>
 <span class="text-xl text-gray-500 font-medium">VNĐ / 3 tháng</span>
 <span class="text-sm text-text-sub dark:text-gray-400 mt-2">(Chưa bao gồm VAT: 1.920.000 VNĐ)</span>
 </div>
@@ -1060,7 +1066,7 @@ get_header();
 </div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 <div class="bg-blue-50 dark:bg-blue-900/10 rounded-2xl p-6 md:p-8 border border-blue-100 dark:border-blue-900/30 flex flex-col h-full">
-<h4 class="text-lg font-bold text-primary dark:text-white mb-6 flex items-start gap-3 uppercase">
+<h4 class="mexo-van-hanh-policy-title text-lg font-bold text-primary dark:text-white mb-6 flex items-start gap-3 uppercase">
 <span class="material-symbols-outlined flex-shrink-0">verified_user</span>
 <span>Chính sách phí doanh thu – Minh bạch &amp; Rõ ràng</span>
 </h4>
@@ -1222,30 +1228,7 @@ get_header();
 </div>
 <section class="bg-background-light py-16 dark:bg-background-dark">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="mb-10 text-center">
-<h3 class="text-lg font-bold uppercase tracking-wider text-text-sub opacity-70">Đối tác &amp; Hệ sinh thái</h3>
-</div>
-<div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6 items-center opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0">
-<div class="flex items-center justify-center p-4">
-<span class="text-xl font-bold text-gray-500">SHOPEE</span>
-</div>
-<div class="flex items-center justify-center p-4">
-<span class="text-xl font-bold text-gray-500">TIKTOK</span>
-</div>
-<div class="flex items-center justify-center p-4">
-<span class="text-xl font-bold text-gray-500">LAZADA</span>
-</div>
-<div class="flex items-center justify-center p-4">
-<span class="text-xl font-bold text-gray-500">META</span>
-</div>
-<div class="flex items-center justify-center p-4">
-<span class="text-xl font-bold text-gray-500">GOOGLE</span>
-</div>
-<div class="flex items-center justify-center p-4">
-<span class="text-xl font-bold text-gray-500">TAOBAO</span>
-</div>
-</div>
-<div class="mt-16 rounded-2xl bg-primary p-8 text-center md:p-16 relative overflow-hidden">
+<div class="rounded-2xl bg-primary p-8 text-center md:p-16 relative overflow-hidden">
 <div class="absolute top-0 right-0 -mt-10 -mr-10 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
 <div class="absolute bottom-0 left-0 -mb-10 -ml-10 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
 <h2 class="relative z-10 mx-auto max-w-3xl text-3xl font-bold text-white sm:text-4xl">Sẵn sàng bứt phá doanh thu cùng MEXO GROUP?</h2>
