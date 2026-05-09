@@ -39,16 +39,21 @@ endif;
 add_action( 'after_setup_theme', 'mexo_setup' );
 
 
+function mexo_asset_version( $relative_path, $fallback = '1.0' ) {
+    $path = get_template_directory() . $relative_path;
+    return file_exists( $path ) ? filemtime( $path ) : $fallback;
+}
+
 function mexo_scripts() {
     // Load Local Fonts
-    wp_enqueue_style( 'mexo-fonts', get_template_directory_uri() . '/assets/fonts/fonts.css', array(), '1.0' );
+    wp_enqueue_style( 'mexo-fonts', get_template_directory_uri() . '/assets/fonts/fonts.css', array(), mexo_asset_version( '/assets/fonts/fonts.css' ) );
     
     // Main Style (Compiled Tailwind + Theme Metadata)
-    wp_enqueue_style( 'mexo-style', get_stylesheet_uri(), array(), time() );
+    wp_enqueue_style( 'mexo-style', get_stylesheet_uri(), array( 'mexo-fonts' ), mexo_asset_version( '/style.css' ) );
 
     // Enqueue Form Loader Script
     if ( is_page_template( 'dich-vu-shopee-mall.php' ) || is_page_template( 'trang-tri-banner.php' ) || is_page('lien-he') ) {
-        wp_enqueue_script( 'mexo-form-loader', get_template_directory_uri() . '/assets/js/form-loader.js', array(), '1.0', true );
+        wp_enqueue_script( 'mexo-form-loader', get_template_directory_uri() . '/assets/js/form-loader.js', array(), mexo_asset_version( '/assets/js/form-loader.js' ), true );
         wp_localize_script( 'mexo-form-loader', 'mexo_ajax', array(
             'ajax_url' => admin_url( 'admin-ajax.php' )
         ));
@@ -291,6 +296,11 @@ function mexo_seo_page_data() {
             'title'       => 'Đào tạo Shopee thực chiến cho chủ shop và doanh nghiệp | MEXO GROUP',
             'description' => 'Khóa đào tạo Shopee thực chiến giúp đội ngũ nắm quy trình vận hành, tối ưu sản phẩm, quảng cáo, báo cáo và tăng trưởng doanh số.',
             'keywords'    => 'đào tạo Shopee, khóa học Shopee, học vận hành Shopee',
+        ),
+        '/khoa-hoc/' => array(
+            'title'       => 'Khóa học AI ứng dụng làm ảnh & video TMĐT | MEXO GROUP',
+            'description' => 'Khóa học AI thực chiến giúp chủ shop và doanh nghiệp tự tạo ảnh sản phẩm, banner, poster và video UGC bán hàng cho Shopee, TikTok Shop và TMĐT.',
+            'keywords'    => 'khóa học AI, đào tạo AI TMĐT, tạo ảnh AI, tạo video AI, AI bán hàng, MEXO GROUP',
         ),
         '/lien-he/' => array(
             'title'       => 'Liên hệ MEXO GROUP - Tư vấn giải pháp TMĐT cho doanh nghiệp',

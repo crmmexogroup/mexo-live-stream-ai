@@ -1230,10 +1230,8 @@
 
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="<?php echo esc_url( get_template_directory_uri() . '/assets/fonts/be-vietnam-pro/be-vietnam-pro-800-vietnamese.woff2' ); ?>" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="<?php echo esc_url( get_template_directory_uri() . '/assets/fonts/be-vietnam-pro/be-vietnam-pro-700-vietnamese.woff2' ); ?>" crossorigin>
 </head>
 <body <?php body_class("bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display transition-colors duration-300 selection:bg-cta-orange selection:text-white"); ?>>
 <nav class="mexo-site-header sticky top-0 w-full bg-white/80 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-slate-800 z-50 transition-colors duration-300">
@@ -1307,7 +1305,7 @@
 <div class="absolute left-0 mt-2 w-56 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 p-3 z-50">
 <a class="mexo-mega-link block px-4 py-2.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="/dao-tao-shopee">Đào Tạo Shopee</a>
 <a class="mexo-mega-link block px-4 py-2.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="#">Đào Tạo TikTok</a>
-<a class="mexo-mega-link block px-4 py-2.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="#">Đào Tạo AI</a>
+<a class="mexo-mega-link block px-4 py-2.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all" href="/khoa-hoc/">Đào Tạo AI</a>
 </div>
 </div>
 <a class="text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary font-semibold transition-colors" href="blog">Blog</a>
@@ -1375,7 +1373,7 @@
                 <div id="mobile-training-content" class="hidden px-4 space-y-1 bg-slate-50/50 dark:bg-slate-800/50 rounded-xl mx-2 pb-2">
                     <a href="https://mexo.vn/dao-tao-shopee/" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">Đào tạo Shopee</a>
                     <a href="#" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">Đào tạo TikTok</a>
-                    <a href="#" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">Đào tạo AI</a>
+                    <a href="/khoa-hoc/" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">Đào tạo AI</a>
                 </div>
             </div>
 
@@ -1498,7 +1496,7 @@ document.addEventListener('DOMContentLoaded', function() {
             '/trang-tri-gian-hang',
             '/dich-vu-tang-follow'
         ];
-        const trainingPaths = ['/dao-tao-shopee'];
+        const trainingPaths = ['/dao-tao-shopee', '/khoa-hoc'];
 
         function samePath(href) {
             try {
