@@ -244,11 +244,10 @@ get_header();
 <span>Dịch vụ Vận hành Gian hàng Shopee trọn gói</span>
 </div>
 <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-text-main dark:text-white">
-                            Vận Hành Gian Hàng Shopee: <br class="hidden lg:block"/>
-<span class="gradient-text-shopee">Chuyên Nghiệp - Bứt Phá - Bền Vững</span>
+                            Vận Hành Gian Hàng Shopee Chuyên Nghiệp
 </h1>
 <p class="text-lg md:text-xl text-text-sub dark:text-gray-400 leading-relaxed max-w-2xl font-light mx-auto lg:mx-0">
-                            Giải pháp toàn diện giúp bạn tối ưu nguồn lực, tăng doanh số và xây dựng thương hiệu mạnh mẽ trên sàn Shopee hàng đầu Việt Nam.
+                            Giải pháp vận hành giúp doanh nghiệp của bạn tối ưu chi phí, tăng trưởng doanh số và phát triển bền vững.
                         </p>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
 <div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-shopee-primary/10 dark:border-shopee-primary/40">
