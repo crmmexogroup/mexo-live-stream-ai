@@ -1182,18 +1182,28 @@
 
     body .mexo-hero-pill,
     body .mexo-hero-badge {
+        gap: 0.5rem !important;
+        max-width: min(100%, 36rem) !important;
+        padding: 0.48rem 1.05rem !important;
+        border-radius: 999px !important;
+        border: 1px solid rgba(96, 165, 250, 0.38) !important;
+        background: rgba(239, 246, 255, 0.88) !important;
         color: #2563eb !important;
         -webkit-text-fill-color: #2563eb !important;
-        font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
+        font-size: clamp(0.9rem, 0.88vw, 1.02rem) !important;
+        line-height: 1.25 !important;
         font-weight: 800 !important;
+        letter-spacing: 0.01em !important;
+        box-shadow: 0 10px 28px rgba(37, 99, 235, 0.10) !important;
     }
 
     html.dark body .mexo-hero-pill,
     html.dark body .mexo-hero-badge {
+        border-color: rgba(96, 165, 250, 0.42) !important;
+        background: rgba(30, 41, 59, 0.78) !important;
         color: #93c5fd !important;
         -webkit-text-fill-color: #93c5fd !important;
-        font-size: clamp(1.15rem, 1.45vw, 1.65rem) !important;
-        font-weight: 800 !important;
+        box-shadow: 0 14px 34px rgba(30, 64, 175, 0.16) !important;
     }
 
     body .mexo-hero-pill > span:not([class*="h-"]):not([class*="w-"]),
@@ -1202,6 +1212,19 @@
     html.dark body .mexo-hero-badge > span:not([class*="h-"]):not([class*="w-"]) {
         color: inherit !important;
         -webkit-text-fill-color: currentColor !important;
+    }
+
+    body .mexo-hero-pill .material-symbols-outlined,
+    body .mexo-hero-badge .material-symbols-outlined {
+        color: #38bdf8 !important;
+        -webkit-text-fill-color: #38bdf8 !important;
+        font-size: 1.05rem !important;
+        line-height: 1 !important;
+    }
+
+    body .mexo-hero-pill [class*="rounded-full"][class*="bg-"],
+    body .mexo-hero-badge [class*="rounded-full"][class*="bg-"] {
+        background-color: #38bdf8 !important;
     }
 
     @media (min-width: 1024px) {
