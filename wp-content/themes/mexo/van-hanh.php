@@ -64,36 +64,52 @@ get_header();
         }
         .accordion-content.active {
             max-height: 1000px;padding-top: 1.5rem;padding-bottom: 1.5rem;}
-        .mexo-case-stage {
+        .mexo-case-carousel {
             position: relative;
-            min-height: 18rem;
+            min-height: 34rem;
         }
-        .mexo-case-slide {
+        .mexo-case-card {
             position: absolute;
             inset: 0;
             opacity: 0;
-            transform: translateY(16px) scale(0.96);
-            animation: mexoCaseRotate 15s infinite;
+            transform: translateY(18px) scale(0.98);
+            animation: mexoCaseRotate 30s infinite;
         }
-        .mexo-case-slide:nth-child(2) {
-            animation-delay: 5s;
+        .mexo-case-card:nth-child(2) {
+            animation-delay: 6s;
         }
-        .mexo-case-slide:nth-child(3) {
-            animation-delay: 10s;
+        .mexo-case-card:nth-child(3) {
+            animation-delay: 12s;
         }
-        .mexo-case-stage:hover .mexo-case-slide {
+        .mexo-case-card:nth-child(4) {
+            animation-delay: 18s;
+        }
+        .mexo-case-card:nth-child(5) {
+            animation-delay: 24s;
+        }
+        .mexo-case-carousel:hover .mexo-case-card {
             animation-play-state: paused;
         }
         @keyframes mexoCaseRotate {
-            0%, 30% {
+            0%, 16% {
                 opacity: 1;
                 transform: translateY(0) scale(1);
                 z-index: 3;
             }
-            35%, 100% {
+            20%, 100% {
                 opacity: 0;
                 transform: translateY(-12px) scale(0.96);
                 z-index: 1;
+            }
+        }
+        @media (max-width: 1023px) {
+            .mexo-case-carousel {
+                min-height: 56rem;
+            }
+        }
+        @media (max-width: 640px) {
+            .mexo-case-carousel {
+                min-height: 62rem;
             }
         }
         .mexo-case-lightbox {
@@ -1014,109 +1030,81 @@ get_header();
 </div>
 </div>
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 mb-12">
+<div class="mexo-case-carousel">
+<div class="mexo-case-card">
 <div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#0F172A] to-[#1E293B] shadow-2xl ring-1 ring-white/10 isolate">
 <div class="absolute top-0 right-0 -z-10 h-[600px] w-[600px] -translate-y-1/2 translate-x-1/2 rounded-full bg-blue-600/10 blur-[120px]"></div>
-<div class="absolute bottom-0 left-0 -z-10 h-[500px] w-[500px] translate-y-1/2 -translate-x-1/2 rounded-full bg-indigo-600/10 blur-[100px]"></div>
 <div class="relative grid lg:grid-cols-2 gap-12 p-8 sm:p-12 lg:p-16 items-center">
 <div class="flex flex-col gap-8">
 <div class="inline-flex w-fit items-center gap-2 rounded-full bg-blue-900/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md border border-blue-800/50">
-<span class="flex h-2 w-2 relative">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-</span>
-                        CASE STUDY HIGHLIGHT
-                    </div>
+<span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-blue-500"></span></span>
+                            CASE STUDY HIGHLIGHT
+                        </div>
 <div class="space-y-4">
 <h3 class="text-3xl sm:text-4xl font-black text-white leading-tight">
 <a class="inline-flex items-center gap-2 text-white hover:text-blue-200 transition-colors" href="https://shopee.vn/ladyes.design" target="_blank" rel="noopener">
-                            Ví vị Laddy's Design
+                                Ví vị Laddy's Design
 <span class="material-symbols-outlined text-[0.9em]">open_in_new</span>
 </a><br class="hidden sm:block"/>
 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-blue-200">Bùng nổ doanh số Mall</span>
 </h3>
-<p class="text-lg font-light text-slate-300 leading-relaxed">
-                            Sau 3 tháng hợp tác cùng MEXO GROUP, shop Ví vị Laddy's Design được tối ưu vận hành, tăng trưởng doanh thu và kiểm soát chi phí quảng cáo minh bạch theo từng giai đoạn.
-                        </p>
+<p class="text-lg font-light text-slate-300 leading-relaxed">Sau 3 tháng hợp tác cùng MEXO GROUP, shop Ví vị Laddy's Design được tối ưu vận hành, tăng trưởng doanh thu và kiểm soát chi phí quảng cáo minh bạch theo từng giai đoạn.</p>
 </div>
 <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-700/50">
-<div>
-<div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">
-                                +250<span class="text-lg text-blue-400">%</span>
-</div>
-<div class="text-xs font-bold uppercase tracking-wider text-slate-400">Doanh thu</div>
-</div>
-<div>
-<div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">
-                                -40<span class="text-lg text-green-400">%</span>
-</div>
-<div class="text-xs font-bold uppercase tracking-wider text-slate-400">Chi phí Ads</div>
-</div>
-<div>
-<div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">
-                                5.0<span class="text-lg text-yellow-400 material-symbols-outlined text-[1em]">star</span>
-</div>
-<div class="text-xs font-bold uppercase tracking-wider text-slate-400">Đánh giá Shop</div>
+<div><div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">+250<span class="text-lg text-blue-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Doanh thu</div></div>
+<div><div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">-40<span class="text-lg text-green-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Chi phí Ads</div></div>
+<div><div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">5.0<span class="text-lg text-yellow-400 material-symbols-outlined text-[1em]">star</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Đánh giá Shop</div></div>
 </div>
 </div>
-</div>
-<div class="relative lg:h-full flex items-center justify-center">
-<div class="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-indigo-600/20 rounded-2xl blur-2xl transform rotate-3"></div>
-<div class="relative w-full max-w-2xl">
-<div class="mexo-case-stage">
-<button type="button" class="mexo-case-slide group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/case-study-ladyes-dashboard.png' ); ?>">
+<div class="relative flex items-center justify-center">
+<div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-600/20 to-indigo-600/20 blur-2xl"></div>
+<button type="button" class="relative w-full max-w-2xl group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/case-study-ladyes-dashboard.png' ); ?>">
 <span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl">
-<span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4">
-<span class="h-2.5 w-2.5 rounded-full bg-red-500"></span>
-<span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
-<span class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
-</span>
+<span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4"><span class="h-2.5 w-2.5 rounded-full bg-red-500"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span><span class="h-2.5 w-2.5 rounded-full bg-green-500"></span></span>
 <span class="relative block aspect-video overflow-hidden">
 <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/case-study-ladyes-dashboard.png' ); ?>" alt="Dashboard doanh thu Ví vị Laddy's Design"/>
-<span class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/10 to-transparent"></span>
-<span class="absolute bottom-4 left-4 right-4">
-<span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-200">Ví vị Laddy's Design</span>
-<span class="block text-xl font-black text-white">Tối ưu vận hành &amp; tăng trưởng doanh thu</span>
-</span>
-</span>
-</span>
-</button>
-<button type="button" class="mexo-case-slide group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/business-consultation.jpg' ); ?>">
-<span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl">
-<span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4">
-<span class="h-2.5 w-2.5 rounded-full bg-red-500"></span>
-<span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
-<span class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
-</span>
-<span class="relative block aspect-video overflow-hidden">
-<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/business-consultation.jpg' ); ?>" alt="Case study tư vấn tăng trưởng Shopee"/>
-<span class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/10 to-transparent"></span>
-<span class="absolute bottom-4 left-4 right-4">
-<span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-200">Dashboard tăng trưởng</span>
-<span class="block text-xl font-black text-white">Theo dõi hiệu quả theo từng tuần</span>
-</span>
-</span>
-</span>
-</button>
-<button type="button" class="mexo-case-slide group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/team-working.jpg' ); ?>">
-<span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl">
-<span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4">
-<span class="h-2.5 w-2.5 rounded-full bg-red-500"></span>
-<span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
-<span class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
-</span>
-<span class="relative block aspect-video overflow-hidden">
-<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/team-working.jpg' ); ?>" alt="Case study đội ngũ vận hành MEXO"/>
-<span class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/10 to-transparent"></span>
-<span class="absolute bottom-4 left-4 right-4">
-<span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-200">Vận hành thực chiến</span>
-<span class="block text-xl font-black text-white">Đội ngũ theo sát từng chỉ số</span>
-</span>
+<span class="absolute inset-0 bg-gradient-to-t from-slate-950/55 via-transparent to-transparent"></span>
+<span class="absolute bottom-4 left-4 right-4"><span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-100">Ví vị Laddy's Design</span><span class="block text-lg font-black text-white">Click vào ảnh để xem lớn hơn</span></span>
 </span>
 </span>
 </button>
 </div>
-<p class="mt-4 text-center text-sm font-semibold text-slate-300">Click vào ảnh để xem lớn hơn</p>
 </div>
+</div>
+</div>
+<div class="mexo-case-card">
+<div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#0F172A] to-[#1E293B] shadow-2xl ring-1 ring-white/10 isolate">
+<div class="relative grid lg:grid-cols-2 gap-12 p-8 sm:p-12 lg:p-16 items-center">
+<div class="flex flex-col gap-8">
+<div class="inline-flex w-fit items-center gap-2 rounded-full bg-blue-900/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white border border-blue-800/50"><span class="h-2 w-2 rounded-full bg-blue-500"></span>CASE STUDY HIGHLIGHT</div>
+<div class="space-y-4"><h3 class="text-3xl sm:text-4xl font-black text-white leading-tight">Mộc Nhiên Home<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-blue-200">Tối ưu vận hành đa kênh</span></h3><p class="text-lg font-light text-slate-300 leading-relaxed">Chuẩn hóa quy trình xử lý đơn, tối ưu nội dung sản phẩm và theo dõi hiệu suất bán hàng theo từng tuần.</p></div>
+<div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-700/50"><div><div class="text-3xl font-black text-white mb-1">+180<span class="text-lg text-blue-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Doanh thu</div></div><div><div class="text-3xl font-black text-white mb-1">-32<span class="text-lg text-green-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Chi phí Ads</div></div><div><div class="text-3xl font-black text-white mb-1">4.9<span class="text-lg text-yellow-400 material-symbols-outlined text-[1em]">star</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Đánh giá Shop</div></div></div>
+</div>
+<div class="relative flex items-center justify-center"><button type="button" class="relative w-full max-w-2xl group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/business-consultation.jpg' ); ?>"><span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl"><span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4"><span class="h-2.5 w-2.5 rounded-full bg-red-500"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span><span class="h-2.5 w-2.5 rounded-full bg-green-500"></span></span><span class="relative block aspect-video overflow-hidden"><img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/business-consultation.jpg' ); ?>" alt="Case study Mộc Nhiên Home"/><span class="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-transparent to-transparent"></span><span class="absolute bottom-4 left-4 right-4"><span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-100">Mộc Nhiên Home</span><span class="block text-lg font-black text-white">Dashboard tăng trưởng theo tuần</span></span></span></span></button></div>
+</div>
+</div>
+</div>
+<div class="mexo-case-card">
+<div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#0F172A] to-[#1E293B] shadow-2xl ring-1 ring-white/10 isolate">
+<div class="relative grid lg:grid-cols-2 gap-12 p-8 sm:p-12 lg:p-16 items-center">
+<div class="flex flex-col gap-8"><div class="inline-flex w-fit items-center gap-2 rounded-full bg-blue-900/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white border border-blue-800/50"><span class="h-2 w-2 rounded-full bg-blue-500"></span>CASE STUDY HIGHLIGHT</div><div class="space-y-4"><h3 class="text-3xl sm:text-4xl font-black text-white leading-tight">Bee Kids Store<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-blue-200">Tăng tốc chuyển đổi</span></h3><p class="text-lg font-light text-slate-300 leading-relaxed">Tối ưu hình ảnh, mô tả và chiến dịch khuyến mãi để tăng tỷ lệ chuyển đổi trong các đợt cao điểm.</p></div><div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-700/50"><div><div class="text-3xl font-black text-white mb-1">+210<span class="text-lg text-blue-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Doanh thu</div></div><div><div class="text-3xl font-black text-white mb-1">-28<span class="text-lg text-green-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Chi phí Ads</div></div><div><div class="text-3xl font-black text-white mb-1">5.0<span class="text-lg text-yellow-400 material-symbols-outlined text-[1em]">star</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Đánh giá Shop</div></div></div></div>
+<div class="relative flex items-center justify-center"><button type="button" class="relative w-full max-w-2xl group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/team-working.jpg' ); ?>"><span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl"><span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4"><span class="h-2.5 w-2.5 rounded-full bg-red-500"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span><span class="h-2.5 w-2.5 rounded-full bg-green-500"></span></span><span class="relative block aspect-video overflow-hidden"><img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/team-working.jpg' ); ?>" alt="Case study Bee Kids Store"/><span class="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-transparent to-transparent"></span><span class="absolute bottom-4 left-4 right-4"><span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-100">Bee Kids Store</span><span class="block text-lg font-black text-white">Đội ngũ theo sát từng chỉ số</span></span></span></span></button></div>
+</div>
+</div>
+</div>
+<div class="mexo-case-card">
+<div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#0F172A] to-[#1E293B] shadow-2xl ring-1 ring-white/10 isolate">
+<div class="relative grid lg:grid-cols-2 gap-12 p-8 sm:p-12 lg:p-16 items-center">
+<div class="flex flex-col gap-8"><div class="inline-flex w-fit items-center gap-2 rounded-full bg-blue-900/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white border border-blue-800/50"><span class="h-2 w-2 rounded-full bg-blue-500"></span>CASE STUDY HIGHLIGHT</div><div class="space-y-4"><h3 class="text-3xl sm:text-4xl font-black text-white leading-tight">Hana Beauty Official<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-blue-200">Bứt phá doanh số campaign</span></h3><p class="text-lg font-light text-slate-300 leading-relaxed">Tái cấu trúc gian hàng, tối ưu combo sản phẩm và phân bổ ngân sách quảng cáo theo hiệu quả thực tế.</p></div><div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-700/50"><div><div class="text-3xl font-black text-white mb-1">+195<span class="text-lg text-blue-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Doanh thu</div></div><div><div class="text-3xl font-black text-white mb-1">-35<span class="text-lg text-green-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Chi phí Ads</div></div><div><div class="text-3xl font-black text-white mb-1">4.9<span class="text-lg text-yellow-400 material-symbols-outlined text-[1em]">star</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Đánh giá Shop</div></div></div></div>
+<div class="relative flex items-center justify-center"><button type="button" class="relative w-full max-w-2xl group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hop-tac-cung-phat-trien.jpg' ); ?>"><span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl"><span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4"><span class="h-2.5 w-2.5 rounded-full bg-red-500"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span><span class="h-2.5 w-2.5 rounded-full bg-green-500"></span></span><span class="relative block aspect-video overflow-hidden"><img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hop-tac-cung-phat-trien.jpg' ); ?>" alt="Case study Hana Beauty Official"/><span class="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-transparent to-transparent"></span><span class="absolute bottom-4 left-4 right-4"><span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-100">Hana Beauty Official</span><span class="block text-lg font-black text-white">Tối ưu chiến dịch bán hàng</span></span></span></span></button></div>
+</div>
+</div>
+</div>
+<div class="mexo-case-card">
+<div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#0F172A] to-[#1E293B] shadow-2xl ring-1 ring-white/10 isolate">
+<div class="relative grid lg:grid-cols-2 gap-12 p-8 sm:p-12 lg:p-16 items-center">
+<div class="flex flex-col gap-8"><div class="inline-flex w-fit items-center gap-2 rounded-full bg-blue-900/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white border border-blue-800/50"><span class="h-2 w-2 rounded-full bg-blue-500"></span>CASE STUDY HIGHLIGHT</div><div class="space-y-4"><h3 class="text-3xl sm:text-4xl font-black text-white leading-tight">An Phúc Decor<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-blue-200">Ổn định vận hành A-Z</span></h3><p class="text-lg font-light text-slate-300 leading-relaxed">Đồng bộ quy trình đăng sản phẩm, chăm sóc khách hàng và báo cáo doanh thu để shop vận hành bền vững hơn.</p></div><div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-700/50"><div><div class="text-3xl font-black text-white mb-1">+165<span class="text-lg text-blue-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Doanh thu</div></div><div><div class="text-3xl font-black text-white mb-1">-30<span class="text-lg text-green-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Chi phí Ads</div></div><div><div class="text-3xl font-black text-white mb-1">4.8<span class="text-lg text-yellow-400 material-symbols-outlined text-[1em]">star</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Đánh giá Shop</div></div></div></div>
+<div class="relative flex items-center justify-center"><button type="button" class="relative w-full max-w-2xl group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero-bg.jpg' ); ?>"><span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl"><span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4"><span class="h-2.5 w-2.5 rounded-full bg-red-500"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span><span class="h-2.5 w-2.5 rounded-full bg-green-500"></span></span><span class="relative block aspect-video overflow-hidden"><img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero-bg.jpg' ); ?>" alt="Case study An Phúc Decor"/><span class="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-transparent to-transparent"></span><span class="absolute bottom-4 left-4 right-4"><span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-100">An Phúc Decor</span><span class="block text-lg font-black text-white">Chuẩn hóa vận hành gian hàng</span></span></span></span></button></div>
 </div>
 </div>
 </div>
