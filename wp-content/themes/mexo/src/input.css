@@ -8,8 +8,6 @@ Version: 1.0
 */
 @import "tailwindcss";
 @config "../tailwind.config.js";
-@import '../assets/fonts/fonts.css';
-
 /* Custom Utilities */
 @layer utilities {
     .text-gradient {

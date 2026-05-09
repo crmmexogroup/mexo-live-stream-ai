@@ -1232,6 +1232,8 @@
 
 <link rel="preload" as="font" type="font/woff2" href="<?php echo esc_url( get_template_directory_uri() . '/assets/fonts/be-vietnam-pro/be-vietnam-pro-800-vietnamese.woff2' ); ?>" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="<?php echo esc_url( get_template_directory_uri() . '/assets/fonts/be-vietnam-pro/be-vietnam-pro-700-vietnamese.woff2' ); ?>" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="<?php echo esc_url( get_template_directory_uri() . '/assets/fonts/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2' ); ?>" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="<?php echo esc_url( get_template_directory_uri() . '/assets/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2' ); ?>" crossorigin>
 </head>
 <body <?php body_class("bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display transition-colors duration-300 selection:bg-cta-orange selection:text-white"); ?>>
 <nav class="mexo-site-header sticky top-0 w-full bg-white/80 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-slate-800 z-50 transition-colors duration-300">
