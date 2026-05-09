@@ -905,61 +905,71 @@ get_header();
 </div>
 </div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-<div class="bg-blue-50 dark:bg-blue-900/10 rounded-2xl p-8 border border-blue-100 dark:border-blue-900/30 flex flex-col h-full">
-<h4 class="text-lg font-bold text-primary dark:text-blue-400 mb-6 flex items-center gap-2 uppercase">
-<span class="material-symbols-outlined">verified_user</span>
-                    Chính sách phí doanh thu – Minh bạch &amp; Rõ ràng
-                </h4>
+<div class="bg-blue-50 dark:bg-blue-900/10 rounded-2xl p-6 md:p-8 border border-blue-100 dark:border-blue-900/30 flex flex-col h-full">
+<h4 class="text-lg font-bold text-primary dark:text-blue-400 mb-6 flex items-start gap-3 uppercase">
+<span class="material-symbols-outlined flex-shrink-0">verified_user</span>
+<span>Chính sách phí doanh thu – Minh bạch &amp; Rõ ràng</span>
+</h4>
 <div class="space-y-6 flex-1">
 <div>
 <h5 class="font-bold text-text-main dark:text-white mb-2 text-sm uppercase tracking-wide">1. Giai đoạn Setup &amp; Tối ưu (Tháng đầu tiên):</h5>
-<p class="text-sm text-text-sub dark:text-gray-300 pl-4 border-l-2 border-blue-200 dark:border-blue-800">Không tính phí % doanh thu. MEXO GROUP tập trung hoàn thiện hạ tầng, tối ưu gian hàng để tạo đà tăng trưởng.</p>
+<p class="text-sm text-text-sub dark:text-gray-300 mb-3">Áp dụng mức phí % linh hoạt dựa trên doanh thu thực tế:</p>
+<ul class="space-y-2 pl-1">
+<li class="flex items-start gap-2 text-sm text-text-main dark:text-gray-300">
+<span class="mt-2 w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0"></span>
+<span>Shop mới doanh số từ 50 triệu: <strong>2%</strong>.</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-text-main dark:text-gray-300">
+<span class="mt-2 w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0"></span>
+<span>Shop cũ đã có doanh số: <strong>2%</strong> của doanh số đạt được - doanh số tháng gần nhất.</span>
+</li>
+</ul>
 </div>
 <div>
 <h5 class="font-bold text-text-main dark:text-white mb-2 text-sm uppercase tracking-wide">2. Giai đoạn Tăng trưởng (Từ tháng thứ 2):</h5>
-<p class="text-sm text-text-sub dark:text-gray-300 mb-2">Áp dụng mức phí % linh hoạt dựa trên doanh thu thực tế:</p>
-<ul class="space-y-2 pl-4">
-<li class="flex items-center gap-2 text-sm text-text-main dark:text-gray-300">
-<span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
-                                Doanh thu từ &ge; 50 đến &lt; 500 triệu: <strong>2%</strong>
+<p class="text-sm text-text-sub dark:text-gray-300 mb-3">Áp dụng mức phí % linh hoạt dựa trên doanh thu thực tế:</p>
+<ul class="space-y-2 pl-1">
+<li class="flex items-start gap-2 text-sm text-text-main dark:text-gray-300">
+<span class="mt-2 w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0"></span>
+<span>Đạt từ 70% KPI doanh số cam kết: Thu phí <strong>1%</strong> doanh thu.</span>
 </li>
-<li class="flex items-center gap-2 text-sm text-text-main dark:text-gray-300">
-<span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
-                                Doanh thu &gt; 500 triệu: <strong>2.5%</strong>
+<li class="flex items-start gap-2 text-sm text-text-main dark:text-gray-300">
+<span class="mt-2 w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0"></span>
+<span>Đạt 100% KPI doanh số cam kết: Thu phí <strong>2%</strong> doanh thu.</span>
 </li>
 </ul>
 </div>
 </div>
 </div>
-<div class="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-8 border border-gray-200 dark:border-gray-700 flex flex-col h-full">
-<h4 class="text-lg font-bold text-text-main dark:text-white mb-6 flex items-center gap-2 uppercase">
-<span class="material-symbols-outlined">gavel</span>
-                    Nguyên tắc thu phí của MEXO GROUP
-                </h4>
+<div class="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-6 md:p-8 border border-gray-200 dark:border-gray-700 flex flex-col h-full">
+<h4 class="text-lg font-bold text-text-main dark:text-white mb-6 flex items-start gap-3 uppercase">
+<span class="material-symbols-outlined flex-shrink-0">gavel</span>
+<span>Nguyên tắc thu phí của MEXO GROUP</span>
+</h4>
 <ul class="space-y-5 flex-1">
-<li class="flex gap-3">
-<span class="material-symbols-outlined text-primary flex-shrink-0">check_box</span>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_box</span>
 <div class="text-sm text-text-main dark:text-gray-300">
 <strong>Không phát sinh phí ẩn:</strong> Mọi khoản chi phí đều được liệt kê rõ ràng trong hợp đồng và báo cáo hàng tháng.
-                        </div>
+</div>
 </li>
-<li class="flex gap-3">
-<span class="material-symbols-outlined text-primary flex-shrink-0">check_box</span>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_box</span>
 <div class="text-sm text-text-main dark:text-gray-300">
 <strong>Win-Win:</strong> Phí dịch vụ gắn liền với hiệu quả kinh doanh. Chúng tôi chỉ thành công khi bạn bán được hàng.
-                        </div>
+</div>
 </li>
-<li class="flex gap-3">
-<span class="material-symbols-outlined text-primary flex-shrink-0">check_box</span>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_box</span>
 <div class="text-sm text-text-main dark:text-gray-300">
 <strong>Linh hoạt theo thời điểm:</strong> Hỗ trợ điều chỉnh chính sách phí trong các giai đoạn khó khăn hoặc các chiến dịch đặc biệt (cần thỏa thuận trước).
-                        </div>
+</div>
 </li>
-<li class="flex gap-3">
-<span class="material-symbols-outlined text-primary flex-shrink-0">check_box</span>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_box</span>
 <div class="text-sm text-text-main dark:text-gray-300">
 <strong>Thanh toán minh bạch:</strong> Có đầy đủ hóa đơn VAT và chứng từ hợp lệ cho doanh nghiệp.
-                        </div>
+</div>
 </li>
 </ul>
 </div>
