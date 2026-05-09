@@ -1226,7 +1226,7 @@ get_header();
 </button>
 <img id="mexo-case-lightbox-img" src="" alt="Ảnh case study phóng to"/>
 </div>
-<section class="bg-background-light py-16 dark:bg-background-dark">
+<section class="bg-white py-10 dark:bg-background-dark">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 <div class="rounded-2xl bg-primary p-8 text-center md:p-16 relative overflow-hidden">
 <div class="absolute top-0 right-0 -mt-10 -mr-10 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
