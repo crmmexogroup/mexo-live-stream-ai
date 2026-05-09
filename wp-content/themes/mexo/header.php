@@ -1231,6 +1231,27 @@
         background-color: #38bdf8 !important;
     }
 
+    body .mexo-service-hero h1 {
+        max-width: min(100%, 72rem) !important;
+        font-size: clamp(3rem, 5.1vw, 4.75rem) !important;
+        line-height: 1.17 !important;
+        letter-spacing: 0 !important;
+        overflow-wrap: break-word !important;
+        text-wrap: balance;
+    }
+
+    body .mexo-service-hero h1 .material-symbols-outlined {
+        line-height: 1 !important;
+    }
+
+    body .mexo-service-hero h1 + p,
+    body .mexo-service-hero .mexo-hero-pill + h1 + p {
+        max-width: 44rem !important;
+        font-size: clamp(1.05rem, 1.35vw, 1.25rem) !important;
+        line-height: 1.68 !important;
+        font-weight: 500 !important;
+    }
+
     @media (max-width: 767px) {
         body .mexo-hero-pill,
         body .mexo-hero-badge {
@@ -1240,6 +1261,24 @@
             text-align: center !important;
             font-size: 0.86rem !important;
             line-height: 1.25 !important;
+        }
+
+        body .mexo-service-hero h1 {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            font-size: clamp(2.55rem, 12vw, 3.25rem) !important;
+            line-height: 1.13 !important;
+            text-align: center !important;
+        }
+
+        body .mexo-service-hero h1 + p,
+        body .mexo-service-hero .mexo-hero-pill + h1 + p {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            max-width: 22rem !important;
+            font-size: 1rem !important;
+            line-height: 1.62 !important;
+            text-align: center !important;
         }
     }
 
