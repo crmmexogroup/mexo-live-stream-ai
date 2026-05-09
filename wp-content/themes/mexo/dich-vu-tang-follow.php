@@ -66,7 +66,9 @@ get_header();
 </div>
 <h1 class="text-[2.15rem] font-black leading-[1.08] tracking-tight text-[#0d121c] dark:text-white md:text-5xl lg:text-6xl">
 <span class="gradient-text">TĂNG FOLLOW</span> <br/>
-                        &amp; HỖ TRỢ KHÁNG VI PHẠM SHOPEE
+<span class="mexo-follow-title-part">&amp; HỖ TRỢ</span>
+<span class="mexo-follow-title-part">KHÁNG VI</span>
+<span class="mexo-follow-title-part">PHẠM SHOPEE</span>
                     </h1>
 <p class="mx-auto text-base text-gray-600 dark:text-gray-300 font-medium leading-relaxed max-w-xl md:text-lg lg:mx-0">
                         Giữ an toàn gian hàng – bảo vệ thương hiệu – duy trì tăng trưởng bền vững. MEXO GROUP xử lý triệt để các rủi ro khóa shop, vi phạm chính sách và bảo vệ thương hiệu của bạn.

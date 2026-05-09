@@ -1233,8 +1233,8 @@
 
     body .mexo-service-hero h1 {
         max-width: min(100%, 72rem) !important;
-        font-size: clamp(3rem, 5.1vw, 4.75rem) !important;
-        line-height: 1.17 !important;
+        font-size: clamp(2.85rem, 4.45vw, 4.15rem) !important;
+        line-height: 1.28 !important;
         letter-spacing: 0 !important;
         overflow-wrap: break-word !important;
         text-wrap: balance;
@@ -1252,6 +1252,36 @@
         font-weight: 500 !important;
     }
 
+    body.page-template-dich-vu-tang-follow .mexo-service-hero > .layout-content-container > div {
+        align-items: center !important;
+    }
+
+    body.page-template-dich-vu-tang-follow .mexo-service-hero > .layout-content-container > div > div:first-child {
+        flex: 1 1 58% !important;
+        min-width: 0 !important;
+    }
+
+    body.page-template-dich-vu-tang-follow .mexo-service-hero > .layout-content-container > div > div:last-child {
+        flex: 0 1 36% !important;
+        max-width: 28rem !important;
+        margin-left: auto !important;
+    }
+
+    body.page-template-dich-vu-tang-follow .mexo-service-hero > .layout-content-container > div > div:last-child > div {
+        aspect-ratio: 1 / 1 !important;
+        border-radius: 2rem !important;
+    }
+
+    body.page-template-dich-vu-tang-follow .mexo-service-hero h1 {
+        max-width: 46rem !important;
+        font-size: clamp(2.65rem, 3.8vw, 3.45rem) !important;
+        line-height: 1.22 !important;
+    }
+
+    body.page-template-dich-vu-tang-follow .mexo-follow-title-part {
+        display: inline !important;
+    }
+
     @media (max-width: 767px) {
         body .mexo-hero-pill,
         body .mexo-hero-badge {
@@ -1266,8 +1296,8 @@
         body .mexo-service-hero h1 {
             margin-left: auto !important;
             margin-right: auto !important;
-            font-size: clamp(2.55rem, 12vw, 3.25rem) !important;
-            line-height: 1.13 !important;
+            font-size: clamp(2.35rem, 11.2vw, 3.05rem) !important;
+            line-height: 1.18 !important;
             text-align: center !important;
         }
 
@@ -1279,6 +1309,32 @@
             font-size: 1rem !important;
             line-height: 1.62 !important;
             text-align: center !important;
+        }
+
+        body.page-template-dich-vu-tang-follow .mexo-service-hero > .layout-content-container > div > div:first-child,
+        body.page-template-dich-vu-tang-follow .mexo-service-hero > .layout-content-container > div > div:last-child {
+            flex: 1 1 auto !important;
+            max-width: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        body.page-template-dich-vu-tang-follow .mexo-service-hero > .layout-content-container > div > div:last-child > div {
+            max-width: 23rem !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body.page-template-dich-vu-tang-follow .mexo-service-hero h1 {
+            width: 100% !important;
+            max-width: 20.5rem !important;
+            font-size: clamp(1.95rem, 8.9vw, 2.25rem) !important;
+            line-height: 1.2 !important;
+            overflow-wrap: normal !important;
+        }
+
+        body.page-template-dich-vu-tang-follow .mexo-follow-title-part {
+            display: block !important;
         }
     }
 
