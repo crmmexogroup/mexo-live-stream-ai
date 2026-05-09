@@ -1212,6 +1212,10 @@
     html.dark body .mexo-hero-badge > span:not([class*="h-"]):not([class*="w-"]) {
         color: inherit !important;
         -webkit-text-fill-color: currentColor !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+        font-weight: inherit !important;
+        letter-spacing: inherit !important;
     }
 
     body .mexo-hero-pill .material-symbols-outlined,
@@ -1225,6 +1229,18 @@
     body .mexo-hero-pill [class*="rounded-full"][class*="bg-"],
     body .mexo-hero-badge [class*="rounded-full"][class*="bg-"] {
         background-color: #38bdf8 !important;
+    }
+
+    @media (max-width: 767px) {
+        body .mexo-hero-pill,
+        body .mexo-hero-badge {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            justify-content: center !important;
+            text-align: center !important;
+            font-size: 0.86rem !important;
+            line-height: 1.25 !important;
+        }
     }
 
     @media (min-width: 1024px) {
