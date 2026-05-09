@@ -64,6 +64,44 @@ get_header();
         }
         .accordion-content.active {
             max-height: 1000px;padding-top: 1.5rem;padding-bottom: 1.5rem;}
+        .mexo-case-stage {
+            position: relative;
+            min-height: 18rem;
+        }
+        .mexo-case-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transform: translateY(16px) scale(0.96);
+            animation: mexoCaseRotate 15s infinite;
+        }
+        .mexo-case-slide:nth-child(2) {
+            animation-delay: 5s;
+        }
+        .mexo-case-slide:nth-child(3) {
+            animation-delay: 10s;
+        }
+        .mexo-case-stage:hover .mexo-case-slide {
+            animation-play-state: paused;
+        }
+        @keyframes mexoCaseRotate {
+            0%, 30% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                z-index: 3;
+            }
+            35%, 100% {
+                opacity: 0;
+                transform: translateY(-12px) scale(0.96);
+                z-index: 1;
+            }
+        }
+        .mexo-case-lightbox {
+            display: none;
+        }
+        .mexo-case-lightbox.is-open {
+            display: flex;
+        }
     </style>
 <div class="text-text-main dark:text-white">
 
@@ -862,7 +900,7 @@ get_header();
 </div>
 <div class="w-full md:w-5/12 flex flex-col items-center justify-center text-center border-b md:border-b-0 md:border-r border-gray-100 dark:border-gray-700 pb-6 md:pb-0 md:pr-8">
 <div class="mb-4 mt-2">
-<span class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold uppercase tracking-wider dark:bg-blue-900/30 dark:text-blue-300">All-in-One</span>
+<span class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold uppercase tracking-wider dark:bg-blue-900/30 dark:text-white">All-in-One</span>
 </div>
 <h4 class="text-2xl font-bold text-text-main dark:text-white mb-3 uppercase">Gói Tăng Tốc</h4>
 <div class="flex flex-col items-center mb-6 space-y-1">
@@ -906,7 +944,7 @@ get_header();
 </div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 <div class="bg-blue-50 dark:bg-blue-900/10 rounded-2xl p-6 md:p-8 border border-blue-100 dark:border-blue-900/30 flex flex-col h-full">
-<h4 class="text-lg font-bold text-primary dark:text-blue-400 mb-6 flex items-start gap-3 uppercase">
+<h4 class="text-lg font-bold text-primary dark:text-white mb-6 flex items-start gap-3 uppercase">
 <span class="material-symbols-outlined flex-shrink-0">verified_user</span>
 <span>Chính sách phí doanh thu – Minh bạch &amp; Rõ ràng</span>
 </h4>
@@ -981,7 +1019,7 @@ get_header();
 <div class="absolute bottom-0 left-0 -z-10 h-[500px] w-[500px] translate-y-1/2 -translate-x-1/2 rounded-full bg-indigo-600/10 blur-[100px]"></div>
 <div class="relative grid lg:grid-cols-2 gap-12 p-8 sm:p-12 lg:p-16 items-center">
 <div class="flex flex-col gap-8">
-<div class="inline-flex w-fit items-center gap-2 rounded-full bg-blue-900/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-blue-300 backdrop-blur-md border border-blue-800/50">
+<div class="inline-flex w-fit items-center gap-2 rounded-full bg-blue-900/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md border border-blue-800/50">
 <span class="flex h-2 w-2 relative">
 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
 <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
@@ -990,11 +1028,14 @@ get_header();
                     </div>
 <div class="space-y-4">
 <h3 class="text-3xl sm:text-4xl font-black text-white leading-tight">
-                            Thương hiệu Thời trang X <br class="hidden sm:block"/>
+<a class="inline-flex items-center gap-2 text-white hover:text-blue-200 transition-colors" href="https://shopee.vn/ladyes.design" target="_blank" rel="noopener">
+                            Ví vị Laddy's Design
+<span class="material-symbols-outlined text-[0.9em]">open_in_new</span>
+</a><br class="hidden sm:block"/>
 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-blue-200">Bùng nổ doanh số Mall</span>
 </h3>
 <p class="text-lg font-light text-slate-300 leading-relaxed">
-                            Sau 3 tháng hợp tác cùng MEXO GROUP, thương hiệu X đã xây dựng thành công Shopee Mall, tăng trưởng 250% doanh thu và tối ưu chi phí quảng cáo (CIR) xuống dưới 8%.
+                            Sau 3 tháng hợp tác cùng MEXO GROUP, shop Ví vị Laddy's Design được tối ưu vận hành, tăng trưởng doanh thu và kiểm soát chi phí quảng cáo minh bạch theo từng giai đoạn.
                         </p>
 </div>
 <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-700/50">
@@ -1020,27 +1061,72 @@ get_header();
 </div>
 <div class="relative lg:h-full flex items-center justify-center">
 <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-indigo-600/20 rounded-2xl blur-2xl transform rotate-3"></div>
-<div class="relative w-full aspect-video rounded-2xl bg-slate-800 border border-slate-700 shadow-2xl overflow-hidden group">
-<div class="h-8 bg-slate-900 border-b border-slate-700 flex items-center px-4 gap-2">
-<div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-<div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-<div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+<div class="relative w-full max-w-2xl">
+<div class="mexo-case-stage">
+<button type="button" class="mexo-case-slide group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hop-tac-cung-phat-trien.jpg' ); ?>">
+<span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl">
+<span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4">
+<span class="h-2.5 w-2.5 rounded-full bg-red-500"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
+</span>
+<span class="relative block aspect-video overflow-hidden">
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hop-tac-cung-phat-trien.jpg' ); ?>" alt="Case study Ví vị Laddy's Design"/>
+<span class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/10 to-transparent"></span>
+<span class="absolute bottom-4 left-4 right-4">
+<span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-200">Ví vị Laddy's Design</span>
+<span class="block text-xl font-black text-white">Tối ưu vận hành &amp; tăng trưởng doanh thu</span>
+</span>
+</span>
+</span>
+</button>
+<button type="button" class="mexo-case-slide group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/business-consultation.jpg' ); ?>">
+<span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl">
+<span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4">
+<span class="h-2.5 w-2.5 rounded-full bg-red-500"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
+</span>
+<span class="relative block aspect-video overflow-hidden">
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/business-consultation.jpg' ); ?>" alt="Case study tư vấn tăng trưởng Shopee"/>
+<span class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/10 to-transparent"></span>
+<span class="absolute bottom-4 left-4 right-4">
+<span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-200">Dashboard tăng trưởng</span>
+<span class="block text-xl font-black text-white">Theo dõi hiệu quả theo từng tuần</span>
+</span>
+</span>
+</span>
+</button>
+<button type="button" class="mexo-case-slide group cursor-zoom-in text-left" data-case-image="<?php echo esc_url( get_template_directory_uri() . '/assets/images/team-working.jpg' ); ?>">
+<span class="block overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl">
+<span class="flex h-8 items-center gap-2 border-b border-slate-700 bg-slate-950 px-4">
+<span class="h-2.5 w-2.5 rounded-full bg-red-500"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
+</span>
+<span class="relative block aspect-video overflow-hidden">
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/team-working.jpg' ); ?>" alt="Case study đội ngũ vận hành MEXO"/>
+<span class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/10 to-transparent"></span>
+<span class="absolute bottom-4 left-4 right-4">
+<span class="mb-1 block text-xs font-bold uppercase tracking-wider text-blue-200">Vận hành thực chiến</span>
+<span class="block text-xl font-black text-white">Đội ngũ theo sát từng chỉ số</span>
+</span>
+</span>
+</span>
+</button>
 </div>
-<div class="flex flex-col items-center justify-center h-[calc(100%-2rem)] bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuBegtbQpsZBUL8qzgU-ysh6OHmIEmOSEsMMUHbL3xMVlvoC3ONbb02dZep4aPg-i6h-5nc_b1-ZXQkgCgWSFggKzwGXrt_LG4zslCA38nhH5IxQOuJ7vt2x0Vj3L5irMYzMimNVQrEr_GFHiVC4ZNP2IEzbhquTNY1QSLeuNo-jAmez8MsO8oIaEuPDEQyYn5tAH-FuzJMikTolGdPAL1OEUBeKfT7b0g6RyG4AYt0xKriXaen8IVbrJrXDvR87D-btrnS-3drRCUA')] bg-cover bg-center relative group-hover:scale-105 transition-transform duration-700">
-<div class="absolute inset-0 bg-slate-900/60 backdrop-blur-[2px] group-hover:backdrop-blur-none transition-all duration-500"></div>
-<div class="relative z-10 text-center p-6 group-hover:opacity-0 transition-opacity duration-300">
-<div class="inline-flex p-4 rounded-2xl bg-slate-800/80 border border-slate-600 shadow-lg mb-4 backdrop-blur-md">
-<span class="material-symbols-outlined text-4xl text-blue-400">monitoring</span>
-</div>
-<h4 class="text-lg font-bold text-white mb-1">Real-time Dashboard</h4>
-<span class="text-sm text-slate-400">Dữ liệu tăng trưởng thực tế</span>
+<p class="mt-4 text-center text-sm font-semibold text-slate-300">Click vào ảnh để xem lớn hơn</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
+<div id="mexo-case-lightbox" class="mexo-case-lightbox fixed inset-0 z-[9999] items-center justify-center bg-slate-950/90 p-4 backdrop-blur-sm">
+<button type="button" class="absolute right-5 top-5 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white hover:bg-white/20" data-case-close aria-label="Đóng ảnh case study">
+<span class="material-symbols-outlined">close</span>
+</button>
+<img id="mexo-case-lightbox-img" class="max-h-[88vh] max-w-[92vw] rounded-2xl border border-white/15 object-contain shadow-2xl" src="" alt="Ảnh case study phóng to"/>
 </div>
 <section class="bg-background-light py-16 dark:bg-background-dark">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -1148,6 +1234,34 @@ get_header();
             accordions[0].querySelector('.accordion-content').classList.add('active');
             accordions[0].querySelector('.accord-icon').classList.add('rotate-180');
         }
+
+        const caseLightbox = document.getElementById('mexo-case-lightbox');
+        const caseLightboxImg = document.getElementById('mexo-case-lightbox-img');
+        document.querySelectorAll('[data-case-image]').forEach(button => {
+            button.addEventListener('click', () => {
+                if (!caseLightbox || !caseLightboxImg) return;
+                caseLightboxImg.src = button.dataset.caseImage;
+                caseLightbox.classList.add('is-open');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        const closeCaseLightbox = () => {
+            if (!caseLightbox || !caseLightboxImg) return;
+            caseLightbox.classList.remove('is-open');
+            caseLightboxImg.src = '';
+            document.body.style.overflow = '';
+        };
+        document.querySelectorAll('[data-case-close]').forEach(button => {
+            button.addEventListener('click', closeCaseLightbox);
+        });
+        if (caseLightbox) {
+            caseLightbox.addEventListener('click', event => {
+                if (event.target === caseLightbox) closeCaseLightbox();
+            });
+        }
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape') closeCaseLightbox();
+        });
     });
 </script>
 </div>
