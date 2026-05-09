@@ -66,7 +66,8 @@ get_header();
             max-height: 1000px;padding-top: 1.5rem;padding-bottom: 1.5rem;}
         .mexo-case-carousel {
             position: relative;
-            min-height: 34rem;
+            height: 28rem;
+            min-height: 28rem;
         }
         .mexo-case-card {
             position: absolute;
@@ -75,6 +76,21 @@ get_header();
             transform: translateY(18px) scale(0.98);
             animation: mexoCaseRotate 30s infinite;
             pointer-events: none;
+        }
+        .mexo-case-card > .relative {
+            height: 100%;
+        }
+        .mexo-case-card > .relative > .relative {
+            height: 100%;
+        }
+        .mexo-case-card .grid.lg\:grid-cols-2 {
+            min-height: 100%;
+        }
+        .mexo-case-card button {
+            width: 100%;
+        }
+        .mexo-case-card button > span.block {
+            width: 100%;
         }
         .mexo-case-card:nth-child(2) {
             animation-delay: 6s;
@@ -107,12 +123,14 @@ get_header();
         }
         @media (max-width: 1023px) {
             .mexo-case-carousel {
-                min-height: 56rem;
+                height: 50rem;
+                min-height: 50rem;
             }
         }
         @media (max-width: 640px) {
             .mexo-case-carousel {
-                min-height: 62rem;
+                height: 58rem;
+                min-height: 58rem;
             }
         }
         .mexo-case-lightbox {
