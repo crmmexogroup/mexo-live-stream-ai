@@ -280,7 +280,7 @@ get_header();
 </div>
 <div class="flex flex-wrap gap-4 pt-6 justify-center lg:justify-start">
 <a class="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-shopee-primary text-white font-bold text-lg hover:bg-shopee-dark transition-all shadow-lg shadow-shopee-primary/30 hover:scale-105" href="#consultation">
-                                Yêu cầu tư vấn ngay
+                                Xem Case Study
                                 <span class="material-symbols-outlined ml-2 text-xl">arrow_forward</span>
 </a>
 <a class="mexo-van-hanh-process-link inline-flex items-center justify-center h-14 px-8 rounded-xl border-2 border-shopee-primary/30 text-shopee-primary font-bold text-lg hover:bg-shopee-light transition-all backdrop-blur-sm hover:border-shopee-primary/50 dark:text-white dark:border-white/20 dark:hover:bg-white/10" href="#process">
