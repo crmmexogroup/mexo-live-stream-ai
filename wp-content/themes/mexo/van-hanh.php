@@ -243,7 +243,7 @@ get_header();
 <span class="material-symbols-outlined text-sm text-shopee-dark fill-current">star</span>
 <span>Dịch vụ Vận hành Gian hàng Shopee trọn gói</span>
 </div>
-<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-text-main dark:text-white">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-[#ff5a2c] dark:text-[#ff7a3d]">
                             Vận Hành Gian Hàng Shopee Chuyên Nghiệp
 </h1>
 <p class="text-lg md:text-xl text-text-sub dark:text-gray-400 leading-relaxed max-w-2xl font-light mx-auto lg:mx-0">
