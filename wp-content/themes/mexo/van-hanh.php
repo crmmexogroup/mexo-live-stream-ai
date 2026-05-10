@@ -1157,7 +1157,7 @@ get_header();
 </div>
 <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-700/50">
 <div><div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">877<span class="text-lg text-blue-400">tr</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Doanh thu</div></div>
-<div><div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">-5<span class="text-lg text-green-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Chi phí Ads</div></div>
+<div><div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">5<span class="text-lg text-green-400">%</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Chi phí Ads</div></div>
 <div><div class="text-3xl font-black text-white mb-1 flex items-baseline gap-1">4.9<span class="text-lg text-yellow-400 material-symbols-outlined text-[1em]">star</span></div><div class="text-xs font-bold uppercase tracking-wider text-slate-400">Đánh giá Shop</div></div>
 </div>
 </div>
