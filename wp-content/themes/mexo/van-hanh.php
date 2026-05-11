@@ -58,6 +58,23 @@ get_header();
             color: var(--mexo-orange) !important;
             -webkit-text-fill-color: var(--mexo-orange) !important;
         }
+        .mexo-hero-panel {
+            background: linear-gradient(135deg, rgba(255,255,255,.98) 0%, rgba(239,246,255,.98) 52%, rgba(236,254,255,.96) 100%) !important;
+            border-color: rgba(191, 219, 254, .85) !important;
+        }
+        .dark .mexo-hero-panel {
+            background: linear-gradient(135deg, #071525 0%, #0c1f3a 55%, #12305a 100%) !important;
+            border-color: rgba(96, 165, 250, .28) !important;
+        }
+        .mexo-hero-stat {
+            background: rgba(255, 247, 237, .58) !important;
+            border-color: rgba(238, 77, 45, .18) !important;
+        }
+        .dark .mexo-hero-stat {
+            background: rgba(15, 27, 47, .92) !important;
+            border-color: rgba(96, 165, 250, .35) !important;
+            box-shadow: 0 18px 40px rgba(2, 8, 23, .22) !important;
+        }
         .process-line {
             background-image: linear-gradient(to right, #E0E7FF, #E0E7FF 50%, #9DA6BD 50%, #9DA6BD);
             background-size: 200% 100%;
@@ -242,12 +259,12 @@ get_header();
 <div class="w-full h-full bg-cover bg-center" style="background-image: url('data:image/svg+xml;utf8,&lt;svg width=&quot;100%&quot; height=&quot;100%&quot; viewBox=&quot;0 0 1200 800&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;defs&gt;&lt;filter id=&quot;f1&quot; x=&quot;-20%&quot; y=&quot;-20%&quot; width=&quot;140%&quot; height=&quot;140%&quot;&gt;&lt;feTurbulence type=&quot;fractalNoise&quot; baseFrequency=&quot;0.8&quot; numOctaves=&quot;3&quot; seed=&quot;0&quot; result=&quot;noise&quot;/&gt;&lt;feDiffuseLighting in=&quot;noise&quot; lightingColor=&quot;#a0d9ff&quot; surfaceScale=&quot;5&quot;&gt;&lt;feDistantLight azimuth=&quot;235&quot; elevation=&quot;50&quot;/&gt;&lt;/feDiffuseLighting&gt;&lt;/filter&gt;&lt;/defs&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;#f0f8ff&quot;/&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot; filter=&quot;url(%23f1)&quot; opacity=&quot;0.2&quot; /&gt;&lt;/svg&gt;');"></div>
 </div>
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-<div class="relative overflow-hidden rounded-[2.5rem] bg-white/90 backdrop-blur-xl border border-gray-100 dark:bg-card-dark dark:border-gray-800 shadow-xl ring-1 ring-white/10 p-6 sm:p-10 lg:p-14">
+<div class="mexo-hero-panel relative overflow-hidden rounded-[2.5rem] backdrop-blur-xl border shadow-xl ring-1 ring-white/10 p-6 sm:p-10 lg:p-14">
 <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-blue-400/10 blur-[100px] rounded-full pointer-events-none dark:hidden"></div>
-<div class="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-[600px] h-[600px] bg-yellow-400/10 blur-[100px] rounded-full pointer-events-none dark:bg-yellow-500/10"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-[600px] h-[600px] bg-blue-300/12 blur-[100px] rounded-full pointer-events-none dark:bg-cyan-500/10"></div>
 <div class="relative z-10">
-<div class="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-20">
-<div class="flex-1 space-y-6 text-center lg:text-left">
+<div class="max-w-5xl mx-auto text-center">
+<div class="space-y-6">
 <div class="mexo-hero-pill inline-flex items-center gap-2 rounded-full bg-shopee-light px-4 py-2 text-sm font-bold text-shopee-primary border border-shopee-primary/30 shadow-md">
 <span class="material-symbols-outlined text-sm text-shopee-dark fill-current">star</span>
 <span>Dịch vụ Vận hành Gian hàng Shopee trọn gói</span>
@@ -255,11 +272,11 @@ get_header();
 <h1 class="mexo-hero-title-orange text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight" style="color:#ee4d2d !important;">
                             Vận Hành Gian Hàng Shopee Chuyên Nghiệp
 </h1>
-<p class="text-lg md:text-xl text-text-sub dark:text-gray-400 leading-relaxed max-w-2xl font-light mx-auto lg:mx-0">
+<p class="text-lg md:text-xl text-text-sub dark:text-gray-400 leading-relaxed max-w-3xl font-light mx-auto">
                             Giải pháp vận hành giúp doanh nghiệp của bạn tối ưu chi phí, tăng trưởng doanh số và phát triển bền vững.
                         </p>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
-<div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-[#0f1b2f]/90 dark:border-blue-400/30 dark:shadow-lg dark:shadow-blue-950/20">
+<div class="mexo-hero-stat group backdrop-blur-sm rounded-2xl p-5 border hover:bg-shopee-light transition-all duration-300">
 <div class="flex items-center gap-3 mb-2">
 <div class="p-2 rounded-lg bg-green-100 text-green-600 dark:bg-green-900/20 dark:text-green-400">
 <span class="material-symbols-outlined text-2xl">trending_up</span>
@@ -268,7 +285,7 @@ get_header();
 </div>
 <p class="text-sm font-medium text-text-sub dark:text-gray-400">Tăng trưởng doanh thu trung bình</p>
 </div>
-<div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-[#0f1b2f]/90 dark:border-blue-400/30 dark:shadow-lg dark:shadow-blue-950/20">
+<div class="mexo-hero-stat group backdrop-blur-sm rounded-2xl p-5 border hover:bg-shopee-light transition-all duration-300">
 <div class="flex items-center gap-3 mb-2">
 <div class="p-2 rounded-lg bg-yellow-100 text-yellow-600 dark:bg-yellow-900/20 dark:text-yellow-400">
 <span class="material-symbols-outlined text-2xl">savings</span>
@@ -277,7 +294,7 @@ get_header();
 </div>
 <p class="text-sm font-medium text-text-sub dark:text-gray-400">Tối ưu chi phí quảng cáo (CIR)</p>
 </div>
-<div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-[#0f1b2f]/90 dark:border-blue-400/30 dark:shadow-lg dark:shadow-blue-950/20">
+<div class="mexo-hero-stat group backdrop-blur-sm rounded-2xl p-5 border hover:bg-shopee-light transition-all duration-300">
 <div class="flex items-center gap-3 mb-2">
 <div class="p-2 rounded-lg bg-blue-100 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400">
 <span class="material-symbols-outlined text-2xl">group_add</span>
@@ -287,7 +304,7 @@ get_header();
 <p class="text-sm font-medium text-text-sub dark:text-gray-400">Kinh nghiệm thực chiến</p>
 </div>
 </div>
-<div class="flex flex-wrap gap-4 pt-6 justify-center lg:justify-start">
+<div class="flex flex-wrap gap-4 pt-6 justify-center">
 <a class="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-shopee-primary text-white font-bold text-lg hover:bg-shopee-dark transition-all shadow-lg shadow-shopee-primary/30 hover:scale-105" href="#consultation">
                                 Xem Case Study
                                 <span class="material-symbols-outlined ml-2 text-xl">arrow_forward</span>
@@ -295,24 +312,6 @@ get_header();
 <a class="mexo-van-hanh-process-link inline-flex items-center justify-center h-14 px-8 rounded-xl border-2 border-shopee-primary/30 text-shopee-primary font-bold text-lg hover:bg-shopee-light transition-all backdrop-blur-sm hover:border-shopee-primary/50 dark:text-white dark:border-white/20 dark:hover:bg-white/10" href="#process">
                                 Xem quy trình chi tiết
                             </a>
-</div>
-</div>
-<div class="hidden lg:block w-1/3 relative">
-<div class="relative z-10 w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700 transform rotate-3 hover:rotate-0 transition-all duration-500">
-<img alt="Shopee Growth Dashboard" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBegtbQpsZBUL8qzgU-ysh6OHmIEmOSEsMMUHbL3xMVlvoC3ONbb02dZep4aPg-i6h-5nc_b1-ZXQkgCgWSFggKzwGXrt_LG4zslCA38nhH5IxQOuJ7vt2x0Vj3L5irMYzMimNVQrEr_GFHiVC4ZNP2IEzbhquTNY1QSLeuNo-jAmez8MsO8oIaEuPDEQyYn5tAH-FuzJMikTolGdPAL1OEUBeKfT7b0g6RyG4AYt0xKriXaen8IVbrJrXDvR87D-btrnS-3drRCUA"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-<div class="absolute bottom-6 left-6 right-6">
-<div class="bg-white/90 backdrop-blur-md rounded-xl p-4 border border-gray-200 dark:bg-card-dark/80 dark:border-gray-700">
-<div class="flex items-center gap-3 mb-2">
-<span class="flex h-3 w-3 relative">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-<span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-</span>
-<span class="text-sm font-bold text-text-main uppercase tracking-wider dark:text-white">Hiệu quả thực tế</span>
-</div>
-<p class="text-xs text-text-sub dark:text-gray-300">Dữ liệu tăng trưởng liên tục được cập nhật từ các gian hàng đối tác.</p>
-</div>
-</div>
 </div>
 </div>
 </div>
