@@ -28,19 +28,44 @@ get_header();
     font-weight: bold;
     color: white;
 }
+.mexo-trang-tri-hero {
+    padding-top: 5.5rem !important;
+}
+.mexo-trang-tri-badge {
+    color: #60a5fa !important;
+    border-color: rgba(96, 165, 250, .48) !important;
+    background: rgba(15, 35, 64, .72) !important;
+    box-shadow: 0 16px 42px rgba(37, 99, 235, .16);
+}
+.mexo-trang-tri-badge span:last-child {
+    color: #93c5fd !important;
+}
+.mexo-trang-tri-title,
+.mexo-trang-tri-title span {
+    background: linear-gradient(90deg, #60a5fa 0%, #22d3ee 48%, #0d59f2 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+}
+@media (min-width: 1024px) {
+    .mexo-trang-tri-hero {
+        padding-top: 6rem !important;
+    }
+}
 </style>
 
 <div class="font-body text-text-light antialiased">
-<section class="mexo-service-hero relative pt-32 pb-20 md:pb-32 overflow-hidden bg-white">
+<section class="mexo-service-hero mexo-trang-tri-hero relative pt-32 pb-20 md:pb-32 overflow-hidden bg-white">
 <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center bg-fixed opacity-[0.03]"></div>
 <div class="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white/95 to-orange-50/50"></div>
 <div class="container mx-auto px-4 relative z-10">
 <div class="flex flex-col items-center text-center">
-<div class="mexo-hero-pill inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-blue-50 backdrop-blur-md text-sm font-medium mb-6 border border-blue-100 text-primary">
+<div class="mexo-hero-pill mexo-trang-tri-badge inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-blue-50 backdrop-blur-md text-sm font-medium mb-6 border border-blue-100 text-primary">
 <span class="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
                     Giải pháp tăng trưởng doanh số 2026
                 </div>
-<h1 class="font-display font-black text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight text-gray-900 drop-shadow-sm">
+<h1 class="mexo-trang-tri-title font-display font-black text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight text-gray-900 drop-shadow-sm">
 <span class="flex items-center justify-center gap-4 mb-2">
 <span class="material-symbols-outlined text-5xl md:text-7xl text-secondary">storefront</span>
 </span>
@@ -561,3 +586,4 @@ get_header();
 </section>
 </div>
 <?php get_footer(); ?>
+
