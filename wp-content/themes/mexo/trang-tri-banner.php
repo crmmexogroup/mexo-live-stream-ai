@@ -42,11 +42,9 @@ get_header();
 }
 .mexo-trang-tri-title,
 .mexo-trang-tri-title span {
-    background: linear-gradient(90deg, #60a5fa 0%, #22d3ee 48%, #0d59f2 100%) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    color: transparent !important;
-    -webkit-text-fill-color: transparent !important;
+    background: none !important;
+    color: #38bdf8 !important;
+    -webkit-text-fill-color: #38bdf8 !important;
 }
 @media (min-width: 1024px) {
     .mexo-trang-tri-hero {
