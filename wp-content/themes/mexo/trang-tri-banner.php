@@ -43,8 +43,8 @@ get_header();
 .mexo-trang-tri-title,
 .mexo-trang-tri-title span {
     background: none !important;
-    color: #38bdf8 !important;
-    -webkit-text-fill-color: #38bdf8 !important;
+    color: #0d59f2 !important;
+    -webkit-text-fill-color: #0d59f2 !important;
 }
 @media (min-width: 1024px) {
     .mexo-trang-tri-hero {
