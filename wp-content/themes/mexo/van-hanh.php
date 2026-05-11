@@ -243,7 +243,7 @@ get_header();
 </div>
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
 <div class="relative overflow-hidden rounded-[2.5rem] bg-white/90 backdrop-blur-xl border border-gray-100 dark:bg-card-dark dark:border-gray-800 shadow-xl ring-1 ring-white/10 p-6 sm:p-10 lg:p-14">
-<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-red-400/10 blur-[100px] rounded-full pointer-events-none dark:bg-shopee-primary/20"></div>
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-blue-400/10 blur-[100px] rounded-full pointer-events-none dark:hidden"></div>
 <div class="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-[600px] h-[600px] bg-yellow-400/10 blur-[100px] rounded-full pointer-events-none dark:bg-yellow-500/10"></div>
 <div class="relative z-10">
 <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-20">
@@ -259,7 +259,7 @@ get_header();
                             Giải pháp vận hành giúp doanh nghiệp của bạn tối ưu chi phí, tăng trưởng doanh số và phát triển bền vững.
                         </p>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
-<div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-shopee-primary/10 dark:border-shopee-primary/40">
+<div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-[#0f1b2f]/90 dark:border-blue-400/30 dark:shadow-lg dark:shadow-blue-950/20">
 <div class="flex items-center gap-3 mb-2">
 <div class="p-2 rounded-lg bg-green-100 text-green-600 dark:bg-green-900/20 dark:text-green-400">
 <span class="material-symbols-outlined text-2xl">trending_up</span>
@@ -268,7 +268,7 @@ get_header();
 </div>
 <p class="text-sm font-medium text-text-sub dark:text-gray-400">Tăng trưởng doanh thu trung bình</p>
 </div>
-<div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-shopee-primary/10 dark:border-shopee-primary/40">
+<div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-[#0f1b2f]/90 dark:border-blue-400/30 dark:shadow-lg dark:shadow-blue-950/20">
 <div class="flex items-center gap-3 mb-2">
 <div class="p-2 rounded-lg bg-yellow-100 text-yellow-600 dark:bg-yellow-900/20 dark:text-yellow-400">
 <span class="material-symbols-outlined text-2xl">savings</span>
@@ -277,7 +277,7 @@ get_header();
 </div>
 <p class="text-sm font-medium text-text-sub dark:text-gray-400">Tối ưu chi phí quảng cáo (CIR)</p>
 </div>
-<div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-shopee-primary/10 dark:border-shopee-primary/40">
+<div class="group bg-shopee-light/50 backdrop-blur-sm rounded-2xl p-5 border border-shopee-primary/20 hover:bg-shopee-light transition-all duration-300 dark:bg-[#0f1b2f]/90 dark:border-blue-400/30 dark:shadow-lg dark:shadow-blue-950/20">
 <div class="flex items-center gap-3 mb-2">
 <div class="p-2 rounded-lg bg-blue-100 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400">
 <span class="material-symbols-outlined text-2xl">group_add</span>
@@ -314,7 +314,6 @@ get_header();
 </div>
 </div>
 </div>
-<div class="absolute -top-6 -right-6 w-full h-full rounded-3xl border-2 border-dashed border-gray-300 -z-10 rotate-6 dark:border-gray-600"></div>
 </div>
 </div>
 </div>
