@@ -1492,6 +1492,30 @@
         color: var(--mexo-blue-readable) !important;
         -webkit-text-fill-color: var(--mexo-blue-readable) !important;
     }
+
+    [class*="bg-primary"] > h1,
+    [class*="bg-primary"] > h2,
+    [class*="bg-primary"] > h3,
+    [class*="bg-primary"] > p,
+    [class*="bg-primary"] .text-white,
+    [class*="from-primary"] > h1,
+    [class*="from-primary"] > h2,
+    [class*="from-primary"] > h3,
+    [class*="from-primary"] > p,
+    [class*="from-primary"] .text-white,
+    html.dark [class*="bg-primary"] > h1,
+    html.dark [class*="bg-primary"] > h2,
+    html.dark [class*="bg-primary"] > h3,
+    html.dark [class*="bg-primary"] > p,
+    html.dark [class*="bg-primary"] .text-white,
+    html.dark [class*="from-primary"] > h1,
+    html.dark [class*="from-primary"] > h2,
+    html.dark [class*="from-primary"] > h3,
+    html.dark [class*="from-primary"] > p,
+    html.dark [class*="from-primary"] .text-white {
+        color: var(--mexo-white-strong) !important;
+        -webkit-text-fill-color: var(--mexo-white-strong) !important;
+    }
 </style>
 
 

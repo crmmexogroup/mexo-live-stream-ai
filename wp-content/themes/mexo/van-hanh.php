@@ -92,8 +92,8 @@ get_header();
             max-height: 1000px;padding-top: 1.5rem;padding-bottom: 1.5rem;}
         .mexo-case-carousel {
             position: relative;
-            height: 32rem;
-            min-height: 32rem;
+            height: 38rem;
+            min-height: 38rem;
         }
         .mexo-case-card {
             position: absolute;
@@ -115,6 +115,9 @@ get_header();
         .mexo-case-card .grid.lg\:grid-cols-2 > .flex.flex-col {
             min-height: 100%;
             justify-content: center;
+        }
+        .mexo-case-card h3 {
+            overflow: visible;
         }
         .mexo-case-card .grid.grid-cols-3 {
             padding-bottom: .25rem;
@@ -183,8 +186,8 @@ get_header();
         }
         @media (max-width: 1023px) {
             .mexo-case-carousel {
-                height: 55rem;
-                min-height: 55rem;
+                height: 60rem;
+                min-height: 60rem;
             }
             .mexo-case-shop-button {
                 position: relative;
@@ -196,8 +199,8 @@ get_header();
         }
         @media (max-width: 640px) {
             .mexo-case-carousel {
-                height: 64rem;
-                min-height: 64rem;
+                height: 68rem;
+                min-height: 68rem;
             }
         }
         .mexo-case-lightbox {
