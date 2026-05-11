@@ -49,6 +49,14 @@ get_header();
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .mexo-hero-title-orange {
+            color: #ff6a2f !important;
+            -webkit-text-fill-color: #ff6a2f !important;
+        }
+        .dark .mexo-hero-title-orange {
+            color: #ff6a2f !important;
+            -webkit-text-fill-color: #ff6a2f !important;
+        }
         .process-line {
             background-image: linear-gradient(to right, #E0E7FF, #E0E7FF 50%, #9DA6BD 50%, #9DA6BD);
             background-size: 200% 100%;
@@ -243,7 +251,7 @@ get_header();
 <span class="material-symbols-outlined text-sm text-shopee-dark fill-current">star</span>
 <span>Dịch vụ Vận hành Gian hàng Shopee trọn gói</span>
 </div>
-<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight" style="color:#ff6a2f;">
+<h1 class="mexo-hero-title-orange text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight" style="color:#ff6a2f !important;">
                             Vận Hành Gian Hàng Shopee Chuyên Nghiệp
 </h1>
 <p class="text-lg md:text-xl text-text-sub dark:text-gray-400 leading-relaxed max-w-2xl font-light mx-auto lg:mx-0">
