@@ -1362,6 +1362,138 @@
     }
 </style>
 
+<style id="mexo-brand-color-sync">
+    :root {
+        --mexo-blue-strong: #0d59f2;
+        --mexo-blue-readable: #1d6fff;
+        --mexo-blue-dark-readable: #4aa3ff;
+        --mexo-orange-strong: #ee4d2d;
+        --mexo-ink-strong: #0f172a;
+        --mexo-white-strong: #ffffff;
+    }
+
+    .text-primary,
+    .text-blue-300,
+    .text-blue-400,
+    .text-sky-300,
+    .text-sky-400,
+    .text-cyan-300,
+    .text-cyan-400,
+    .text-blue-500,
+    .text-blue-600,
+    .text-blue-700,
+    .text-indigo-400,
+    .text-indigo-500,
+    .text-indigo-600,
+    .text-shopee-primary,
+    [class*="text-primary"],
+    [class*="text-blue-300"],
+    [class*="text-blue-400"],
+    [class*="text-sky-300"],
+    [class*="text-sky-400"],
+    [class*="text-cyan-300"],
+    [class*="text-cyan-400"] {
+        color: var(--mexo-blue-strong) !important;
+        -webkit-text-fill-color: var(--mexo-blue-strong) !important;
+    }
+
+    html.dark .text-primary,
+    html.dark .text-blue-300,
+    html.dark .text-blue-400,
+    html.dark .text-sky-300,
+    html.dark .text-sky-400,
+    html.dark .text-cyan-300,
+    html.dark .text-cyan-400,
+    html.dark .text-blue-500,
+    html.dark .text-blue-600,
+    html.dark .text-blue-700,
+    html.dark .text-indigo-400,
+    html.dark .text-indigo-500,
+    html.dark .text-indigo-600,
+    html.dark .text-shopee-primary,
+    html.dark [class*="text-primary"],
+    html.dark [class*="text-blue-300"],
+    html.dark [class*="text-blue-400"],
+    html.dark [class*="text-sky-300"],
+    html.dark [class*="text-sky-400"],
+    html.dark [class*="text-cyan-300"],
+    html.dark [class*="text-cyan-400"] {
+        color: var(--mexo-blue-dark-readable) !important;
+        -webkit-text-fill-color: var(--mexo-blue-dark-readable) !important;
+    }
+
+    .text-orange-400,
+    .text-orange-500,
+    .text-orange-600,
+    .text-red-500,
+    .text-red-600,
+    html.dark .text-orange-400,
+    html.dark .text-orange-500,
+    html.dark .text-orange-600,
+    html.dark .text-red-500,
+    html.dark .text-red-600 {
+        color: var(--mexo-orange-strong) !important;
+        -webkit-text-fill-color: var(--mexo-orange-strong) !important;
+    }
+
+    .mexo-primary-cta,
+    a[class*="bg-cta-orange"],
+    button[class*="bg-cta-orange"],
+    a[class*="from-cta-orange"],
+    button[class*="from-cta-orange"] {
+        background: linear-gradient(135deg, var(--mexo-orange-strong) 0%, #ff6a2a 100%) !important;
+        border-color: rgba(255, 255, 255, .72) !important;
+    }
+
+    [class*="from-blue"].text-transparent.bg-clip-text,
+    [class*="from-primary"].text-transparent.bg-clip-text,
+    [class*="to-cyan"].text-transparent.bg-clip-text,
+    [class*="to-blue"].text-transparent.bg-clip-text {
+        background: none !important;
+        background-image: none !important;
+        color: var(--mexo-blue-strong) !important;
+        -webkit-text-fill-color: var(--mexo-blue-strong) !important;
+        -webkit-background-clip: initial !important;
+        background-clip: initial !important;
+    }
+
+    html.dark [class*="from-blue"].text-transparent.bg-clip-text,
+    html.dark [class*="from-primary"].text-transparent.bg-clip-text,
+    html.dark [class*="to-cyan"].text-transparent.bg-clip-text,
+    html.dark [class*="to-blue"].text-transparent.bg-clip-text {
+        color: var(--mexo-blue-readable) !important;
+        -webkit-text-fill-color: var(--mexo-blue-readable) !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-display {
+        color: var(--mexo-ink-strong);
+    }
+
+    html.dark h1,
+    html.dark h2,
+    html.dark h3,
+    html.dark .font-display {
+        color: var(--mexo-white-strong);
+    }
+
+    .mexo-section-title-accent,
+    .trang-tri-benefit-title span,
+    body.page-template-trang-tri-banner section h2 span {
+        color: var(--mexo-blue-strong) !important;
+        -webkit-text-fill-color: var(--mexo-blue-strong) !important;
+    }
+
+    html.dark .mexo-section-title-accent,
+    html.dark .trang-tri-benefit-title span,
+    html.dark body.page-template-trang-tri-banner section h2 span {
+        color: var(--mexo-blue-readable) !important;
+        -webkit-text-fill-color: var(--mexo-blue-readable) !important;
+    }
+</style>
+
 
 
 <link rel="preload" as="font" type="font/woff2" href="<?php echo esc_url( get_template_directory_uri() . '/assets/fonts/be-vietnam-pro/be-vietnam-pro-800-vietnamese.woff2' ); ?>" crossorigin>

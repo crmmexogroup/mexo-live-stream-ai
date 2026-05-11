@@ -258,8 +258,8 @@ get_header();
 </div>
 </div>
 <div class="lg:w-7/12 order-1 lg:order-2">
-<h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
-                        Lợi ích khi <span class="text-primary">Trang trí gian hàng</span>
+<h2 class="trang-tri-benefit-title font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
+                        Lợi ích khi <span class="mexo-section-title-accent">Trang trí gian hàng</span>
 </h2>
 <p class="text-gray-600 mb-10 text-lg">
                         Một gian hàng được đầu tư thiết kế không chỉ là "làm đẹp", đó là chiến lược kinh doanh giúp bạn vượt trội so với đối thủ.
