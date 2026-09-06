@@ -98,49 +98,139 @@ get_header(); ?>
 <div class="relative z-10 animate-float">
 <div class="absolute -top-10 -right-10 w-24 h-24 bg-yellow-400 rounded-full blur-3xl opacity-30 animate-pulse"></div>
 <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-red-500 rounded-full blur-3xl opacity-20"></div>
-<div class="relative aspect-[9/16] max-w-sm mx-auto bg-black rounded-[2.5rem] border-[10px] border-gray-900 shadow-2xl overflow-hidden ring-1 ring-gray-900/5">
-<div class="absolute top-0 left-0 w-full h-full bg-gray-800" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKgbkQrNVf9YLWFAKcOarjVJe8O65kdd1OvGqj-Sx5gyb2Ia2Vm5-SYMKmHDu7F1x8dbu3bkbrsYFIdFDSKIcXbqZ2Z2TNGwMcSi53EUM08DHWQA78JQiKmi6Vu-vEh3KOzN-dhO91kZZBC_XqKE85w45p1UwMYkxHZJdKs83iS8ldY6qwd4Ii28wrEIxPHQrr7OccI7ZIEzJEV8oz_I_1rh_KWxlcJnF1WrOpYLPDJ3hrdrO-hwYXX2y9oyOCX31qutmVv4nj4Ns"); background-size: cover; background-position: center;'>
-<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/80"></div>
+<div class="relative aspect-[9/16] max-w-sm mx-auto bg-black rounded-[2.5rem] border-[10px] border-gray-900 shadow-2xl overflow-hidden ring-1 ring-gray-900/5 group cursor-pointer" id="mexo-phone-player">
+<video id="mexo-ai-video" class="w-full h-full object-cover rounded-[1.8rem]" playsinline preload="metadata" muted>
+<source id="mexo-video-source" src="<?php echo get_template_directory_uri(); ?>/assets/videos/livestream-ai/1.mp4" type="video/mp4">
+</video>
+<div id="mexo-play-overlay" class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center transition-opacity duration-300 pointer-events-none">
+<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 text-white shadow-xl transition-transform transform group-hover:scale-110">
+<span id="mexo-play-icon" class="material-symbols-outlined text-4xl">play_arrow</span>
 </div>
-<div class="absolute top-6 left-4 flex items-center gap-2">
-<div class="bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
-<span class="w-1.5 h-1.5 bg-white rounded-full animate-[ping_1.5s_infinite]"></span>
-                                LIVE
-                            </div>
-<div class="bg-black/40 backdrop-blur-md text-white text-[10px] px-2 py-0.5 rounded flex items-center gap-1">
-<span class="material-symbols-outlined text-[12px]">visibility</span>
-                                15.2k
-                            </div>
+<p id="mexo-play-label" class="text-white text-xs font-bold mt-2 bg-black/50 px-3 py-1 rounded-full backdrop-blur-sm">Bấm để xem video 1/7</p>
 </div>
-<div class="absolute bottom-32 right-4 flex flex-col gap-2 opacity-80">
-<span class="material-symbols-outlined text-red-500 text-2xl animate-[bounce_2s_infinite]">favorite</span>
-<span class="material-symbols-outlined text-pink-500 text-xl animate-[bounce_1.5s_infinite] delay-100">favorite</span>
+<div class="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-20" id="mexo-video-dots">
+<?php for($i = 1; $i <= 7; $i++): ?>
+<button type="button" onclick="event.stopPropagation(); selectVideo(<?php echo $i; ?>);" class="w-2.5 h-2.5 rounded-full transition-all duration-300 <?php echo $i === 1 ? 'bg-orange-500 w-5' : 'bg-white/50 hover:bg-white'; ?>" aria-label="Video <?php echo $i; ?>" data-index="<?php echo $i; ?>"></button>
+<?php endfor; ?>
 </div>
-<div class="absolute bottom-4 left-4 right-4 space-y-3">
-<div class="flex flex-col gap-1.5 mb-2 opacity-90">
-<div class="bg-black/30 backdrop-blur-sm self-start rounded-2xl rounded-tl-none px-3 py-1.5 text-white text-xs max-w-[80%]">
-<span class="font-bold text-yellow-400">user123:</span> Shop tư vấn nhiệt tình quá ❤️
-                                </div>
-<div class="bg-black/30 backdrop-blur-sm self-start rounded-2xl rounded-tl-none px-3 py-1.5 text-white text-xs max-w-[80%]">
-<span class="font-bold text-blue-400">thanh_ha:</span> Đã chốt đơn nha shop ơi!
-                                </div>
+<button type="button" onclick="event.stopPropagation(); prevVideo();" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20 hover:bg-black/70" aria-label="Video trước">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button type="button" onclick="event.stopPropagation(); nextVideo();" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20 hover:bg-black/70" aria-label="Video tiếp">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
 </div>
-<div class="flex items-end gap-3">
-<div class="bg-white/95 backdrop-blur-md p-2 rounded-xl flex-1 shadow-lg flex gap-2 items-center">
-<div class="w-10 h-10 bg-gray-100 rounded-lg shrink-0 overflow-hidden">
-<div class="w-full h-full bg-gray-200"></div>
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-xs font-bold text-gray-900 truncate">Combo 3 Áo Thun Basic...</p>
-<p class="text-xs text-red-600 font-extrabold">159.000đ <span class="text-[10px] text-gray-400 line-through font-normal">250.000đ</span></p>
-</div>
-</div>
-<div class="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white shadow-lg animate-bounce cursor-pointer hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">shopping_bag</span>
-</div>
-</div>
-</div>
-</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const themeUri = "<?php echo get_template_directory_uri(); ?>";
+    const totalVideos = 7;
+    let currentIndex = 1;
+    let autoNextTimer = null;
+    let isUserPlaying = false;
+
+    const video = document.getElementById('mexo-ai-video');
+    const source = document.getElementById('mexo-video-source');
+    const playOverlay = document.getElementById('mexo-play-overlay');
+    const playIcon = document.getElementById('mexo-play-icon');
+    const playLabel = document.getElementById('mexo-play-label');
+    const playerContainer = document.getElementById('mexo-phone-player');
+
+    function updateVideo(index, playImmediately = false) {
+        currentIndex = index;
+        const videoUrl = themeUri + '/assets/videos/livestream-ai/' + currentIndex + '.mp4';
+        
+        video.pause();
+        source.src = videoUrl;
+        video.load();
+
+        const dots = document.querySelectorAll('#mexo-video-dots button');
+        dots.forEach((dot, idx) => {
+            if (idx + 1 === currentIndex) {
+                dot.className = 'w-5 h-2.5 rounded-full transition-all duration-300 bg-orange-500';
+            } else {
+                dot.className = 'w-2.5 h-2.5 rounded-full transition-all duration-300 bg-white/50 hover:bg-white';
+            }
+        });
+
+        if (playImmediately) {
+            video.muted = false;
+            video.play().then(() => {
+                isUserPlaying = true;
+                playIcon.textContent = 'pause';
+                playLabel.textContent = 'Đang phát video ' + currentIndex + '/7';
+                playOverlay.classList.add('opacity-0');
+                stopAutoNext();
+            }).catch(err => console.log('Playback error:', err));
+        } else {
+            video.muted = true;
+            playIcon.textContent = 'play_arrow';
+            playLabel.textContent = 'Bấm để xem video ' + currentIndex + '/7';
+            playOverlay.classList.remove('opacity-0');
+        }
+    }
+
+    function startAutoNext() {
+        stopAutoNext();
+        autoNextTimer = setInterval(function() {
+            if (!isUserPlaying) {
+                let nextIdx = currentIndex + 1;
+                if (nextIdx > totalVideos) nextIdx = 1;
+                updateVideo(nextIdx, false);
+            }
+        }, 3000);
+    }
+
+    function stopAutoNext() {
+        if (autoNextTimer) {
+            clearInterval(autoNextTimer);
+            autoNextTimer = null;
+        }
+    }
+
+    window.selectVideo = function(index) {
+        updateVideo(index, isUserPlaying);
+    };
+
+    window.nextVideo = function() {
+        let nextIdx = currentIndex + 1;
+        if (nextIdx > totalVideos) nextIdx = 1;
+        updateVideo(nextIdx, isUserPlaying);
+    };
+
+    window.prevVideo = function() {
+        let prevIdx = currentIndex - 1;
+        if (prevIdx < 1) prevIdx = totalVideos;
+        updateVideo(prevIdx, isUserPlaying);
+    };
+
+    playerContainer.addEventListener('click', function() {
+        if (video.paused) {
+            video.muted = false;
+            video.play().then(() => {
+                isUserPlaying = true;
+                playIcon.textContent = 'pause';
+                playLabel.textContent = 'Đang phát video ' + currentIndex + '/7';
+                playOverlay.classList.add('opacity-0');
+                stopAutoNext();
+            }).catch(err => console.log('Playback error:', err));
+        } else {
+            video.pause();
+            isUserPlaying = false;
+            playIcon.textContent = 'play_arrow';
+            playLabel.textContent = 'Tạm dừng (Bấm để tiếp tục)';
+            playOverlay.classList.remove('opacity-0');
+            startAutoNext();
+        }
+    });
+
+    video.addEventListener('ended', function() {
+        window.nextVideo();
+    });
+
+    startAutoNext();
+});
+</script>
 <div class="absolute top-1/4 -left-12 bg-white dark:bg-card-dark p-3.5 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 flex items-center gap-3 animate-[float_4s_infinite]">
 <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
 <span class="material-symbols-outlined">payments</span>
